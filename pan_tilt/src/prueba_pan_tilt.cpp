@@ -40,7 +40,6 @@ int main(int argc, char** argv)
   bool retroceso = false;
   while (ros::ok())  //bucle principal, aqui entramos y nos mantenemos durante la ej
   {
-    
     msg.header.stamp = ros::Time::now();
     msg.position[0] = posPan;
     msg.position[1] = posTilt;
