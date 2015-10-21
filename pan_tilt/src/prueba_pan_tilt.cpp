@@ -29,7 +29,7 @@ main(int argc, char** argv)
   ros::Publisher flir_pub;		//Declaramos los publicadores y subcriptores
   ros::Subscriber flir_sub;
 
-  flir_pub 	= n.advertise<sensor_msgs::JointState>("/cmd", 1); 
+  flir_pub 	= n.advertise<sensor_msgs::JointState>("/joint_states", 1); 
   sensor_msgs::JointState msg;
   msg.position.resize(2);
   msg.name.resize(2);
