@@ -1,0 +1,1195 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"forces"
+			],
+			[
+				"va",
+				"v_aux"
+			],
+			[
+				"v",
+				"v_aux"
+			],
+			[
+				"mo",
+				"moduleAttrac"
+			],
+			[
+				"an",
+				"angular_PID"
+			],
+			[
+				"ob",
+				"objectAux"
+			],
+			[
+				"force",
+				"forces_list"
+			],
+			[
+				"fo",
+				"forces_list"
+			],
+			[
+				"f",
+				"foundObject"
+			],
+			[
+				"is",
+				"isObject"
+			],
+			[
+				"jon",
+				"tfg_jonathan_gines"
+			],
+			[
+				"forc",
+				"forces_msg"
+			],
+			[
+				"fr",
+				"forces_msg"
+			],
+			[
+				"pu",
+				"push_back"
+			],
+			[
+				"Y",
+				"Y_ORIGIN"
+			],
+			[
+				"X",
+				"X_ORIGIN"
+			],
+			[
+				"odo",
+				"odoV"
+			],
+			[
+				"od",
+				"odoV"
+			],
+			[
+				"re",
+				"repulsionV"
+			],
+			[
+				"nav",
+				"nav_msgs"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"s",
+				"subscribe"
+			],
+			[
+				"modu",
+				"moduleB"
+			],
+			[
+				"m",
+				"meanAngle"
+			],
+			[
+				"repul",
+				"repulsion_module"
+			],
+			[
+				"Obj",
+				"ObjectParams"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"curso",
+				"cursorArray"
+			],
+			[
+				"lang",
+				"language"
+			],
+			[
+				"lan",
+				"language"
+			],
+			[
+				"le",
+				"level"
+			],
+			[
+				"mon",
+				"mongodb"
+			],
+			[
+				"lo",
+				"loadingGif"
+			],
+			[
+				"rom",
+				"roomNumber"
+			],
+			[
+				"roo",
+				"roomNumber"
+			],
+			[
+				"ro",
+				"roomNumber"
+			],
+			[
+				"la",
+				"lang2"
+			],
+			[
+				"user",
+				"usersArray"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"pas",
+				"passConfirm"
+			],
+			[
+				"se",
+				"seclanguage"
+			],
+			[
+				"js",
+				"js"
+			],
+			[
+				"pa",
+				"pass"
+			],
+			[
+				"em",
+				"emailconfirm"
+			],
+			[
+				"ema",
+				"email"
+			],
+			[
+				"au",
+				"authOK"
+			],
+			[
+				"jonathan",
+				"Jonathan"
+			],
+			[
+				"prin",
+				"printf	printf …"
+			],
+			[
+				"me",
+				"meanDistance"
+			],
+			[
+				"ver",
+				"verboseMode"
+			],
+			[
+				"deb",
+				"debugMode"
+			],
+			[
+				"MA",
+				"MAXSIZE"
+			],
+			[
+				"mea",
+				"meanAngle"
+			],
+			[
+				"ma",
+				"matrix"
+			],
+			[
+				"pr",
+				"printf	printf …"
+			],
+			[
+				"Scan",
+				"scan_time"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ga",
+				"gameTogo"
+			],
+			[
+				"gam",
+				"gameTogo"
+			],
+			[
+				"ind",
+				"indexFin"
+			],
+			[
+				"ins",
+				"indexSt"
+			],
+			[
+				"hi",
+				"history"
+			],
+			[
+				"ha",
+				"handlerOff"
+			],
+			[
+				"fi",
+				"finishGame"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"nu",
+				"numGame"
+			],
+			[
+				"save",
+				"saveHistory"
+			],
+			[
+				"radio",
+				"radio4"
+			],
+			[
+				"sh",
+				"showTypeGame"
+			],
+			[
+				"sav",
+				"saveHistory"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"ch",
+				"checkScreen"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"get",
+				"getJson"
+			],
+			[
+				"di",
+				"difficult"
+			],
+			[
+				"his",
+				"historyCallback"
+			],
+			[
+				"han",
+				"handlerOff"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"inde",
+				"indexList"
+			],
+			[
+				"y",
+				"yourScore"
+			],
+			[
+				"Ma",
+				"MAX_SCORE"
+			],
+			[
+				"CON",
+				"CONST_LAT"
+			],
+			[
+				"lat",
+				"latlng"
+			],
+			[
+				"p",
+				"picturesDiv"
+			],
+			[
+				"T",
+				"TIME_DIFFICULT"
+			],
+			[
+				"li",
+				"linkList"
+			],
+			[
+				"pla",
+				"placeList"
+			],
+			[
+				"pl",
+				"placeList"
+			],
+			[
+				"pro",
+				"properties"
+			],
+			[
+				"Ty",
+				"TYPE_GAME1"
+			],
+			[
+				"TY",
+				"TYPE_GAME1"
+			],
+			[
+				"ali",
+				"vertical-align"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"radi",
+				"radio1"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"c",
+				"checked"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"SHA",
+				"SHA512_DIGEST_LENGTH"
+			],
+			[
+				"has",
+				"hash_out"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"time",
+				"timeline"
+			],
+			[
+				"he",
+				"hearth_go"
+			],
+			[
+				"stone",
+				"stone_array"
+			],
+			[
+				"pri",
+				"princessesCaught"
+			],
+			[
+				"SH",
+				"SHA512_DIGEST_LENGTH"
+			],
+			[
+				"file",
+				"file_to_check"
+			],
+			[
+				"E",
+				"EMSASHA512ID"
+			],
+			[
+				"RSA",
+				"RSA_key"
+			],
+			[
+				"R",
+				"RSA_key"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "forces_node.cpp",
+			"settings":
+			{
+				"buffer_size": 6047,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "navigation_node.cpp",
+			"settings":
+			{
+				"buffer_size": 3658,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jonathan/catkin_ws/src/tfg_jonathan_gines/launch/kobuki_hokuyo.launch",
+			"settings":
+			{
+				"buffer_size": 1249,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jonathan/catkin_ws/src/tfg_jonathan_gines/robot/kobuki_hokuyo_model.urdf.xacro",
+			"settings":
+			{
+				"buffer_size": 1185,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jonathan/catkin_ws/src/tfg_jonathan_gines/urdf/flir_ptu.urdf.xacro",
+			"settings":
+			{
+				"buffer_size": 865,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jonathan/catkin_ws/src/tfg_jonathan_gines/urdf/hokuyo.urdf.xacro",
+			"settings":
+			{
+				"buffer_size": 1057,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jonathan/catkin_ws/src/pan_tilt/src/prueba_pan_tilt.cpp",
+			"settings":
+			{
+				"buffer_size": 1771,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jonathan/catkin_ws/robotica/launch/kobuki_sim.launch",
+			"settings":
+			{
+				"buffer_size": 1197,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jonathan/catkin_ws/robotica/launch/kobuki_real.launch",
+			"settings":
+			{
+				"buffer_size": 1445,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jonathan/catkin_ws/memoria_proyecto.txt",
+			"settings":
+			{
+				"buffer_size": 6922,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 369.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: pi",
+				"Package Control: Create Package File"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/urdf/d46.urdf.xacro",
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/urdf/kobuki_hokuyo.urdf.xacro",
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/urdf/hokuyo.urdf.xacro",
+		"/home/jonathan/catkin_ws/src/flir_ptu_driver/launch/ptu.launch",
+		"/home/jonathan/catkin_ws/src/practica1/src/bumpgo_kobuki_node.cpp",
+		"/home/jonathan/catkin_ws/src/bicaacademy/src/components/siguelineas/siguelineascomp.cpp",
+		"/home/jonathan/catkin_ws/src/bicaacademy/src/components/siguelineas/siguelineas.cpp",
+		"/home/jonathan/catkin_ws/src/bicaacademy/src/components/siguelineas/giralineas.cpp",
+		"/home/jonathan/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/CMakeLists.txt",
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/package.xml",
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/msg/Forces.msg",
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/launch/kobuki_hokuyo.launch",
+		"/home/jonathan/catkin_ws/robotica/src/localization_node.cpp",
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/robot/kobuki_hokuyo_model.urdf.xacro",
+		"/home/jonathan/catkin_ws/robotica/launch/kobuki_sim.launch",
+		"/home/jonathan/catkin_ws/src/vff/src/navigation.cpp",
+		"/home/jonathan/catkin_ws/robotica/urdf/turtlebot_properties.urdf.xacro",
+		"/home/jonathan/catkin_ws/src/tfg_jonathan_gines/meshes/hokuyo.dae",
+		"/home/jonathan/catkin_ws/tfg_jonathan_gines/urdf/hokuyo.urdf.xacro",
+		"/home/jonathan/catkin_ws/tfg_jonathan_gines/launch/kobuki_hokuyo.launch",
+		"/home/jonathan/catkin_ws/tfg_jonathan_gines/robot/kobuki_hokuyo.urdf.xacro",
+		"/home/jonathan/catkin_ws/proyecto_Jonathan_Gines/urdf/hokuyo.urdf.xacro",
+		"/home/jonathan/catkin_ws/proyecto_Jonathan_Gines/launch/kobuki_hokuyo.launch",
+		"/home/jonathan/catkin_ws/proyecto_Jonathan_Gines/robot/kobuki_hokuyo.urdf.xacro",
+		"/opt/ros/hydro/share/kobuki_description/urdf/kobuki_standalone.urdf.xacro",
+		"/home/jonathan/catkin_ws/src/kobuki_desktop-hydro/kobuki_gazebo/launch/includes/robot.launch.xml",
+		"/opt/ros/hydro/share/kobuki_description/urdf/kobuki.urdf.xacro",
+		"/opt/ros/hydro/share/kobuki_description/urdf/sensors/hokuyo_utm30lx.urdf.xacro",
+		"/home/jonathan/catkin_ws/src/kobuki_desktop-hydro/kobuki_rviz_launchers/rviz/robot.rviz",
+		"/opt/ros/hydro/share/kobuki_description/urdf/kobuki_gazebo.urdf.xacro",
+		"/home/jonathan/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_camera_utils.cpp",
+		"/home/jonathan/catkin_ws/home/jonathan/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_camera_utils.cpp",
+		"/home/jonathan/.bashrc",
+		"/home/jonathan/catkin_ws/src/kobuki_gazebo/launch/kobuki_empty_world.launch",
+		"/opt/ros/hydro/include/opencv2/core/core.hpp",
+		"/home/jonathan/.gazebo/models/turtlebot/model.sdf",
+		"/opt/ros/hydro/include/opencv2/core/core_c.h",
+		"/home/jonathan/catkin_ws/src/CMakeLists.txt",
+		"/home/jonathan/Robotica/src/practica1/src/bumpgo_kobuki_node .cpp",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/public/js/rooms/main.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/public/js/lib/sonic.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/public/css/styles.css",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/public/js/rooms/init.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/app/routes.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/parteAvila/js/main.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/parteAvila/js/init.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/parteAvila/room.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/parteAvila/index.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/room.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/indexRoom.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/parteAvila/multiserver.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/config/sockets.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/package.json",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/public/js/signup.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/signup.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/app/models/user.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/config/passport.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/home.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/config/database.js",
+		"/home/jonathan/Aloneinthelab/Heroku/node-js-getting-started/package.json",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/login.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/model/account.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/model/user.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/signup.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/routes/index.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/db.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/init.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/login.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/model/Comment.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/passport/model/Post.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/test/server(con node-static).js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/js/login.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/index.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/css/styles.css",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/js/signup.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/routes/index.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/model/user.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/singup.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/db.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/about.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/main.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/login.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/profile.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/js/profile.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/server.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/nofichero.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/js/script.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/pages/index_template.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/pages/main.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/pages/index.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/pages/js_test/main.js",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/views/pages/index.html",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/public/stylesheets/main.css",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/views/pages/index.ejs",
+		"/home/jonathan/Aloneinthelab/Heroku/webTest/app.json",
+		"/home/jonathan/Aloneinthelab/Heroku/node-js-getting-started/server.js",
+		"/home/jonathan/Aloneinthelab/Heroku/node-js-getting-started/Procfile",
+		"/home/jonathan/Aloneinthelab/Heroku/node-js-getting-started/index.js",
+		"/home/jonathan/Aloneinthelab/Heroku/node-js-getting-started/app.json",
+		"/home/jonathan/Aloneinthelab/web/webidiomas/views/index.jade",
+		"/home/jonathan/catkin_ws/robotica/launch/kobuki_real.launch",
+		"/opt/ros/hydro/include/opencv/cv.h",
+		"/opt/ros/hydro/include/opencv/cxcore.h",
+		"/home/jonathan/catkin_ws/src/imagetest/src/imagetest.cpp",
+		"/home/jonathan/catkin_ws/src/vff/CMakeLists.txt",
+		"/home/jonathan/catkin_ws/src/bicaacademy/src/components/siguelineas/Lineas.cpp",
+		"/home/jonathan/catkin_ws/src/bicaacademy/src/components/siguelineas/Bumper.cpp",
+		"/home/jonathan/catkin_ws/src/bicaacademy/src/components/siguelineas/configAntesLunes.txt",
+		"/home/jonathan/catkin_ws/src/bicaacademy/src/components/siguelineas/Lineas.h",
+		"/home/jonathan/catkin_ws/src/pan_tilt/CMakeLists.txt",
+		"/home/jonathan/catkin_ws/src/pan_tilt/src/prueba_pan_tilt.cpp",
+		"/home/jonathan/catkin_ws/src/pan_tilt/package.xml",
+		"/home/jonathan/catkin_ws/src/vff/package.xml",
+		"/home/jonathan/catkin_ws/src/robot_setup_tf/src/tf_broadcaster.cpp",
+		"/home/jonathan/catkin_ws/src/robotica/launch/kobuki_real.launch",
+		"/home/jonathan/catkin_ws/src/robotica/launch/kobuki_sim.launch",
+		"/home/jonathan/a",
+		"/home/jonathan/Aloneinthelab/posts/ROSbian",
+		"/home/jonathan/catkin_ws/src/uvc_camera/src/uvc_cam.cpp",
+		"/home/jonathan/catkin_ws/src/uvc_camera/nodelet_uvc_camera.xml",
+		"/home/jonathan/catkin_ws/src/uvc_camera/example.yaml",
+		"/home/jonathan/catkin_ws/src/uvc_camera/launch/camera_node.launch",
+		"/home/jonathan/AT_Ejercicios/entregas/X-Nav-Practica-Adivina/css/optionsWindow.css",
+		"/home/jonathan/AT_Ejercicios/entregas/X-Nav-Practica-Adivina/css/adivina.css",
+		"/home/jonathan/AT_Ejercicios/entregas/X-Nav-Practica-Adivina/adivina.js",
+		"/home/jonathan/AT_Ejercicios/entregas/X-Nav-Practica-Adivina/index.html",
+		"/home/jonathan/AT_Ejercicios/entregas/X-Nav-Practica-Adivina/README.md"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"}*/\n",
+			"found",
+			"isObje",
+			"math",
+			"nav",
+			"print",
+			"CameraInfo",
+			"arrowed",
+			"line",
+			"atrac",
+			"addingVectors",
+			"coherente",
+			"  \n",
+			"language",
+			"socket",
+			"app",
+			"socket",
+			"'));\n",
+			"app",
+			"      ",
+			"sing",
+			"signupModal",
+			"sing",
+			"LWDI",
+			"lenguagetolearn",
+			"lf",
+			"	$",
+			"present",
+			"console",
+			"alert",
+			"numGa",
+			"gameToGo",
+			"finishgame",
+			"));",
+			"score",
+			"scoreCalc",
+			");\n",
+			"startGame",
+			"// ",
+			");\n",
+			"70",
+			"nextButton",
+			"%;\n",
+			">\n",
+			"writ",
+			"prin",
+			",",
+			",\n",
+			"\n",
+			",\n",
+			");\n",
+			"7",
+			"':",
+			");\n",
+			"figcaption",
+			"		\n",
+			"].",
+			"princes",
+			"mallo",
+			"INcorrecto",
+			",\n",
+			";\n",
+			");\n",
+			"gcc -Wall -g sign.c -lssl -lcrypto -o sign",
+			"){\n",
+			"memcpy",
+			"bk",
+			"                            <",
+			"button",
+			"coll",
+			"screens",
+			"scree",
+			"screens",
+			"screen",
+			"revie",
+			"featu",
+			"herra",
+			"about",
+			"\">\n",
+			"block",
+			"Ss",
+			" #",
+			"elemen",
+			"featu",
+			"@ico",
+			"@font",
+			"fa-hea",
+			"flir_sus",
+			"m_join_sub",
+			");\n",
+			"number of",
+			"m_joint",
+			"getReso",
+			"width",
+			"Áá",
+			"printf",
+			"fprint",
+			"could not",
+			"/dev",
+			"ROS_INFO",
+			");\n",
+			";\n",
+			"num2",
+			"avia-font",
+			"; ",
+			"font",
+			"\"header_main_alternate\"",
+			"\"header_main_alternate\" class=\"container_wrap\">",
+			"div id=\"header_main_alternate\" class=\"container_wrap\">",
+			"container",
+			"avia_text",
+			"h3",
+			"gform_ti",
+			"<!DOCTYPE html>\n<html lang=\"es-ES\" prefix=\"og: http://ogp.me/ns#\" class=\" html_boxed responsive av-default-lightbox  html_header_top html_logo_center html_bottom_nav_header html_menu_right html_custom html_header_sticky_disabled html_header_shrinking_disabled html_header_topbar_active html_mobile_menu_phone html_disabled html_hea",
+			"data-av-icon",
+			"\";\n",
+			"pos"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".",
+			"",
+			"."
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "forces_node.cpp",
+					"settings":
+					{
+						"buffer_size": 6047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5511,
+								5511
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "navigation_node.cpp",
+					"settings":
+					{
+						"buffer_size": 3658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1373,
+								1373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/jonathan/catkin_ws/src/tfg_jonathan_gines/launch/kobuki_hokuyo.launch",
+					"settings":
+					{
+						"buffer_size": 1249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1249,
+								1249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/jonathan/catkin_ws/src/tfg_jonathan_gines/robot/kobuki_hokuyo_model.urdf.xacro",
+					"settings":
+					{
+						"buffer_size": 1185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1079,
+								1079
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/jonathan/catkin_ws/src/tfg_jonathan_gines/urdf/flir_ptu.urdf.xacro",
+					"settings":
+					{
+						"buffer_size": 865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								834,
+								834
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/jonathan/catkin_ws/src/tfg_jonathan_gines/urdf/hokuyo.urdf.xacro",
+					"settings":
+					{
+						"buffer_size": 1057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1028,
+								1028
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/jonathan/catkin_ws/src/pan_tilt/src/prueba_pan_tilt.cpp",
+					"settings":
+					{
+						"buffer_size": 1771,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								521,
+								521
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/jonathan/catkin_ws/robotica/launch/kobuki_sim.launch",
+					"settings":
+					{
+						"buffer_size": 1197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/jonathan/catkin_ws/robotica/launch/kobuki_real.launch",
+					"settings":
+					{
+						"buffer_size": 1445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1236,
+								1236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/jonathan/catkin_ws/memoria_proyecto.txt",
+					"settings":
+					{
+						"buffer_size": 6922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1213,
+								1213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 28.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
