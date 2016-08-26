@@ -1,0 +1,52 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Im\IeC {\'a}genes de distintas representaciones de la obra teatral R.U.R.\relax }}{2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Un hombre, una mujer y tres robots}}}{2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rebeli\IeC {\'o}n de los robots}}}{2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces El telar de Jacquard est\IeC {\'a} expuesto en el Museo de la ciencia y la industria en Manchester, Inglaterra.\relax }}{3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {El telar de Jacquard.}}}{3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tarjeta programable del telar.}}}{3}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Dos de los primeros robots programables en la d\IeC {\'e}cada de 1970.\relax }}{4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {FAMULUS}}}{4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PUMA}}}{4}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Robot Nao equipado con un l\IeC {\'a}ser en la cabeza.\relax }}{6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Reconocimiento de cara en imagen}}}{8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Seguimiento de la pelota durante un partido de tenis}}}{8}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Detector de personas utilizando una c\IeC {\'a}mara de seguridad en un aeropuerto.\relax }}{9}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Imagen de una calle de Bruselas\relax }}{10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Par est\IeC {\'e}reo}}}{11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Im\IeC {\'a}genes de un par est\IeC {\'e}reo de c\IeC {\'a}maras}}}{11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {El dispositivo}}}{12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Imagen e imagen de profundidad}}}{12}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Competiciones en la RoboCup\relax }}{13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {RoboCupSoccer}}}{13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {RoboCupRescue}}}{13}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Competiciones en la RoboCup\relax }}{14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {RoboCupH@me}}}{14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {RoboCupJunior}}}{14}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Gary Kasp\IeC {\'a}rov en uno de sus duelos contra la supercomputadora Deeper Blue.\relax }}{15}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Ajedrez vs F\IeC {\'u}tbol de robots\relax }}{15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Modelo en espiral.\relax }}{19}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo visual de un costmap.\relax }}{21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A la izquierda el frame map y a la derecha los frames de odom y base\_footprint\relax }}{22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Mapa est\IeC {\'a}tico\relax }}{23}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Comportamiento de los filtros en la fase de predicci\IeC {\'o}n\relax }}{25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {El robot est\IeC {\'a} siguiendo dos objetos y se mueve en direcci\IeC {\'o}n hacia ellos}}}{25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Los filtros se encuentran m\IeC {\'a}s cerca del robot y ha aumentado su incertidumbre}}}{25}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Distintas situaciones del emparejamiento entre una observaci\IeC {\'o}n y un filtro\relax }}{27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fusi\IeC {\'o}n de una observaci\IeC {\'o}n con un filtro}}}{27}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Posible creaci\IeC {\'o}n de un filtro nuevo}}}{27}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Distinguir poste izquierdo de poste derecho\relax }}{32}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Distancia a la que se encuentra un objeto haciendo el seguimiento y tomando las medidas del detector directamente\relax }}{34}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Gr\IeC {\'a}fico del experimento sobre los falsos positivos\relax }}{35}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Seguimiento de la pelota con un falso positivo\relax }}{36}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Gr\IeC {\'a}fico del experimento de seguimiento de objetos complejos\relax }}{38}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Correcci\IeC {\'o}n de la velocidad de un objeto\relax }}{39}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Gr\IeC {\'a}fico con tiempos de ejecuci\IeC {\'o}n\relax }}{41}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diferencia de trayectoria con/sin tener en cuenta la velocidad de la bola\relax }}{44}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trayectoria parab\IeC {\'o}lica}}}{44}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trayectoria rectil\IeC {\'\i }nea}}}{44}

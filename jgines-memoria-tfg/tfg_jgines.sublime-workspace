@@ -1,0 +1,1215 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ros",
+				"ROS_INFO"
+			],
+			[
+				"star",
+				"starting2_"
+			],
+			[
+				"ce",
+				"cells_y"
+			],
+			[
+				"cel",
+				"cellsOK"
+			],
+			[
+				"RO",
+				"ROS_INFO"
+			],
+			[
+				"ROS",
+				"ROS_ERROR"
+			],
+			[
+				"goal",
+				"goal_place_"
+			],
+			[
+				"pos",
+				"posRobot_y"
+			],
+			[
+				"ro",
+				"round"
+			],
+			[
+				"goal_",
+				"goal_msg"
+			],
+			[
+				"fi",
+				"finishOne"
+			],
+			[
+				"b2",
+				"bf2point"
+			],
+			[
+				"bf",
+				"bf2map"
+			],
+			[
+				"map",
+				"map2point"
+			],
+			[
+				"go",
+				"goal_point"
+			],
+			[
+				"pu",
+				"publishGoalPoint"
+			],
+			[
+				"fin",
+				"findValueY"
+			],
+			[
+				"ki",
+				"kitchen"
+			],
+			[
+				"sem",
+				"semanticMapCallback"
+			],
+			[
+				"met",
+				"metadata"
+			],
+			[
+				"pO",
+				"pOutX"
+			],
+			[
+				"pOu",
+				"pOutX"
+			],
+			[
+				"me",
+				"metadata"
+			],
+			[
+				"pA",
+				"pArrayinY"
+			],
+			[
+				"ini",
+				"initArray"
+			],
+			[
+				"find",
+				"findValue"
+			],
+			[
+				"pArrayin",
+				"pArrayinX"
+			],
+			[
+				"ge",
+				"geometry_msgs"
+			],
+			[
+				"n",
+				"nDiagonal"
+			],
+			[
+				"por",
+				"posRobot_x"
+			],
+			[
+				"get",
+				"getValueOf"
+			],
+			[
+				"goa",
+				"goal_place_"
+			],
+			[
+				"pr",
+				"principalroom_val"
+			],
+			[
+				"li",
+				"livingroom_val"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"tf",
+				"tfListener_"
+			],
+			[
+				"sta",
+				"static_map"
+			],
+			[
+				"cell",
+				"cells_x"
+			],
+			[
+				"posR",
+				"posRobot_w"
+			],
+			[
+				"posRo",
+				"posRobot_x"
+			],
+			[
+				"ob",
+				"objectPoint"
+			],
+			[
+				"pointObjectList_",
+				"pointObjectList_Cells"
+			],
+			[
+				"point",
+				"pointV"
+			],
+			[
+				"cos",
+				"cost_now_aux"
+			],
+			[
+				"cost",
+				"cost_now"
+			],
+			[
+				"COS",
+				"cost_now"
+			],
+			[
+				"lo",
+				"longterm_cost_dec"
+			],
+			[
+				"pri",
+				"private_nh_"
+			],
+			[
+				"init",
+				"init_x"
+			],
+			[
+				"obs",
+				"obstacle_detector"
+			],
+			[
+				"sr",
+				"srv_name"
+			],
+			[
+				"st",
+				"static_map_srv_name"
+			],
+			[
+				"ef",
+				"effective_map_OCCU"
+			],
+			[
+				"efe",
+				"effective_map_publisher_"
+			],
+			[
+				"ori",
+				"origin"
+			],
+			[
+				"time",
+				"timeStart"
+			],
+			[
+				"getS",
+				"getSizeInCellsX"
+			],
+			[
+				"e",
+				"e_map"
+			],
+			[
+				"eff",
+				"effectiveMap_pub"
+			],
+			[
+				"long",
+				"longTerm_map"
+			],
+			[
+				"sh",
+				"short_map"
+			],
+			[
+				"M",
+				"Metadata"
+			],
+			[
+				"run",
+				"runMetadataSrv"
+			],
+			[
+				"Ge",
+				"GetMap"
+			],
+			[
+				"lon",
+				"longTerm_map"
+			],
+			[
+				"sho",
+				"shortTerm_map"
+			],
+			[
+				"res",
+				"resp_map_pub"
+			],
+			[
+				"ma",
+				"map_controller"
+			],
+			[
+				"poin",
+				"point_A_y"
+			],
+			[
+				"mess",
+				"message_filters"
+			],
+			[
+				"CO",
+				"COST_INC"
+			],
+			[
+				"po",
+				"pos_ready"
+			],
+			[
+				"p_ro",
+				"p_robot_cell_x"
+			],
+			[
+				"p_robot",
+				"p_robot_cell_x"
+			],
+			[
+				"p_cel",
+				"p_cell_y"
+			],
+			[
+				"p_",
+				"p_x"
+			],
+			[
+				"origin",
+				"origin_x"
+			],
+			[
+				"ma2",
+				"map2obj"
+			],
+			[
+				"pa",
+				"point_A_x"
+			],
+			[
+				"mo",
+				"mod_y"
+			],
+			[
+				"poi",
+				"pointObjectList_"
+			],
+			[
+				"D",
+				"COST_DEC"
+			],
+			[
+				"set",
+				"setCost"
+			],
+			[
+				"se",
+				"setX"
+			],
+			[
+				"x_a",
+				"x_aux"
+			],
+			[
+				"un",
+				"unsigned"
+			],
+			[
+				"sca",
+				"scan_ready"
+			],
+			[
+				"con",
+				"containsPointObject"
+			],
+			[
+				"P",
+				"Point"
+			],
+			[
+				"Pi",
+				"Publisher"
+			],
+			[
+				"de",
+				"define"
+			],
+			[
+				"pon",
+				"point_bf_"
+			],
+			[
+				"scan",
+				"scan_bf_"
+			],
+			[
+				"co",
+				"cost_now"
+			],
+			[
+				"wObs",
+				"wObstacle"
+			],
+			[
+				"I",
+				"INIT_Y"
+			],
+			[
+				"INI",
+				"INIT_X"
+			],
+			[
+				"psr",
+				"posRobot_x"
+			],
+			[
+				"na",
+				"nav_matrix"
+			],
+			[
+				"Range",
+				"range_min"
+			],
+			[
+				"Co",
+				"Costmap2DPublisher"
+			],
+			[
+				"C",
+				"Costmap2D"
+			],
+			[
+				"costmap",
+				"costmap_2d"
+			],
+			[
+				"posr",
+				"posRobot_x"
+			],
+			[
+				"or",
+				"origin_y"
+			],
+			[
+				"poRo",
+				"posRobot_y"
+			],
+			[
+				"re",
+				"resolution"
+			],
+			[
+				"def",
+				"default_value"
+			],
+			[
+				"sn",
+				"scan_ready"
+			],
+			[
+				"Ros",
+				"ROS_INFO"
+			],
+			[
+				"cTo",
+				"cToExit"
+			],
+			[
+				"mu",
+				"mutexId"
+			],
+			[
+				"mut",
+				"mutexId"
+			],
+			[
+				"id",
+				"idClient"
+			],
+			[
+				"vec",
+				"vector"
+			],
+			[
+				"num",
+				"numClients"
+			],
+			[
+				"nu",
+				"numDirs"
+			],
+			[
+				"fil",
+				"file1"
+			],
+			[
+				"path",
+				"path2"
+			],
+			[
+				"Un",
+				"Unlock"
+			],
+			[
+				"en",
+				"endConfig"
+			],
+			[
+				"ve",
+				"vector"
+			],
+			[
+				"vect",
+				"vector"
+			],
+			[
+				"in",
+				"initVectorTime"
+			],
+			[
+				"dirs",
+				"dirsPath"
+			],
+			[
+				"chan",
+				"change"
+			],
+			[
+				"cT",
+				"cToServer4Vector"
+			],
+			[
+				"strin",
+				"string"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "cap3.tex",
+			"settings":
+			{
+				"buffer_size": 37965,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cap2.tex",
+			"settings":
+			{
+				"buffer_size": 9346,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cap4.tex",
+			"settings":
+			{
+				"buffer_size": 25633,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ejemploalgoritmo",
+			"settings":
+			{
+				"buffer_size": 776,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cap5.tex",
+			"settings":
+			{
+				"buffer_size": 13921,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cap6.tex",
+			"settings":
+			{
+				"buffer_size": 7559,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "memoria.tex",
+			"settings":
+			{
+				"buffer_size": 4837,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jgines/catkin_ws/dynamic_navigation/memoria_proyecto.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 390.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: pi",
+				"Package Control: Create Package File"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 452.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jgines/catkin_ws/dynamic_navigation/dn_mapping/src/obstacle_detector.cpp",
+		"/home/jgines/redaccion_tfg/jgines-memoria-tfg/cap1.tex",
+		"/media/jgines/PEN_1GB/waypoints_arena_A.txt",
+		"/run/user/1000/gvfs/sftp:host=192.168.2.101,user=rb1/home/rb1/catkin_ws/src/applications/bica/robocup_configuration/locations_rc16-B.json",
+		"/run/user/1000/gvfs/sftp:host=192.168.2.101,user=rb1/home/rb1/catkin_ws/src/applications/navigation/dynamic_navigation/dn_mapping/launch/dynamic_map_server_arena_B.launch",
+		"/run/user/1000/gvfs/sftp:host=192.168.2.101,user=rb1/home/rb1/catkin_ws/src/applications/navigation/dynamic_navigation/dn_mapping/launch/dynamic_map_server_arena_A.launch",
+		"/run/user/1000/gvfs/sftp:host=192.168.2.101,user=rb1/home/rb1/catkin_ws/src/applications/bica/robocup_configuration/package.xml",
+		"/media/jgines/PEN_1GB/waypoints_arena_A_2.txt",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/memoria_proyecto.txt",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/2D_maps/static_map_robocup_B.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/src/find_and_go.cpp",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/2D_maps/long_map_robocup_B.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/config/map_saver.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/launch/sim.launch",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/launch/move_base.launch",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/launch/ava.launch",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/src/load_semantic_map.cpp",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/map_controller.cpp",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/include/dn_mapping/map_controller.h",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/include/dn_mapping/obstacle_detector.h",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/config/obstacle_detector.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/definitions/urdf/hokuyo.urdf.xacro",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/param/dwa_local_planner_params.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/param/global_costmap_params.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/param/costmap_common_params.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/param/dummy.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/pruebalabo_2D/static_map.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/pruebalabo_2D/long_map.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/param/global_planner_params.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/param/local_costmap_params.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/param/move_base_params.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/param/navfn_global_planner_params.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/launch/includes/move_base.launch.xml",
+		"/home/jgines/catkin_ws/src/CSUROS/csuro_navigation/launch/includes/move_base.launch.xml",
+		"/home/jgines/catkin_ws/src/CSUROS/csuro_navigation/launch/includes/amcl.launch.xml",
+		"/home/jgines/catkin_ws/src/CSUROS/csuro_navigation/launch/navigation.launch",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/launch/dynamic_map_server.launch",
+		"/home/jgines/catkin_ws/dir_repo_leon/navigation/dynamic_navigation/dn_mapping/README.md",
+		"/home/jgines/catkin_ws/dir_repo_leon/navigation/dynamic_navigation/dn_mapping/launch/dynamic_map_server_arena_A.launch",
+		"/home/jgines/catkin_ws/src/CSUROS/csuro_navigation/param/global_costmap_params.yaml",
+		"/home/jgines/catkin_ws/src/CSUROS/csuro_navigation/param/local_costmap_params.yaml",
+		"/home/jgines/catkin_ws/src/CSUROS/csuro_navigation/param/costmap_common_params.yaml",
+		"/home/jgines/catkin_ws/src/CSUROS/csuro_navigation/param/global_planner_params.yaml",
+		"/home/jgines/catkin_ws/src/CSUROS/csuro_navigation/param/move_base_params.yaml",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_robot-hydro-devel/rb1_base_navigation/launch/navigation_amcl/move_base_amcl.launch",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_sim-hydro-devel/rb1_base_2dnav/launch/navigation_amcl/move_base_amcl.launch",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/launch/rb1_start_gazebo_in_grannyAnnie_world2.launch",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_robot-hydro-devel/rb1_base_navigation/launch/navigation_amcl/amcl_rb1_base.launch",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/2D_maps/long_map _robocup_B.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/2D_maps/long_map.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/2D_maps/static_map.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/2D_maps/long_map_apt_leon.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/apartamento_leon_semantic.pgm",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/definitions/robot/my_laser_config.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/README.md",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/map_server.cpp",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/image_loader.cpp",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/definitions/robot/kobuki_hokuyo_model.urdf.xacro",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/definitions/urdf/flir_ptu.urdf.xacro",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/obstacle_detector.cpp",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/include/dn_mapping/map_saver.h",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/config/semantic_navigation.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/config/load_semantic_map.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/launch/semantic_navigation.launch",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/README.md",
+		"/home/jgines/Escritorio/mapas_robot_gimp/leon/imagenes/apartamento_leon_semantic.pgm",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/README.md",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/definitions/urdf/kobuki_hokuyo.urdf.xacro",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/src/2D_maps/static_map_apt_leon.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/include/dn_navigation/load_semantic_map.h",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/CMakeLists.txt",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/longTerm_map.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/apartamento_leon_semantic_view.pgm",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/semanticmap.pgm",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/semanticmap_test_WO_headers.pgm",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/include/dn_navigation/find_and_go.h",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_navigation/semanticmap2_WO_headers.pgm",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/definitions/robot/rb1_laser_config.yaml",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_sandbox/launch/rb1_start_gazebo_in_grannyAnnie_world2.launch",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_amcl/src/amcl_node.cpp",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_robot/launch/map_builder.launch",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_common-indigo-devel/rb1_base_description/urdf/sensors/hokuyo_urg04lx.urdf.xacro",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_common-indigo-devel/rb1_base_description/urdf/sensors/hokuyo_utm30lx.urdf.xacro",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_common-indigo-devel/rb1_base_description/urdf/sensors/hokuyo_urg04lx.urdf.xacro ",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/config/map_controller.yaml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_amcl/src/amcl/map/map.c",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/launch/includes/amcl.launch.xml",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_amcl/src/amcl/pf/pf.c",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_amcl/include/amcl/map/map.h",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/dn_mapping/CMakeLists.txt",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/costmap_2d/CMakeLists.txt",
+		"/home/jgines/catkin_ws/src/dynamic_navigation/costmap_2d/plugins/static_layer.cpp",
+		"/home/jgines/catkin_ws/map.yaml",
+		"/run/user/1000/gvfs/sftp:host=delta.aulas.gsyc.es,user=jgines/home/al-11-12/jgines/.bashrc",
+		"/run/user/1000/gvfs/sftp:host=delta.aulas.gsyc.es,user=jgines/home/al-11-12/jgines/go/src/semsmain.go",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_common-indigo-devel/rb1_description/robots/rb1_robot.urdf.xacro",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_common-indigo-devel/rb1_base_description/robots/rb1_base_platform.urdf.xacro",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_common-indigo-devel/rb1_base_description/urdf/sensors/all_sensors.urdf.xacro",
+		"/home/jgines/catkin_ws/src/rb1temporal/rb1_sandbox/launch/rb1_start_gazebo_in_grannyAnnie_world.launch",
+		"/home/jgines/Robotica/dynamic_navigation/dn_rviz/CMakeLists.txt",
+		"/home/jgines/Robotica/dynamic_navigation/dn_rviz/package.xml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_rviz/launch/rviz.launch",
+		"/home/jgines/Robotica/dynamic_navigation/dn_rviz/rviz/config.rviz",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/src/load_semantic_map.cpp",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/semantic_navigation.launch",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/CMakeLists.txt",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/src/navigation_node.cpp",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/package.xml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/src/forces_node.cpp",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/src/find_and_go.cpp",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/param/navfn_global_planner_params.yaml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/param/move_base_params.yaml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/param/local_costmap_params.yaml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/param/global_planner_params.yaml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/param/global_costmap_params.yaml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/param/dwa_local_planner_params.yaml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/param/dummy.yaml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/param/costmap_common_params.yaml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/msg/Forces.msg",
+		"/home/jgines/Robotica/dynamic_navigation/dn_robot/launch/map_builder.launch",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/velocity_smoother.launch.xml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/safety_controller.launch.xml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/move_base.launch.xml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/gmapping.launch.xml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/amcl.launch.xml",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/include/dn_navigation/find_and_go.h",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/include/dn_navigation/Forces.h",
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/include/dn_navigation/load_semantic_map.h"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"resetMap",
+			"Metadata",
+			"\n  ",
+			"-->\n",
+			"srv",
+			"image",
+			"image_loader",
+			"room_val",
+			"convertMap",
+			"map_",
+			"conver",
+			"starting2",
+			"starting2_",
+			"map_alloc",
+			"map_",
+			"convertMap",
+			"convert\n",
+			"convertMap\n",
+			"}\n",
+			"convertMap",
+			"starting_",
+			"mapReceived",
+			"freeMapDependentMemory",
+			"mapReceived",
+			"freeMapDependentMemory();",
+			"free",
+			"186",
+			"map_ready",
+			"mapCallback",
+			"map_sub",
+			"semanticmap_test_WO_headers",
+			"publish",
+			"jgines",
+			"jgines_",
+			"jgines",
+			"jgines_",
+			"jgines_robot",
+			"jgines_",
+			"jgines",
+			"tfg_jonathan_gines_dir",
+			"jgines_mapping",
+			"jgines",
+			"jgines_mapping",
+			"jgines_lo",
+			"jgines_localization",
+			"jgines_attention",
+			"gmappin",
+			"reso",
+			"  \n",
+			"ros::Time",
+			"cost_inc",
+			"setCos",
+			"get",
+			"resolu",
+			"map_stat",
+			"point_bf",
+			"in",
+			"position",
+			"costmap_2d",
+			"map_server::loadMapFromFile",
+			"fake",
+			"saver",
+			"first",
+			"static_map",
+			"getMetadata",
+			"\"/map\"",
+			"pointObjectList",
+			"pointObjectList_",
+			"tfScanSub_",
+			"setCos",
+			"cost_now < 0",
+			"getMap",
+			"n_",
+			"max_lenght",
+			"min_lenght",
+			"COST_DEC",
+			"INIT_Y",
+			"INIT_X",
+			"ACCURACY",
+			"LENGHT",
+			"512",
+			"-1",
+			"pepe",
+			"mapname",
+			"height",
+			";\n",
+			"setCos",
+			";\n",
+			"size",
+			"updateLongTermMap",
+			"time",
+			"map_sub_long",
+			"; ",
+			"saved_long_map",
+			"]);\n",
+			"INIT_X",
+			"ROS_INFO",
+			"Metadata",
+			"}\n",
+			"gencpp",
+			"service",
+			"new",
+			"*);\n",
+			"service",
+			"map_resp_",
+			"kobuki_",
+			"updateShortMapTopic(){",
+			"cell_pos_robot_x",
+			");*/\n",
+			"cell_pos_robot_x",
+			"posRobot_x",
+			"posRobot_w",
+			"print()",
+			"*/\n",
+			"cost_now",
+			"xy2cells",
+			"u",
+			"setCost",
+			"rx",
+			"ptu_d46",
+			"functionS",
+			"list::",
+			"posRobot_w",
+			"robot",
+			"	\n",
+			"ros::Rate",
+			"  ros::Rate",
+			"  ros::Rate loop_rate(5);"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".",
+			"",
+			"."
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "cap3.tex",
+					"settings":
+					{
+						"buffer_size": 37965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26359,
+								26359
+							]
+						],
+						"settings":
+						{
+							"spell_check": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6331.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "cap2.tex",
+					"settings":
+					{
+						"buffer_size": 9346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6523,
+								6523
+							]
+						],
+						"settings":
+						{
+							"spell_check": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 449.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "cap4.tex",
+					"settings":
+					{
+						"buffer_size": 25633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3103,
+								3103
+							]
+						],
+						"settings":
+						{
+							"spell_check": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 519.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ejemploalgoritmo",
+					"settings":
+					{
+						"buffer_size": 776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "cap5.tex",
+					"settings":
+					{
+						"buffer_size": 13921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "cap6.tex",
+					"settings":
+					{
+						"buffer_size": 7559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "memoria.tex",
+					"settings":
+					{
+						"buffer_size": 4837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								640,
+								640
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/jgines/catkin_ws/dynamic_navigation/memoria_proyecto.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5814.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 28.0
+	},
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

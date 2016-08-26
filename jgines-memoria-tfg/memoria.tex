@@ -1,0 +1,213 @@
+\documentclass[twoside,a4paper,12pt,openany]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{subfig}
+%\usepackage[Bjornstrup]{fncychap}
+\usepackage{a4wide}
+\usepackage{named}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{appendix}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% From texlive-science
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+%\DeclareGraphicsExtensions{.jpg,.pdf,.png,.ps}
+
+\usepackage{color}
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+
+\pagestyle{headings}
+\geometry{a4paper, left=3.5cm, right=2cm, top=3cm, bottom=2cm, headsep=1.5cm}
+
+\widowpenalty=10000
+\clubpenalty=10000
+\hyphenpenalty=10000
+\tolerance=10000
+%Para que no corte las palabras al final de la linea.
+
+% Latex command para crear listas sin espacio entre
+% un item y otro.
+\newenvironment{packed_item}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+% Latex command para crear listas umeradas sin 
+% espacio entre un item y otro.
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
+% Configuracion del entorno lstlistings
+\lstset{
+  frame=Ltb,
+  framerule=0pt,
+  aboveskip=0.5cm,
+  xleftmargin=0.7cm,
+  framextopmargin=3pt,
+  framexbottommargin=3pt,
+  framexleftmargin=0.4cm,
+  framesep=0pt,
+  rulesep=.4pt,
+  backgroundcolor=\color{gray97},
+  rulesepcolor=\color{black},
+  %
+  stringstyle=\ttfamily,
+  showstringspaces = false,
+  basicstyle=\small\ttfamily,
+  commentstyle=\color{gray45},
+  keywordstyle=\bfseries,
+  %
+  numbers=left,
+  numbersep=15pt,
+  numberstyle=\tiny,
+  numberfirstline = false,
+  breaklines=true,
+}
+
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+{\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+
+\lstdefinestyle{consola}
+{basicstyle=\scriptsize\bf\ttfamily,
+backgroundcolor=\color{gray75},
+}
+
+\lstdefinestyle{C}
+{language=C,
+}
+
+\lstdefinestyle{sh}
+{language=sh,
+}
+
+\makeindex
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\baselineskip 1.35\baselineskip
+
+\vspace{2cm}
+
+\begin{figure}[htb]
+  \centerline{\resizebox{.60\textwidth}{!}{\includegraphics{img/logo_urjc}}}
+\end{figure}
+
+\begin{center}
+  {\Large {\bf MÁSTER UNIVERSITARIO EN SISTEMAS TELEMÁTICOS E INFORMÁTICOS}}
+  \vspace{5mm}
+ 
+  {\large {Escuela Técnica Superior de Ingeniería Telecomunicación}}
+  \vspace{5mm}
+
+  {\large {Curso académico 2013/2014}}
+
+  \vspace{1cm}
+
+  {\large {\bf Trabajo Fin de Máster}}
+
+  \vspace{2cm}
+
+  {\Large {Estimación multiobjeto en entornos dinámicos\\[1cm] }}
+
+  \vspace{5cm}
+  {\bf Autor}: Gonzalo José Abella Dago\\
+  {\bf Tutor}: Francisco Martín Rico 
+\end{center}
+
+\clearpage
+\newpage{\pagestyle{empty}\cleardoublepage}
+\thispagestyle{empty}
+
+\vspace{5cm}
+\makebox[15cm][r]{
+  \begin{tabular}{ll}
+  \emph{A mi familia y Emma}
+  \end{tabular} 
+}
+
+\clearpage
+\newpage{\pagestyle{empty}\cleardoublepage}
+\thispagestyle{empty}
+
+\vspace{5cm}
+\textbf{\huge{Agradecimientos}}\\
+
+Lo cierto es que tengo que agradecer a mucha gente la oportunidad de haber hecho este proyecto. En primer lugar agradecer a Paco, el tutor, todo su esfuerzo y dedicación. He tenido la suerte de trabajar un par de años bajo su tutela y hacer el PFC y el TFM. En todo este tiempo he podido aprender muchísimo de robótica y de muchas otras cosas. ¡Así da gusto trabajar! \\
+
+Como siempre agradecer infinito a la familia, siempre ayudando, siempre apoyando, siempre ahí, a las duras y a las maduras. \\
+
+A la gente del Grupo del Robótica de la URJC, compañía indispensable en el despacho. Al final cada uno acaba por un camino distinto, pero estoy seguro que en algún momento en el futuro nos volveremos a cruzar. \\
+
+Y por último la más importante, Emma. Aguantándome y animándome a diario. Estoy feliz de tenerte. \\
+
+\clearpage
+\newpage{\pagestyle{empty}\cleardoublepage}
+
+%%%%%%%%%% RESUMEN %%%%%%%%
+\newpage{\pagestyle{empty}\cleardoublepage} 
+\input{resumen}
+
+                                %\pagenumbering{roman}
+
+                                %\setcounter{page}{1}
+\frontmatter
+\tableofcontents
+
+\listoffigures
+                                %\setcounter{page}{1}
+                                %\pagenumbering{arabic}
+%\listoftables
+
+\mainmatter
+
+% Init counter page
+\setcounter{page}{1}
+
+% Capitulo 1
+\input{cap1}
+
+% Capitulo 2
+\input{cap2}
+
+% Capitulo 3
+%\input{cap3}
+
+% Capitulo 4
+\input{cap4}
+
+% Capitulo 5
+\input{cap5}
+
+% Capitulo 6
+\input{cap6}
+
+% Bibliografía
+\clearpage
+\addcontentsline{toc}{chapter}{Bibliografía}
+\nocite{*}	% Imprime todas las cites de la bibliografía aunque no se citen
+\bibliographystyle{named} 
+\bibliography{bibliografia}
+
+\printindex 
+
+\end{document}

@@ -1,0 +1,11 @@
+\vspace{5 cm}
+\textbf{\Huge{Resumen}}
+\vspace{1.5 cm}
+
+Los robots móviles perciben, miden y \textit{entienden} el entorno que les rodea gracias a sus sensores - láser, ultrasonidos, \textit{bumpers} o cámaras. Esta tarea, que para una persona es básica, para un robot es extremadamente difícil. Uno de los sensores más populares y que más información pueden proporcionar al robot son las imágenes proporcionadas por las cámaras. Analizar estas imágenes es costoso y, normalmente las observaciones no son muy precisas. Por esta razón, es imprescindible filtrar las observaciones para mantener estimaciones fiables y robustas de los estímulos visuales releventas para las tareas que un robot debe llevar a cabo. \\
+
+En este proyecto se ha desarrollado un algoritmo para mantener una estimación de múltiples objetos. Para este propósito se ha empleado una colección dinámica de Filtros Extendidos de Kalman. El estado de estos filtros está compuesto por la posición y velocidad del objeto. La dinámica de los objetos se modela mediante una serie de parámetros simples que hacen que este algoritmo pueda aplicarse a un gran rango de problemas. \\
+
+Como banco de pruebas se ha utilizado en entorno del fútbol de robots. Esta competición es ideal para poner a prueba algoritmos experimentales para, de una forma visual y sencilla, medir su rendimiento y compararlos con el estado del arte actual. \\
+
+El proyecto se ha realizado dentro del Grupo de Robótica de la Universidad Rey Juan Carlos y la solución se ha implementado dentro del código del equipo de la RoboCup SPL SpiTeam como arquitectura base. Se ha desarrollado una implementación para reemplazar el actual algoritmo de seguimiento de la pelota y las porterías.

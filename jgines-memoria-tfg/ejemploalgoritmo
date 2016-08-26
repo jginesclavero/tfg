@@ -1,0 +1,28 @@
+\begin{algorithm}[h]
+  \caption{Algoritmo general de seguimiento de objetos}
+  \label{alg:seguimientoobjetos}
+  \begin{algorithmic}[1]
+    \STATE $T \gets$ Objetos en seguimiento.
+    \FORALL{$to \in T$}
+    \STATE $u \gets$ vector de control
+    \STATE $v \gets$ ruido del vector de control
+    \STATE $to.predict(u, v)$
+    \ENDFOR
+    \FORALL{$z \in Z$}
+    \STATE $t \gets \arg\min_{t \in T}(measurement\_likelihood)$
+    \IF{$t.match(t,z,w)$}
+    \STATE $t.update(z,w)$
+    \ELSE
+    \STATE Append $create\_filter(z,w)$ to $T$
+    \ENDIF
+    \ENDFOR
+    \FORALL{$t \in T$}
+    \STATE $t.add\_noise()$
+    \ENDFOR
+    \FORALL{$t \in T$}
+    \IF {$t.ellipse\_area() > max\_area$}
+    \STATE remove $t$ from $T$
+    \ENDIF
+    \ENDFOR    
+  \end{algorithmic}
+\end{algorithm}
