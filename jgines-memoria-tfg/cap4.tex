@@ -32,7 +32,7 @@ Usamos las \textit{tf} para poder representar información relativa a uno de est
 
 Cuando trabajamos con mapas es importante que todo lo que se representa en él sea respecto al frame map. De este modo nuestro mapa puede ser usado por otros nodos, como el nodo de navegación, o en cualquier otro escenario.
 
-\section{Mapas del servidor de mapas dinámico}
+\section{Tipos de mapas}
 
 En este apartado se describirá la metodologia seguida para la construcción de cada uno de los tres mapas usados por el algoritmo.
 
@@ -47,6 +47,19 @@ Este mapa nos servirá como base para crear el mapa de largo plazo.
   \caption{Mapa estático}
   \label{fig:mapaestatico}
 \end{figure}
+
+\subsubsection{Mapa de corto plazo}
+El mapa de corto plazo se caracteriza por ser un mapa en el que se representa los objetos que el robot va percibiendo. Este mapa se inicializa con el valor 255, lo que indica una incertidumbre total. En el instante en el que el algoritmo de construcción del mapa comienza a iterar comenzarán a corregirse estos valores iniciales, asignando el valor 0 a las celdas que corresponden con zonas libres e incrementando desde 0 hasta 254 el valor de las celdas que se perciben como ocupadas. \\
+
+{EJEMPLO CODIGO}\\
+
+El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al mapa, si no ademas eliminarlos si los objetos desaparecen del lugar que ocupaban. Para ello se compara cada muestra de datos con el mapa que estamos generando y si en dicha muestra existen celdas libres que en el mapa están ocupadas se decrementa el valor de dicha celda en el mapa. La cuantia del decremento se puede modelar, consiguiendo asi que el robot olvide más lentamente o más rapidamente los objetos que desaparecen del escenario.\\
+
+{EJEMPLO CODIGO}\\
+{EJEMPLO GRAFICO}\\
+
+
+
 
 \section{Colección de EKFs}
 \label{sec:colecciondeekfs}

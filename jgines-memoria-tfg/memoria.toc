@@ -13,24 +13,25 @@
 \contentsline {chapter}{\numberline {3}Servidor de mapas din\IeC {\'a}mico}{21}
 \contentsline {section}{\numberline {3.1}Costmap\_2D}{21}
 \contentsline {subsubsection}{tf}{22}
-\contentsline {section}{\numberline {3.2}Mapas del servidor de mapas din\IeC {\'a}mico}{22}
+\contentsline {section}{\numberline {3.2}Tipos de mapas}{22}
 \contentsline {subsubsection}{Mapa est\IeC {\'a}tico}{23}
-\contentsline {section}{\numberline {3.3}Colecci\IeC {\'o}n de EKFs}{23}
-\contentsline {subsection}{\numberline {3.3.1}Inicializaci\IeC {\'o}n de los filtros}{24}
-\contentsline {subsection}{\numberline {3.3.2}Predicci\IeC {\'o}n de nuevos estados}{25}
+\contentsline {subsubsection}{Mapa de corto plazo}{23}
+\contentsline {section}{\numberline {3.3}Colecci\IeC {\'o}n de EKFs}{24}
+\contentsline {subsection}{\numberline {3.3.1}Inicializaci\IeC {\'o}n de los filtros}{25}
+\contentsline {subsection}{\numberline {3.3.2}Predicci\IeC {\'o}n de nuevos estados}{26}
 \contentsline {subsection}{\numberline {3.3.3}Incorporaci\IeC {\'o}n de observaciones}{26}
-\contentsline {subsubsection}{Emparejamiento}{26}
-\contentsline {subsubsection}{Matching}{27}
-\contentsline {subsection}{\numberline {3.3.4}Descarte de filtros}{29}
+\contentsline {subsubsection}{Emparejamiento}{27}
+\contentsline {subsubsection}{Matching}{28}
+\contentsline {subsection}{\numberline {3.3.4}Descarte de filtros}{30}
 \contentsline {section}{\numberline {3.4}Adici\IeC {\'o}n de incertidumbre}{30}
-\contentsline {section}{\numberline {3.5}Objetos complejos}{31}
-\contentsline {chapter}{\numberline {4}Experimentos}{33}
-\contentsline {section}{\numberline {4.1}Seguimiento de un objeto}{33}
-\contentsline {section}{\numberline {4.2}Descubrimiento de falsos positivos}{34}
-\contentsline {section}{\numberline {4.3}Seguimiento de objetos con falsos positivos}{36}
-\contentsline {section}{\numberline {4.4}Seguimiento de objetos complejos}{37}
-\contentsline {section}{\numberline {4.5}Correcci\IeC {\'o}n de la velocidad de un objeto}{39}
-\contentsline {section}{\numberline {4.6}Tiempos de ejecuci\IeC {\'o}n}{40}
-\contentsline {chapter}{\numberline {5}Conclusiones y trabajos futuros}{42}
-\contentsline {section}{\numberline {5.1}Conclusiones}{42}
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{43}
+\contentsline {section}{\numberline {3.5}Objetos complejos}{32}
+\contentsline {chapter}{\numberline {4}Experimentos}{34}
+\contentsline {section}{\numberline {4.1}Seguimiento de un objeto}{34}
+\contentsline {section}{\numberline {4.2}Descubrimiento de falsos positivos}{35}
+\contentsline {section}{\numberline {4.3}Seguimiento de objetos con falsos positivos}{37}
+\contentsline {section}{\numberline {4.4}Seguimiento de objetos complejos}{38}
+\contentsline {section}{\numberline {4.5}Correcci\IeC {\'o}n de la velocidad de un objeto}{40}
+\contentsline {section}{\numberline {4.6}Tiempos de ejecuci\IeC {\'o}n}{41}
+\contentsline {chapter}{\numberline {5}Conclusiones y trabajos futuros}{43}
+\contentsline {section}{\numberline {5.1}Conclusiones}{43}
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{44}

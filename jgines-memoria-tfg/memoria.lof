@@ -32,21 +32,21 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo visual de un costmap.\relax }}{21}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces A la izquierda el frame map y a la derecha los frames de odom y base\_footprint\relax }}{22}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Mapa est\IeC {\'a}tico\relax }}{23}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Comportamiento de los filtros en la fase de predicci\IeC {\'o}n\relax }}{25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {El robot est\IeC {\'a} siguiendo dos objetos y se mueve en direcci\IeC {\'o}n hacia ellos}}}{25}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Los filtros se encuentran m\IeC {\'a}s cerca del robot y ha aumentado su incertidumbre}}}{25}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Comportamiento de los filtros en la fase de predicci\IeC {\'o}n\relax }}{26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {El robot est\IeC {\'a} siguiendo dos objetos y se mueve en direcci\IeC {\'o}n hacia ellos}}}{26}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Los filtros se encuentran m\IeC {\'a}s cerca del robot y ha aumentado su incertidumbre}}}{26}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Distintas situaciones del emparejamiento entre una observaci\IeC {\'o}n y un filtro\relax }}{27}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fusi\IeC {\'o}n de una observaci\IeC {\'o}n con un filtro}}}{27}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Posible creaci\IeC {\'o}n de un filtro nuevo}}}{27}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Distinguir poste izquierdo de poste derecho\relax }}{32}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Distancia a la que se encuentra un objeto haciendo el seguimiento y tomando las medidas del detector directamente\relax }}{34}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Gr\IeC {\'a}fico del experimento sobre los falsos positivos\relax }}{35}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Seguimiento de la pelota con un falso positivo\relax }}{36}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Gr\IeC {\'a}fico del experimento de seguimiento de objetos complejos\relax }}{38}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Correcci\IeC {\'o}n de la velocidad de un objeto\relax }}{39}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Gr\IeC {\'a}fico con tiempos de ejecuci\IeC {\'o}n\relax }}{41}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Distancia a la que se encuentra un objeto haciendo el seguimiento y tomando las medidas del detector directamente\relax }}{35}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Gr\IeC {\'a}fico del experimento sobre los falsos positivos\relax }}{36}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Seguimiento de la pelota con un falso positivo\relax }}{37}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Gr\IeC {\'a}fico del experimento de seguimiento de objetos complejos\relax }}{39}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Correcci\IeC {\'o}n de la velocidad de un objeto\relax }}{40}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Gr\IeC {\'a}fico con tiempos de ejecuci\IeC {\'o}n\relax }}{42}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diferencia de trayectoria con/sin tener en cuenta la velocidad de la bola\relax }}{44}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trayectoria parab\IeC {\'o}lica}}}{44}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trayectoria rectil\IeC {\'\i }nea}}}{44}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diferencia de trayectoria con/sin tener en cuenta la velocidad de la bola\relax }}{45}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trayectoria parab\IeC {\'o}lica}}}{45}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trayectoria rectil\IeC {\'\i }nea}}}{45}

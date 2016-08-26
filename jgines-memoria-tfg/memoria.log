@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.26)  26 AUG 2016 10:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.26)  26 AUG 2016 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1376,192 +1376,207 @@ File: img/cap4/mapaestatico.png Graphic file (type png)
 Package pdftex.def Info: img/cap4/mapaestatico.png used on input line 45.
 (pdftex.def)             Requested size: 199.16928pt x 186.48726pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-
-LaTeX Warning: Reference `alg:seguimientoobjetos' on page 23 undefined on input
- line 60.
-
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
 [23 <./img/cap4/mapaestatico.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-LaTeX Info: Redefining \. on input line 76.
-LaTeX Info: Redefining \% on input line 76.
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+LaTeX Warning: Reference `alg:seguimientoobjetos' on page 24 undefined on input
+ line 73.
+
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Overfull \hbox (8.86119pt too wide) in paragraph at lines 91--91
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
+[25]
+Overfull \hbox (8.86119pt too wide) in paragraph at lines 104--104
 []\OT1/cmr/m/n/10 (a)
  []
 
 
-Overfull \hbox (5.66673pt too wide) in paragraph at lines 91--91
+Overfull \hbox (5.66673pt too wide) in paragraph at lines 104--104
 |\OT1/cmr/m/n/10 El
  []
 
 
-Overfull \hbox (19.72234pt too wide) in paragraph at lines 91--91
+Overfull \hbox (19.72234pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 ro-bot
  []
 
 
-Overfull \hbox (13.36118pt too wide) in paragraph at lines 91--91
+Overfull \hbox (13.36118pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 est^^Sa
  []
 
 
-Overfull \hbox (36.69458pt too wide) in paragraph at lines 91--91
+Overfull \hbox (36.69458pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 si-guien-do
  []
 
 
-Overfull \hbox (10.5834pt too wide) in paragraph at lines 91--91
+Overfull \hbox (10.5834pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 dos
  []
 
 
-Overfull \hbox (27.52788pt too wide) in paragraph at lines 91--91
+Overfull \hbox (27.52788pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 ob-je-tos
  []
 
 
-Overfull \hbox (1.36118pt too wide) in paragraph at lines 91--91
+Overfull \hbox (1.36118pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 y
  []
 
 
-Overfull \hbox (4.47226pt too wide) in paragraph at lines 91--91
+Overfull \hbox (4.47226pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 se
  []
 
 
-Overfull \hbox (23.58342pt too wide) in paragraph at lines 91--91
+Overfull \hbox (23.58342pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 mue-ve
  []
 
 
-Overfull \hbox (6.08339pt too wide) in paragraph at lines 91--91
+Overfull \hbox (6.08339pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 en
  []
 
 
-Overfull \hbox (35.0001pt too wide) in paragraph at lines 91--91
+Overfull \hbox (35.0001pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 di-rec-ci^^Son
  []
 
 
-Overfull \hbox (18.8612pt too wide) in paragraph at lines 91--91
+Overfull \hbox (18.8612pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 ha-cia
  []
 
 
-Overfull \hbox (15.02785pt too wide) in paragraph at lines 91--91
+Overfull \hbox (15.02785pt too wide) in paragraph at lines 104--104
 \OT1/cmr/m/n/10 ellos| 
  []
 
 
-Overfull \hbox (9.41675pt too wide) in paragraph at lines 95--95
+Overfull \hbox (9.41675pt too wide) in paragraph at lines 108--108
 []\OT1/cmr/m/n/10 (b)
  []
 
 
-Overfull \hbox (11.27785pt too wide) in paragraph at lines 95--95
+Overfull \hbox (11.27785pt too wide) in paragraph at lines 108--108
 |\OT1/cmr/m/n/10 Los
  []
 
 
-Overfull \hbox (21.16676pt too wide) in paragraph at lines 95--95
+Overfull \hbox (21.16676pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 fil-tros
  []
 
 
-Overfull \hbox (4.47226pt too wide) in paragraph at lines 95--95
+Overfull \hbox (4.47226pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 se
  []
 
 
-Overfull \hbox (44.1668pt too wide) in paragraph at lines 95--95
+Overfull \hbox (44.1668pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 en-cuen-tran
  []
 
 
-Overfull \hbox (13.36119pt too wide) in paragraph at lines 95--95
+Overfull \hbox (13.36119pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 m^^Sas
  []
 
 
-Overfull \hbox (18.33339pt too wide) in paragraph at lines 95--95
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 cer-ca
  []
 
 
-Overfull \hbox (8.86118pt too wide) in paragraph at lines 95--95
+Overfull \hbox (8.86118pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 del
  []
 
 
-Overfull \hbox (19.72234pt too wide) in paragraph at lines 95--95
+Overfull \hbox (19.72234pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 ro-bot
  []
 
 
-Overfull \hbox (1.36118pt too wide) in paragraph at lines 95--95
+Overfull \hbox (1.36118pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 y
  []
 
 
-Overfull \hbox (6.63896pt too wide) in paragraph at lines 95--95
+Overfull \hbox (6.63896pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 ha
  []
 
 
-Overfull \hbox (44.13905pt too wide) in paragraph at lines 95--95
+Overfull \hbox (44.13905pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 au-men-ta-do
  []
 
 
-Overfull \hbox (5.58339pt too wide) in paragraph at lines 95--95
+Overfull \hbox (5.58339pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 su
  []
 
 
-Overfull \hbox (56.97238pt too wide) in paragraph at lines 95--95
+Overfull \hbox (56.97238pt too wide) in paragraph at lines 108--108
 \OT1/cmr/m/n/10 in-cer-ti-dum-bre| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
@@ -1570,168 +1585,175 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
-Overfull \hbox (8.86119pt too wide) in paragraph at lines 125--125
+ []
+
+
+Overfull \hbox (8.86119pt too wide) in paragraph at lines 138--138
 []\OT1/cmr/m/n/10 (a)
  []
 
 
-Overfull \hbox (24.61122pt too wide) in paragraph at lines 125--125
+Overfull \hbox (24.61122pt too wide) in paragraph at lines 138--138
 |\OT1/cmr/m/n/10 Fu-si^^Son
  []
 
 
-Overfull \hbox (6.08339pt too wide) in paragraph at lines 125--125
+Overfull \hbox (6.08339pt too wide) in paragraph at lines 138--138
 \OT1/cmr/m/n/10 de
  []
 
 
-Overfull \hbox (12.19453pt too wide) in paragraph at lines 125--125
+Overfull \hbox (12.19453pt too wide) in paragraph at lines 138--138
 \OT1/cmr/m/n/10 una
  []
 
 
-Overfull \hbox (46.4446pt too wide) in paragraph at lines 125--125
+Overfull \hbox (46.4446pt too wide) in paragraph at lines 138--138
 \OT1/cmr/m/n/10 ob-ser-va-ci^^Son
  []
 
 
-Overfull \hbox (11.0834pt too wide) in paragraph at lines 125--125
+Overfull \hbox (11.0834pt too wide) in paragraph at lines 138--138
 \OT1/cmr/m/n/10 con
  []
 
 
-Overfull \hbox (7.19452pt too wide) in paragraph at lines 125--125
+Overfull \hbox (7.19452pt too wide) in paragraph at lines 138--138
 \OT1/cmr/m/n/10 un
  []
 
 
-Overfull \hbox (17.22232pt too wide) in paragraph at lines 125--125
+Overfull \hbox (17.22232pt too wide) in paragraph at lines 138--138
 \OT1/cmr/m/n/10 fil-tro| 
  []
 
 
-Overfull \hbox (9.41675pt too wide) in paragraph at lines 129--129
+Overfull \hbox (9.41675pt too wide) in paragraph at lines 142--142
 []\OT1/cmr/m/n/10 (b)
  []
 
 
-Overfull \hbox (27.1112pt too wide) in paragraph at lines 129--129
+Overfull \hbox (27.1112pt too wide) in paragraph at lines 142--142
 |\OT1/cmr/m/n/10 Po-si-ble
  []
 
 
-Overfull \hbox (31.66676pt too wide) in paragraph at lines 129--129
+Overfull \hbox (31.66676pt too wide) in paragraph at lines 142--142
 \OT1/cmr/m/n/10 crea-ci^^Son
  []
 
 
-Overfull \hbox (6.08339pt too wide) in paragraph at lines 129--129
+Overfull \hbox (6.08339pt too wide) in paragraph at lines 142--142
 \OT1/cmr/m/n/10 de
  []
 
 
-Overfull \hbox (7.19452pt too wide) in paragraph at lines 129--129
+Overfull \hbox (7.19452pt too wide) in paragraph at lines 142--142
 \OT1/cmr/m/n/10 un
  []
 
 
-Overfull \hbox (17.22232pt too wide) in paragraph at lines 129--129
+Overfull \hbox (17.22232pt too wide) in paragraph at lines 142--142
 \OT1/cmr/m/n/10 fil-tro
  []
 
 
-Overfull \hbox (21.3612pt too wide) in paragraph at lines 129--129
+Overfull \hbox (21.3612pt too wide) in paragraph at lines 142--142
 \OT1/cmr/m/n/10 nue-vo| 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+ []
+
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 156--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--155
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \vbox (badness 1546) has occurred while \output is active []
+Underfull \vbox (badness 3386) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
- [27]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-LaTeX Info: Redefining \. on input line 188.
-LaTeX Info: Redefining \% on input line 188.
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-LaTeX Info: Redefining \. on input line 206.
-LaTeX Info: Redefining \% on input line 206.
-[29]
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [28]
 Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
-
- []
-
-LaTeX Info: Redefining \. on input line 221.
-LaTeX Info: Redefining \% on input line 221.
+LaTeX Info: Redefining \. on input line 228.
+LaTeX Info: Redefining \% on input line 228.
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-LaTeX Info: Redefining \. on input line 250.
-LaTeX Info: Redefining \% on input line 250.
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 242.
+LaTeX Info: Redefining \% on input line 242.
+ [31]
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+LaTeX Info: Redefining \. on input line 271.
+LaTeX Info: Redefining \% on input line 271.
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 ) (./cap5.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [32]
+ [33]
 Cap\'{\i }tulo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -1749,7 +1771,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<img/cap5/tracked_vs_raw_plot.png, id=192, 642.4pt x 481.8pt>
+<img/cap5/tracked_vs_raw_plot.png, id=195, 642.4pt x 481.8pt>
 File: img/cap5/tracked_vs_raw_plot.png Graphic file (type png)
 
 <use img/cap5/tracked_vs_raw_plot.png>
@@ -1770,7 +1792,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[33
+[34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
@@ -1787,7 +1809,7 @@ Underfull \vbox (badness 4001) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
- [34 <./img/cap5/tracked_vs_raw_plot.png>] <img/cap5/exp1.png, id=200, 642.4pt 
+ [35 <./img/cap5/tracked_vs_raw_plot.png>] <img/cap5/exp1.png, id=203, 642.4pt 
 x 481.8pt>
 File: img/cap5/exp1.png Graphic file (type png)
 
@@ -1801,12 +1823,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
 LaTeX Info: Redefining \. on input line 41.
 LaTeX Info: Redefining \% on input line 41.
-[35 <./img/cap5/exp1.png>]
+[36 <./img/cap5/exp1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-<img/cap5/falsos_positivos.png, id=205, 642.4pt x 481.8pt>
+<img/cap5/falsos_positivos.png, id=208, 642.4pt x 481.8pt>
 File: img/cap5/falsos_positivos.png Graphic file (type png)
 
 <use img/cap5/falsos_positivos.png>
@@ -1819,7 +1841,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
-[36 <./img/cap5/falsos_positivos.png>]
+[37 <./img/cap5/falsos_positivos.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -1844,7 +1866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-<img/cap5/exp2.png, id=210, 642.4pt x 481.8pt>
+<img/cap5/exp2.png, id=214, 642.4pt x 481.8pt>
 File: img/cap5/exp2.png Graphic file (type png)
  <use img/cap5/exp2.png>
 Package pdftex.def Info: img/cap5/exp2.png used on input line 72.
@@ -1860,7 +1882,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
-[37]
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
@@ -1875,8 +1897,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 88.
 LaTeX Info: Redefining \% on input line 88.
- [38 <./img/cap5/exp2.png>]
-<img/cap5/exp_kick_no_tracking.png, id=220, 642.4pt x 481.8pt>
+ [39 <./img/cap5/exp2.png>]
+<img/cap5/exp_kick_no_tracking.png, id=223, 642.4pt x 481.8pt>
 File: img/cap5/exp_kick_no_tracking.png Graphic file (type png)
 
 <use img/cap5/exp_kick_no_tracking.png>
@@ -1890,7 +1912,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
 LaTeX Info: Redefining \. on input line 98.
 LaTeX Info: Redefining \% on input line 98.
-[39 <./img/cap5/exp_kick_no_tracking.png>]
+[40 <./img/cap5/exp_kick_no_tracking.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
@@ -1917,7 +1939,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
 LaTeX Info: Redefining \. on input line 111.
 LaTeX Info: Redefining \% on input line 111.
-[40] <img/cap5/10_balls.png, id=228, 642.4pt x 481.8pt>
+[41] <img/cap5/10_balls.png, id=231, 642.4pt x 481.8pt>
 File: img/cap5/10_balls.png Graphic file (type png)
 
 <use img/cap5/10_balls.png>
@@ -1926,7 +1948,7 @@ Package pdftex.def Info: img/cap5/10_balls.png used on input line 114.
 ) (./cap6.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [41 <./img/cap5/10_balls.png>]
+ [42 <./img/cap5/10_balls.png>]
 Cap\'{\i }tulo 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -1943,7 +1965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-[42
+[43
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
@@ -1952,14 +1974,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
-[43] <img/cap6/planning01.jpg, id=240, 963.6pt x 444.15938pt>
+[44] <img/cap6/planning01.jpg, id=243, 963.6pt x 444.15938pt>
 File: img/cap6/planning01.jpg Graphic file (type jpg)
 
 <use img/cap6/planning01.jpg>
 Package pdftex.def Info: img/cap6/planning01.jpg used on input line 49.
 (pdftex.def)             Requested size: 199.16928pt x 91.79875pt.
 
-<img/cap6/planning02.jpg, id=241, 963.6pt x 444.15938pt>
+<img/cap6/planning02.jpg, id=244, 963.6pt x 444.15938pt>
 File: img/cap6/planning02.jpg Graphic file (type jpg)
 
 <use img/cap6/planning02.jpg>
@@ -1967,10 +1989,10 @@ Package pdftex.def Info: img/cap6/planning02.jpg used on input line 53.
 (pdftex.def)             Requested size: 199.16928pt x 91.79875pt.
 LaTeX Info: Redefining \. on input line 59.
 LaTeX Info: Redefining \% on input line 59.
- [44 <./img/cap6/planning01.jpg> <./img/cap6/planning02.jpg>])
+ [45 <./img/cap6/planning01.jpg> <./img/cap6/planning02.jpg>])
 LaTeX Info: Redefining \. on input line 205.
 LaTeX Info: Redefining \% on input line 205.
- [45]
+ [46]
 No file memoria.bbl.
 No file memoria.ind.
 (./memoria.aux
@@ -2005,10 +2027,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on memoria.pdf (57 pages, 14439512 bytes).
+Output written on memoria.pdf (58 pages, 14440669 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
+ 307 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
