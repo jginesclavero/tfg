@@ -1,37 +1,15 @@
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}
-\contentsline {section}{\numberline {1.1}Rob\IeC {\'o}tica}{1}
-\contentsline {section}{\numberline {1.2}Visi\IeC {\'o}n computacional en rob\IeC {\'o}tica}{6}
-\contentsline {subsection}{\numberline {1.2.1}Visi\IeC {\'o}n 2D y 3D}{10}
-\contentsline {section}{\numberline {1.3}RoboCup}{13}
-\contentsline {section}{\numberline {1.4}Estructura del documento}{16}
-\contentsline {chapter}{\numberline {2}Objetivos y Metodolog\IeC {\'\i }a}{17}
-\contentsline {section}{\numberline {2.1}Descripci\IeC {\'o}n del problema y requisitos}{17}
-\contentsline {section}{\numberline {2.2}Objetivo del proyecto}{17}
-\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a de desarrollo}{18}
-\contentsline {section}{\numberline {2.4}Plan de trabajo}{20}
-\contentsline {chapter}{\numberline {3}Servidor de mapas din\IeC {\'a}mico}{21}
-\contentsline {section}{\numberline {3.1}Costmap\_2D}{21}
-\contentsline {subsubsection}{tf}{22}
-\contentsline {section}{\numberline {3.2}Tipos de mapas}{22}
-\contentsline {subsubsection}{Mapa est\IeC {\'a}tico}{23}
-\contentsline {subsubsection}{Mapa de corto plazo}{23}
-\contentsline {section}{\numberline {3.3}Colecci\IeC {\'o}n de EKFs}{24}
-\contentsline {subsection}{\numberline {3.3.1}Inicializaci\IeC {\'o}n de los filtros}{25}
-\contentsline {subsection}{\numberline {3.3.2}Predicci\IeC {\'o}n de nuevos estados}{26}
-\contentsline {subsection}{\numberline {3.3.3}Incorporaci\IeC {\'o}n de observaciones}{26}
-\contentsline {subsubsection}{Emparejamiento}{27}
-\contentsline {subsubsection}{Matching}{28}
-\contentsline {subsection}{\numberline {3.3.4}Descarte de filtros}{30}
-\contentsline {section}{\numberline {3.4}Adici\IeC {\'o}n de incertidumbre}{30}
-\contentsline {section}{\numberline {3.5}Objetos complejos}{32}
-\contentsline {chapter}{\numberline {4}Experimentos}{34}
-\contentsline {section}{\numberline {4.1}Seguimiento de un objeto}{34}
-\contentsline {section}{\numberline {4.2}Descubrimiento de falsos positivos}{35}
-\contentsline {section}{\numberline {4.3}Seguimiento de objetos con falsos positivos}{37}
-\contentsline {section}{\numberline {4.4}Seguimiento de objetos complejos}{38}
-\contentsline {section}{\numberline {4.5}Correcci\IeC {\'o}n de la velocidad de un objeto}{40}
-\contentsline {section}{\numberline {4.6}Tiempos de ejecuci\IeC {\'o}n}{41}
-\contentsline {chapter}{\numberline {5}Conclusiones y trabajos futuros}{43}
-\contentsline {section}{\numberline {5.1}Conclusiones}{43}
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{44}
+\contentsline {chapter}{\numberline {2}Objetivos y Metodolog\IeC {\'\i }a}{2}
+\contentsline {section}{\numberline {2.1}Descripci\IeC {\'o}n del problema y requisitos}{2}
+\contentsline {section}{\numberline {2.2}Objetivo del proyecto}{2}
+\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a de desarrollo}{3}
+\contentsline {section}{\numberline {2.4}Plan de trabajo}{5}
+\contentsline {chapter}{\numberline {3}Servidor de mapas din\IeC {\'a}mico}{6}
+\contentsline {section}{\numberline {3.1}Costmap\_2D}{6}
+\contentsline {subsubsection}{tf}{7}
+\contentsline {section}{\numberline {3.2}Tipos de mapas}{8}
+\contentsline {subsection}{\numberline {3.2.1}Mapa est\IeC {\'a}tico}{8}
+\contentsline {subsection}{\numberline {3.2.2}Mapa de corto plazo}{8}
+\contentsline {subsection}{\numberline {3.2.3}Mapa de largo plazo}{9}
+\contentsline {section}{\numberline {3.3}Construcci\IeC {\'o}n del mapa final}{9}

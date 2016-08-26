@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.26)  26 AUG 2016 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.26)  26 AUG 2016 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,490 +809,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
 [5] [6
 
 
-] (./resumen.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-) [7
+] (./resumen.tex) [7
 
 ] [8
 
 ] (./memoria.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [1
-
-])
+)
 \tf@toc=\write4
 \openout4 = `memoria.toc'.
 
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
- [2] (./memoria.lof
+ [1
+
+] (./memoria.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write5
 \openout5 = `memoria.lof'.
 
- [3
+ [2
 
 ]
-LaTeX Info: Redefining \. on input line 181.
-LaTeX Info: Redefining \% on input line 181.
- [4] (./cap1.tex
+(./cap1.tex
 Cap\'{\i }tulo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-<img/cap1/rur1.jpg, id=47, 568.1225pt x 317.185pt>
-File: img/cap1/rur1.jpg Graphic file (type jpg)
- <use img/cap1/rur1.jpg>
-Package pdftex.def Info: img/cap1/rur1.jpg used on input line 18.
-(pdftex.def)             Requested size: 264.6107pt x 147.73631pt.
-
-<img/cap1/rur2.jpg, id=48, 426.09187pt x 332.74312pt>
-File: img/cap1/rur2.jpg Graphic file (type jpg)
- <use img/cap1/rur2.jpg>
-Package pdftex.def Info: img/cap1/rur2.jpg used on input line 22.
-(pdftex.def)             Requested size: 190.63338pt x 148.86987pt.
-
-Overfull \hbox (33.80948pt too wide) in paragraph at lines 18--23
- [][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-[1
+) (./cap2.tex [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 33.
-LaTeX Info: Redefining \% on input line 33.
- [2 <./img/cap1/rur1.jpg> <./img/cap1/rur2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-<img/cap1/telar-jacquard.jpg, id=59, 220.825pt x 295.1025pt>
-File: img/cap1/telar-jacquard.jpg Graphic file (type jpg)
-
-<use img/cap1/telar-jacquard.jpg>
-Package pdftex.def Info: img/cap1/telar-jacquard.jpg used on input line 40.
-(pdftex.def)             Requested size: 227.62204pt x 304.2021pt.
-
-<img/cap1/tarjeta-jacquard.jpg, id=60, 220.825pt x 295.1025pt>
-File: img/cap1/tarjeta-jacquard.jpg Graphic file (type jpg)
-
-<use img/cap1/tarjeta-jacquard.jpg>
-Package pdftex.def Info: img/cap1/tarjeta-jacquard.jpg used on input line 44.
-(pdftex.def)             Requested size: 227.62204pt x 304.2021pt.
-
-Overfull \hbox (29.89285pt too wide) in paragraph at lines 40--45
- [][][] 
- []
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 49--50
-\OT1/cmr/m/it/12 Uni-ma-te\OT1/cmr/m/n/12 . Su co-me-ti-do era el le-van-tar pi
-e-zas in-dus-tria-les que es-ta-ban a al-tas
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
-[3 <./img/cap1/telar-jacquard.jpg> <./img/cap1/tarjeta-jacquard.jpg>]
-<img/cap1/famulus.png, id=64, 200.75pt x 181.67876pt>
-File: img/cap1/famulus.png Graphic file (type png)
-
-<use img/cap1/famulus.png>
-Package pdftex.def Info: img/cap1/famulus.png used on input line 56.
-(pdftex.def)             Requested size: 227.62204pt x 206.01259pt.
- <img/cap1/puma.jpg, id=66, 451.6875pt x 427.5975pt>
-File: img/cap1/puma.jpg Graphic file (type jpg)
-
-<use img/cap1/puma.jpg>
-Package pdftex.def Info: img/cap1/puma.jpg used on input line 60.
-(pdftex.def)             Requested size: 227.62204pt x 215.48808pt.
-
-Overfull \hbox (29.89285pt too wide) in paragraph at lines 56--61
- [][][] 
- []
-
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
-[4 <./img/cap1/famulus.png> <./img/cap1/puma.jpg>]
-<img/cap1/nao-laser.jpg, id=71, 401.5pt x 401.5pt>
-File: img/cap1/nao-laser.jpg Graphic file (type jpg)
-
-<use img/cap1/nao-laser.jpg>
-Package pdftex.def Info: img/cap1/nao-laser.jpg used on input line 77.
-(pdftex.def)             Requested size: 256.0748pt x 256.08917pt.
-
-Underfull \hbox (badness 1424) in paragraph at lines 85--86
-\OT1/cmr/m/n/12 los ac-tua-do-res. Com-pa-ran-do un ro-bot con una per-so-na y 
-ha-cien-do una
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-
-Underfull \vbox (badness 1237) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
-[6 <./img/cap1/nao-laser.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-<img/cap1/reconocimiento_cara.png, id=78, 298.11375pt x 268.00125pt>
-File: img/cap1/reconocimiento_cara.png Graphic file (type png)
-
-<use img/cap1/reconocimiento_cara.png>
-Package pdftex.def Info: img/cap1/reconocimiento_cara.png used on input line 11
-2.
-(pdftex.def)             Requested size: 216.2411pt x 194.40019pt.
-
-<img/cap1/seguimiento_pelota.png, id=79, 672.5125pt x 538.01pt>
-File: img/cap1/seguimiento_pelota.png Graphic file (type png)
-
-<use img/cap1/seguimiento_pelota.png>
-Package pdftex.def Info: img/cap1/seguimiento_pelota.png used on input line 116
-.
-(pdftex.def)             Requested size: 239.00298pt x 191.20422pt.
-
-Overfull \hbox (29.89285pt too wide) in paragraph at lines 112--117
- [][][][][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
-
- []
-
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
-[7] <img/cap1/tracking-people.jpg, id=84, 770.88pt x 578.16pt>
-File: img/cap1/tracking-people.jpg Graphic file (type jpg)
-
-<use img/cap1/tracking-people.jpg>
-Package pdftex.def Info: img/cap1/tracking-people.jpg used on input line 128.
-(pdftex.def)             Requested size: 256.0748pt x 192.05493pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
- []
-
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
-[8 <./img/cap1/reconocimiento_cara.png> <./img/cap1/seguimiento_pelota.png>]
-
-LaTeX Warning: Citation `rocapal' on page 9 undefined on input line 136.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
- [9 <./img/cap1/tracking-people.jpg>]
-<img/cap1/calle-de-bruselas.jpg, id=93, 1638.12pt x 1228.59pt>
-File: img/cap1/calle-de-bruselas.jpg Graphic file (type jpg)
-
-<use img/cap1/calle-de-bruselas.jpg>
-Package pdftex.def Info: img/cap1/calle-de-bruselas.jpg used on input line 149.
-
-(pdftex.def)             Requested size: 341.43306pt x 256.06184pt.
-LaTeX Info: Redefining \. on input line 161.
-LaTeX Info: Redefining \% on input line 161.
- [10 <./img/cap1/calle-de-bruselas.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-<img/cap1/stereo.jpg, id=98, 278.641pt x 284.6635pt>
-File: img/cap1/stereo.jpg Graphic file (type jpg)
- <use img/cap1/stereo.jpg>
-Package pdftex.def Info: img/cap1/stereo.jpg used on input line 174.
-(pdftex.def)             Requested size: 113.81102pt x 116.26973pt.
-
-<img/cap1/stereo2.png, id=99, 803.0pt x 305.14pt>
-File: img/cap1/stereo2.png Graphic file (type png)
- <use img/cap1/stereo2.png>
-Package pdftex.def Info: img/cap1/stereo2.png used on input line 178.
-(pdftex.def)             Requested size: 312.9803pt x 118.93427pt.
-
-Overfull \hbox (1.4401pt too wide) in paragraph at lines 174--179
- [][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
- []
-
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
-[11 <./img/cap1/stereo.jpg> <./img/cap1/stereo2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-<img/cap1/kinect.jpg, id=104, 662.475pt x 351.3125pt>
-File: img/cap1/kinect.jpg Graphic file (type jpg)
-
-<use img/cap1/kinect.jpg>
-Package pdftex.def Info: img/cap1/kinect.jpg used on input line 190.
-(pdftex.def)             Requested size: 128.0374pt x 67.89723pt.
-
-<img/cap1/kinect-depth.png, id=105, 895.09406pt x 334.24875pt>
-File: img/cap1/kinect-depth.png Graphic file (type png)
-
-<use img/cap1/kinect-depth.png>
-Package pdftex.def Info: img/cap1/kinect-depth.png used on input line 194.
-(pdftex.def)             Requested size: 298.75394pt x 111.56218pt.
-
-Overfull \hbox (1.44011pt too wide) in paragraph at lines 190--195
- [][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
-
- []
-
-LaTeX Info: Redefining \. on input line 203.
-LaTeX Info: Redefining \% on input line 203.
-[12 <./img/cap1/kinect.jpg> <./img/cap1/kinect-depth.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 210--211
-[]\OT1/cmr/bx/n/12 RoboCupRescue. \OT1/cmr/m/n/12 Com-pe-ti-ci^^Son d^^Sonde lo
-s ro-bots asis-ten a \OT1/cmr/m/it/12 ser-vi-cios de
- []
-
-<img/cap1/robocupsoccer.jpg, id=110, 1204.5pt x 677.53125pt>
-File: img/cap1/robocupsoccer.jpg Graphic file (type jpg)
-
-<use img/cap1/robocupsoccer.jpg>
-Package pdftex.def Info: img/cap1/robocupsoccer.jpg used on input line 217.
-(pdftex.def)             Requested size: 230.46748pt x 129.6317pt.
-
-<img/cap1/robocuprescue.jpg, id=111, 3902.58pt x 2601.72pt>
-File: img/cap1/robocuprescue.jpg Graphic file (type jpg)
-
-<use img/cap1/robocuprescue.jpg>
-Package pdftex.def Info: img/cap1/robocuprescue.jpg used on input line 222.
-(pdftex.def)             Requested size: 196.32384pt x 130.8479pt.
-
-Overfull \hbox (1.4401pt too wide) in paragraph at lines 217--223
- [][][] 
- []
-
-LaTeX Info: Redefining \. on input line 228.
-LaTeX Info: Redefining \% on input line 228.
-[13 <./img/cap1/robocupsoccer.jpg> <./img/cap1/robocuprescue.jpg>]
-Underfull \hbox (badness 2042) in paragraph at lines 228--229
-[]\OT1/cmr/bx/n/12 RoboCupJunior. \OT1/cmr/m/n/12 Es-ta com-pe-ti-ci^^Son se ce
-n-tra en los m^^Sas j^^Sove-nes. Los
- []
-
-<img/cap1/robocuphome.jpg, id=116, 566.5968pt x 660.5478pt>
-File: img/cap1/robocuphome.jpg Graphic file (type jpg)
-
-<use img/cap1/robocuphome.jpg>
-Package pdftex.def Info: img/cap1/robocuphome.jpg used on input line 235.
-(pdftex.def)             Requested size: 167.87108pt x 195.70656pt.
-
-<img/cap1/robocupjunior.jpg, id=117, 179.872pt x 134.904pt>
-File: img/cap1/robocupjunior.jpg Graphic file (type jpg)
-
-<use img/cap1/robocupjunior.jpg>
-Package pdftex.def Info: img/cap1/robocupjunior.jpg used on input line 239.
-(pdftex.def)             Requested size: 258.92024pt x 194.21838pt.
-
-Overfull \hbox (1.4401pt too wide) in paragraph at lines 235--240
- [][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
-
- []
-
-<img/cap1/chesschallenge.jpg, id=118, 1027.84pt x 660.4675pt>
-File: img/cap1/chesschallenge.jpg Graphic file (type jpg)
-
-<use img/cap1/chesschallenge.jpg>
-Package pdftex.def Info: img/cap1/chesschallenge.jpg used on input line 249.
-(pdftex.def)             Requested size: 256.0748pt x 164.54202pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
-
- []
-
-LaTeX Info: Redefining \. on input line 258.
-LaTeX Info: Redefining \% on input line 258.
-[14 <./img/cap1/robocuphome.jpg> <./img/cap1/robocupjunior.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
-
- []
-
-
-LaTeX Warning: Citation `MultiObjectsManuela' on page 15 undefined on input lin
-e 277.
-
-
-LaTeX Warning: Citation `RobotRecognition' on page 15 undefined on input line 2
-77.
-
-
-LaTeX Warning: Citation `MultiHypothesis' on page 15 undefined on input line 27
-7.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
-
- []
-
-
-Underfull \vbox (badness 1540) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
- [15 <./img/cap1/chesschallenge.jpg>])
-Underfull \hbox (badness 10000) in paragraph at lines 282--188
-
- []
-
-(./cap2.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [16]
 Cap\'{\i }tulo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -1314,14 +862,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--46
 
  []
 
-[17
+[2
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-<img/cap2/modelo_espiral.png, id=131, 757.83125pt x 509.905pt>
+<img/cap2/modelo_espiral.png, id=46, 757.83125pt x 509.905pt>
 File: img/cap2/modelo_espiral.png Graphic file (type png)
 
 <use img/cap2/modelo_espiral.png>
@@ -1334,10 +882,10 @@ Overfull \hbox (14.22635pt too wide) in paragraph at lines 65--66
 
 LaTeX Info: Redefining \. on input line 69.
 LaTeX Info: Redefining \% on input line 69.
-[18]
+[3]
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
- [19 <./img/cap2/modelo_espiral.png>]
+ [4 <./img/cap2/modelo_espiral.png>]
 Underfull \hbox (badness 1173) in paragraph at lines 92--93
 []\OT1/cmr/m/n/12 Cuarto subob-je-ti-vo. Crear el ma-pa sem^^Santi-co, es-pe-ci
 -fi-can-do las eti-que-tas
@@ -1346,30 +894,30 @@ Underfull \hbox (badness 1173) in paragraph at lines 92--93
 ) (./cap4.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [20]
+ [5]
 Cap\'{\i }tulo 3.
-<img/cap4/costmap-ejemplo.png, id=143, 801.99625pt x 579.16376pt>
+<img/cap4/costmap-ejemplo.png, id=63, 801.99625pt x 579.16376pt>
 File: img/cap4/costmap-ejemplo.png Graphic file (type png)
 
 <use img/cap4/costmap-ejemplo.png>
 Package pdftex.def Info: img/cap4/costmap-ejemplo.png used on input line 12.
-(pdftex.def)             Requested size: 227.62204pt x 164.37407pt.
+(pdftex.def)             Requested size: 213.39566pt x 154.1051pt.
 
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
- [21
-
- <./img/cap4/costmap-ejemplo.png>]
-<img/cap4/frames.png, id=147, 675.27281pt x 387.69844pt>
+<img/cap4/frames.png, id=64, 675.27281pt x 387.69844pt>
 File: img/cap4/frames.png Graphic file (type png)
 
 <use img/cap4/frames.png>
 Package pdftex.def Info: img/cap4/frames.png used on input line 25.
 (pdftex.def)             Requested size: 341.43306pt x 196.03166pt.
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
- [22 <./img/cap4/frames.png (PNG copy)>]
-<img/cap4/mapaestatico.png, id=151, 268.00125pt x 250.9375pt>
+ [6
+
+ <./img/cap4/costmap-ejemplo.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ [7 <./img/cap4/frames.png (PNG copy)>]
+<img/cap4/mapaestatico.png, id=71, 268.00125pt x 250.9375pt>
 File: img/cap4/mapaestatico.png Graphic file (type png)
 
 <use img/cap4/mapaestatico.png>
@@ -1390,609 +938,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
-[23 <./img/cap4/mapaestatico.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+[8 <./img/cap4/mapaestatico.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
-
-LaTeX Warning: Reference `alg:seguimientoobjetos' on page 24 undefined on input
- line 73.
-
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
-[25]
-Overfull \hbox (8.86119pt too wide) in paragraph at lines 104--104
-[]\OT1/cmr/m/n/10 (a)
- []
-
-
-Overfull \hbox (5.66673pt too wide) in paragraph at lines 104--104
-|\OT1/cmr/m/n/10 El
- []
-
-
-Overfull \hbox (19.72234pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 ro-bot
- []
-
-
-Overfull \hbox (13.36118pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 est^^Sa
- []
-
-
-Overfull \hbox (36.69458pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 si-guien-do
- []
-
-
-Overfull \hbox (10.5834pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 dos
- []
-
-
-Overfull \hbox (27.52788pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 ob-je-tos
- []
-
-
-Overfull \hbox (1.36118pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 y
- []
-
-
-Overfull \hbox (4.47226pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 se
- []
-
-
-Overfull \hbox (23.58342pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 mue-ve
- []
-
-
-Overfull \hbox (6.08339pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 en
- []
-
-
-Overfull \hbox (35.0001pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 di-rec-ci^^Son
- []
-
-
-Overfull \hbox (18.8612pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 ha-cia
- []
-
-
-Overfull \hbox (15.02785pt too wide) in paragraph at lines 104--104
-\OT1/cmr/m/n/10 ellos| 
- []
-
-
-Overfull \hbox (9.41675pt too wide) in paragraph at lines 108--108
-[]\OT1/cmr/m/n/10 (b)
- []
-
-
-Overfull \hbox (11.27785pt too wide) in paragraph at lines 108--108
-|\OT1/cmr/m/n/10 Los
- []
-
-
-Overfull \hbox (21.16676pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 fil-tros
- []
-
-
-Overfull \hbox (4.47226pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 se
- []
-
-
-Overfull \hbox (44.1668pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 en-cuen-tran
- []
-
-
-Overfull \hbox (13.36119pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 m^^Sas
- []
-
-
-Overfull \hbox (18.33339pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 cer-ca
- []
-
-
-Overfull \hbox (8.86118pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 del
- []
-
-
-Overfull \hbox (19.72234pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 ro-bot
- []
-
-
-Overfull \hbox (1.36118pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 y
- []
-
-
-Overfull \hbox (6.63896pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 ha
- []
-
-
-Overfull \hbox (44.13905pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 au-men-ta-do
- []
-
-
-Overfull \hbox (5.58339pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 su
- []
-
-
-Overfull \hbox (56.97238pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/10 in-cer-ti-dum-bre| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-
- []
-
-
-Overfull \hbox (8.86119pt too wide) in paragraph at lines 138--138
-[]\OT1/cmr/m/n/10 (a)
- []
-
-
-Overfull \hbox (24.61122pt too wide) in paragraph at lines 138--138
-|\OT1/cmr/m/n/10 Fu-si^^Son
- []
-
-
-Overfull \hbox (6.08339pt too wide) in paragraph at lines 138--138
-\OT1/cmr/m/n/10 de
- []
-
-
-Overfull \hbox (12.19453pt too wide) in paragraph at lines 138--138
-\OT1/cmr/m/n/10 una
- []
-
-
-Overfull \hbox (46.4446pt too wide) in paragraph at lines 138--138
-\OT1/cmr/m/n/10 ob-ser-va-ci^^Son
- []
-
-
-Overfull \hbox (11.0834pt too wide) in paragraph at lines 138--138
-\OT1/cmr/m/n/10 con
- []
-
-
-Overfull \hbox (7.19452pt too wide) in paragraph at lines 138--138
-\OT1/cmr/m/n/10 un
- []
-
-
-Overfull \hbox (17.22232pt too wide) in paragraph at lines 138--138
-\OT1/cmr/m/n/10 fil-tro| 
- []
-
-
-Overfull \hbox (9.41675pt too wide) in paragraph at lines 142--142
-[]\OT1/cmr/m/n/10 (b)
- []
-
-
-Overfull \hbox (27.1112pt too wide) in paragraph at lines 142--142
-|\OT1/cmr/m/n/10 Po-si-ble
- []
-
-
-Overfull \hbox (31.66676pt too wide) in paragraph at lines 142--142
-\OT1/cmr/m/n/10 crea-ci^^Son
- []
-
-
-Overfull \hbox (6.08339pt too wide) in paragraph at lines 142--142
-\OT1/cmr/m/n/10 de
- []
-
-
-Overfull \hbox (7.19452pt too wide) in paragraph at lines 142--142
-\OT1/cmr/m/n/10 un
- []
-
-
-Overfull \hbox (17.22232pt too wide) in paragraph at lines 142--142
-\OT1/cmr/m/n/10 fil-tro
- []
-
-
-Overfull \hbox (21.3612pt too wide) in paragraph at lines 142--142
-\OT1/cmr/m/n/10 nue-vo| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-
- []
-
-LaTeX Info: Redefining \. on input line 153.
-LaTeX Info: Redefining \% on input line 153.
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
-Underfull \vbox (badness 3386) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
- [28]
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
-
- []
-
-LaTeX Info: Redefining \. on input line 215.
-LaTeX Info: Redefining \% on input line 215.
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-LaTeX Info: Redefining \. on input line 228.
-LaTeX Info: Redefining \% on input line 228.
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 242.
-LaTeX Info: Redefining \% on input line 242.
- [31]
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
-
- []
-
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
-
- []
-
-) (./cap5.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [33]
-Cap\'{\i }tulo 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 11--12
-[]\OT1/cmr/m/n/12 En es-te ex-pe-ri-men-to se com-pa-ran los re-sul-ta-dos ob-t
-e-ni-dos a par-tir de las
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-<img/cap5/tracked_vs_raw_plot.png, id=195, 642.4pt x 481.8pt>
-File: img/cap5/tracked_vs_raw_plot.png Graphic file (type png)
-
-<use img/cap5/tracked_vs_raw_plot.png>
-Package pdftex.def Info: img/cap5/tracked_vs_raw_plot.png used on input line 15
-.
-(pdftex.def)             Requested size: 369.88582pt x 277.42249pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-[34
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-
-Underfull \vbox (badness 4001) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
- [35 <./img/cap5/tracked_vs_raw_plot.png>] <img/cap5/exp1.png, id=203, 642.4pt 
-x 481.8pt>
-File: img/cap5/exp1.png Graphic file (type png)
-
-<use img/cap5/exp1.png>
-Package pdftex.def Info: img/cap5/exp1.png used on input line 34.
-(pdftex.def)             Requested size: 369.88582pt x 277.42249pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
-[36 <./img/cap5/exp1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-<img/cap5/falsos_positivos.png, id=208, 642.4pt x 481.8pt>
-File: img/cap5/falsos_positivos.png Graphic file (type png)
-
-<use img/cap5/falsos_positivos.png>
-Package pdftex.def Info: img/cap5/falsos_positivos.png used on input line 49.
-(pdftex.def)             Requested size: 369.88582pt x 277.42249pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
-[37 <./img/cap5/falsos_positivos.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-
- []
-
-<img/cap5/exp2.png, id=214, 642.4pt x 481.8pt>
-File: img/cap5/exp2.png Graphic file (type png)
- <use img/cap5/exp2.png>
-Package pdftex.def Info: img/cap5/exp2.png used on input line 72.
-(pdftex.def)             Requested size: 426.79134pt x 320.0989pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
- [39 <./img/cap5/exp2.png>]
-<img/cap5/exp_kick_no_tracking.png, id=223, 642.4pt x 481.8pt>
-File: img/cap5/exp_kick_no_tracking.png Graphic file (type png)
-
-<use img/cap5/exp_kick_no_tracking.png>
-Package pdftex.def Info: img/cap5/exp_kick_no_tracking.png used on input line 9
-1.
-(pdftex.def)             Requested size: 426.79134pt x 320.0989pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
-[40 <./img/cap5/exp_kick_no_tracking.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
-LaTeX Info: Redefining \. on input line 111.
-LaTeX Info: Redefining \% on input line 111.
-[41] <img/cap5/10_balls.png, id=231, 642.4pt x 481.8pt>
-File: img/cap5/10_balls.png Graphic file (type png)
-
-<use img/cap5/10_balls.png>
-Package pdftex.def Info: img/cap5/10_balls.png used on input line 114.
-(pdftex.def)             Requested size: 369.88582pt x 277.42249pt.
-) (./cap6.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [42 <./img/cap5/10_balls.png>]
-Cap\'{\i }tulo 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-
- []
-
-[43
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
-[44] <img/cap6/planning01.jpg, id=243, 963.6pt x 444.15938pt>
-File: img/cap6/planning01.jpg Graphic file (type jpg)
-
-<use img/cap6/planning01.jpg>
-Package pdftex.def Info: img/cap6/planning01.jpg used on input line 49.
-(pdftex.def)             Requested size: 199.16928pt x 91.79875pt.
-
-<img/cap6/planning02.jpg, id=244, 963.6pt x 444.15938pt>
-File: img/cap6/planning02.jpg Graphic file (type jpg)
-
-<use img/cap6/planning02.jpg>
-Package pdftex.def Info: img/cap6/planning02.jpg used on input line 53.
-(pdftex.def)             Requested size: 199.16928pt x 91.79875pt.
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
- [45 <./img/cap6/planning01.jpg> <./img/cap6/planning02.jpg>])
-LaTeX Info: Redefining \. on input line 205.
-LaTeX Info: Redefining \% on input line 205.
- [46]
+)
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+ [9]
 No file memoria.bbl.
 No file memoria.ind.
 (./memoria.aux
@@ -2000,37 +966,30 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 8323 strings out of 493029
- 120510 string characters out of 6136234
- 209083 words of memory out of 5000000
- 11637 multiletter control sequences out of 15000+600000
+ 8081 strings out of 493029
+ 114895 string characters out of 6136234
+ 206138 words of memory out of 5000000
+ 11432 multiletter control sequences out of 15000+600000
  13108 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,23n,49p,1398b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,8n,42p,675b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on memoria.pdf (58 pages, 14440669 bytes).
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti12.pfb>
+Output written on memoria.pdf (19 pages, 1712976 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
+ 109 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
