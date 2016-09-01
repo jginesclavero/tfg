@@ -6,3 +6,6 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo visual de un costmap.\relax }}{6}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces A la izquierda el frame map y a la derecha los frames de odom y base\_footprint\relax }}{7}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Mapa est\IeC {\'a}tico\relax }}{8}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Visi\IeC {\'o}n del simulador, (a) y (b), y mapa a corto plazo (c).\relax }}{10}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A\IeC {\~n}adimos un objeto al escenario\relax }}{10}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Eliminamos un objeto del escenario\relax }}{11}

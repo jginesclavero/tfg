@@ -49,14 +49,85 @@ Este mapa nos servirá como base para crear el mapa de largo plazo.
 \end{figure}
 
 \subsection{Mapa de corto plazo}
-El mapa de corto plazo se caracteriza por ser un mapa en el que se representa los objetos que el robot va percibiendo. Este mapa se inicializa con el valor 255, lo que indica una incertidumbre total. En el instante en el que el algoritmo de construcción del mapa comienza a iterar comenzarán a corregirse estos valores iniciales, asignando el valor 0 a las celdas que corresponden con zonas libres e incrementando desde 0 hasta 254 el valor de las celdas que se perciben como ocupadas. \\
+El mapa de corto plazo se caracteriza por ser un mapa en el que se representa los objetos que el robot va percibiendo. Este mapa se inicializa con el valor 255, lo que indica una incertidumbre total. En el instante en el que el algoritmo de construcción del mapa comienza a iterar comenzarán a corregirse estos valores iniciales, asignando el valor 0 a las celdas que corresponden con zonas libres e incrementando desde 0 hasta 254 el valor de las celdas que se perciben como ocupadas. \pagebreak
 
-{EJEMPLO CODIGO}\\
+\renewcommand{\lstlistingname}{Código}
+\begin{lstlisting}[caption=Inicialización del cost\_map correspondiente al mapa de corto plazo, label=initcostmap]
+
+  metadata = getMetadata();
+  tf::TransformListener tf(ros::Duration(10));
+  cells_size_x = metadata.width;
+  cells_size_y = metadata.height;
+  resolution = metadata.resolution;
+  origin_x = metadata.origin.position.x;
+  origin_y = metadata.origin.position.y;
+  default_value = 255;
+  scan_ready = false;
+  pos_ready = false;
+  cost_map.resizeMap(cells_size_x,cells_size_y, resolution, origin_x, origin_y);
+  cost_map.setDefaultValue(default_value);
+  cost_map.resetMap(0,0,cost_map.getSizeInCellsX(), cost_map.getSizeInCellsY());
+\end{lstlisting}
+
 
 El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al mapa, si no ademas eliminarlos si los objetos desaparecen del lugar que ocupaban. Para ello se compara cada muestra de datos con el mapa que estamos generando y si en dicha muestra existen celdas libres que en el mapa están ocupadas se decrementa el valor de dicha celda en el mapa. La cuantia del decremento se puede modelar, consiguiendo asi que el robot olvide más lentamente o más rapidamente los objetos que desaparecen del escenario.\\
 
-{EJEMPLO CODIGO}\\
-{EJEMPLO GRAFICO}\\
+\renewcommand{\lstlistingname}{Código}
+\begin{lstlisting}[caption=Función principal del nodo. Actualiza el mapa en cada iteración, label=updatecostmap]
+  void
+  ObstacleDetector::updateCostmap(){
+    if(scan_ready && pos_ready){
+      incrementCostProcedure();
+      decrementCostProcedure();
+    }
+    pVectorList_.clear();
+    pointList_.clear();
+  }
+\end{lstlisting}
+
+La figura \ref{fig:initserver} fué captada al iniciar el algoritmo. Observamos que la mayor parte del mapa de corto plazo se encuentra en una posición de desconocimiento y que se han ido incluyendo en este las zonas libres, las paredes y la estantería. Los puntos morados y verdes corresponden a la representación de las muestras tomadas por el laser.
+
+\begin{figure}[H]
+  \begin{center}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap4/incrementmap}}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap4/incrementmap2}}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap4/incrementmap-rviz}}
+  \end{center}
+  \caption{Visión del simulador, (a) y (b), y mapa a corto plazo (c).}
+  \label{fig:initserver}
+\end{figure}
+
+Tras el inicio del algortimo se añadió un objeto nuevo al escenario. Esto se representa en la figura \ref{fig:includeobject}. Vemos como el algoritmo añade el objeto al mapa y lo situa en una posición coherente respecto a la posición que ocupa el objeto en el escenario simulado.
+
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[width=6cm,height=5cm]{img/cap4/incrementmap-object3}
+    \includegraphics[width=6cm,height=5cm]{img/cap4/incrementmap-object}
+  \end{center}
+  \caption{Añadimos un objeto al escenario}
+  \label{fig:includeobject}
+\end{figure}
+
+Una vez que el algoritmo a incluido el objeto en el mapa procedemos a eliminarlo del escenario simulado. Esto se representa en la figura  \ref{fig:deleteobject}. Vemos como el algoritmo ha comenzado a borrar el objeto, por lo que el valor de las celdas que estaban ocupadas por el objeto ahora es mucho menor.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=6cm,height=5cm]{img/cap4/incrementmap2}
+    \includegraphics[width=6cm,height=5cm]{img/cap4/incrementmap-object2}
+  \end{center}
+  \caption{Eliminamos un objeto del escenario}
+  \label{fig:deleteobject}
+\end{figure}
+
+El proceso de añadir o eliminar un objeto puede ser más o menos rápido dependiendo de los valores de las varibles que modelan estas operaciones. Para el caso de nuestro algoritmo contamos un fichero con extensión yaml en el que modificamos los valores de los parámetros.
+\renewcommand{\lstlistingname}{Código}
+\begin{lstlisting}[caption=Fichero de configuración obstacle\_detector.yaml, label=obstacledetectorconfig]
+  cost_inc: 4
+  cost_dec: 1
+  min_lenght: 0.23
+  max_lenght: 2.5
+\end{lstlisting}
+Los valores asociados a cost\_inc y cost\_dec representan el incremento o decremento del valor de una celda por cada iteración del algortimo. Los otros valores configurables representan la longitud máxima y mínima que se tiene en cuenta para cada medida que el laser nos proporciona. Las muestras obtenidas del laser que estén fuera de estos valores son ignoradas.
 
 \subsection{Mapa de largo plazo}
 El mapa de largo plazo se inicializa con los valores del mapa estático y se caracteriza por incluir los objetos que tienen un valor muy alto en el mapa de corto plazo, por tanto tenemos un mapa con objetos que han perdurado en el mapa a corto plazo durante un largo periodo de tiempo y que podemos considerar que son objetos estáticos del escenario. 
