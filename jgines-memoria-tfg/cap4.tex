@@ -73,7 +73,7 @@ El mapa de corto plazo se caracteriza por ser un mapa en el que se representa lo
 El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al mapa, si no ademas eliminarlos si los objetos desaparecen del lugar que ocupaban. Para ello se compara cada muestra de datos con el mapa que estamos generando y si en dicha muestra existen celdas libres que en el mapa están ocupadas se decrementa el valor de dicha celda en el mapa. La cuantia del decremento se puede modelar, consiguiendo asi que el robot olvide más lentamente o más rapidamente los objetos que desaparecen del escenario.\\
 
 \renewcommand{\lstlistingname}{Código}
-\begin{lstlisting}[caption=Función principal del nodo. Actualiza el mapa en cada iteración, label=updatecostmap]
+\begin{lstlisting}[caption=Función que actualiza el mapa en cada iteración, label=updatecostmap]
   void
   ObstacleDetector::updateCostmap(){
     if(scan_ready && pos_ready){
@@ -128,6 +128,36 @@ El proceso de añadir o eliminar un objeto puede ser más o menos rápido depend
   max_lenght: 2.5
 \end{lstlisting}
 Los valores asociados a cost\_inc y cost\_dec representan el incremento o decremento del valor de una celda por cada iteración del algortimo. Los otros valores configurables representan la longitud máxima y mínima que se tiene en cuenta para cada medida que el laser nos proporciona. Las muestras obtenidas del laser que estén fuera de estos valores son ignoradas.
+
+{Explicar como se borran los objetos? (decremento)}\\
+
+Al final de cada iteración del algoritmo el mapa de corto plazo es publicado en un topic para que pueda ser usado por el resto de nodos que conforman el servidor de mapas dinámico. Para llevar a cabo esta operación usamos una estructura de datos proporcionada por ROS, \textit{Costmap2DPublisher}\footnote{http://docs.ros.org/indigo/api/costmap\_2d/html/classcostmap\_\_2d\_1\_1Costmap2DPublisher.html}. Este publicador publica nuestro mapa en el topic \textit{costmap\_auto}.\pagebreak
+\renewcommand{\lstlistingname}{Código}
+\begin{lstlisting}[caption=Step del nodo obstacle\_detector, label=obstacledetectorconfig]
+  void
+  ObstacleDetector::step(){
+    updateCostmap();
+    cost_map_publisher_.publishCostmap();
+  }
+
+  int
+  main(int argc, char** argv)
+  {
+    ros::init(argc, argv, "obstacle_detector");   //Inicializa el nodo
+    ObstacleDetector obs;
+    ros::Rate loop_rate(5);
+
+    while (ros::ok()){
+      obs.step();
+      ros::spinOnce();
+      loop_rate.sleep();
+    }
+    return 0;
+  }
+
+\end{lstlisting}
+
+Existe un pequeño cambio en los valores del mapa que se publica. El tipo de mensaje que se usa para publica un costmap es \textit{nav\_msgs::OccupancyGrid}\footnote{http://docs.ros.org/indigo/api/nav\_msgs/html/msg/OccupancyGrid.html}. Este tipo de mensaje contiene, ademas de los metadatos asociados al mapa, un array de datos que representa al mapa. La pricipal diferencia con un costmap es que los valores en un OccupancyGrid van de 0 a 100 y no de 0 a 255 como en un costmap.
 
 \subsection{Mapa de largo plazo}
 El mapa de largo plazo se inicializa con los valores del mapa estático y se caracteriza por incluir los objetos que tienen un valor muy alto en el mapa de corto plazo, por tanto tenemos un mapa con objetos que han perdurado en el mapa a corto plazo durante un largo periodo de tiempo y que podemos considerar que son objetos estáticos del escenario. 

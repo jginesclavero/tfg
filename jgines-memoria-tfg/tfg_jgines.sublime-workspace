@@ -539,7 +539,7 @@
 			"file": "cap4.tex",
 			"settings":
 			{
-				"buffer_size": 7849,
+				"buffer_size": 11058,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "memoria.tex",
 			"settings":
 			{
-				"buffer_size": 3954,
+				"buffer_size": 3977,
 				"line_ending": "Unix"
 			}
 		},
@@ -775,6 +775,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".\n",
 			"resetMap",
 			"Metadata",
 			"\n  ",
@@ -901,8 +902,7 @@
 			"robot",
 			"	\n",
 			"ros::Rate",
-			"  ros::Rate",
-			"  ros::Rate loop_rate(5);"
+			"  ros::Rate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -967,8 +967,8 @@
 						"selection":
 						[
 							[
-								6523,
-								6523
+								8375,
+								8375
 							]
 						],
 						"settings":
@@ -977,7 +977,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 143.0,
+						"translation.y": 1785.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -987,15 +987,15 @@
 					"file": "cap4.tex",
 					"settings":
 					{
-						"buffer_size": 7849,
+						"buffer_size": 11058,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5856,
-								5856
+								9351,
+								9351
 							]
 						],
 						"settings":
@@ -1006,7 +1006,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1607.0,
+						"translation.y": 2491.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1101,15 +1101,15 @@
 					"file": "memoria.tex",
 					"settings":
 					{
-						"buffer_size": 3954,
+						"buffer_size": 3977,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1507,
-								1507
+								195,
+								195
 							]
 						],
 						"settings":
@@ -1119,7 +1119,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

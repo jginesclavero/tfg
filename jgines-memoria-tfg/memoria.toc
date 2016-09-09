@@ -11,5 +11,5 @@
 \contentsline {section}{\numberline {3.2}Tipos de mapas}{8}
 \contentsline {subsection}{\numberline {3.2.1}Mapa est\IeC {\'a}tico}{8}
 \contentsline {subsection}{\numberline {3.2.2}Mapa de corto plazo}{8}
-\contentsline {subsection}{\numberline {3.2.3}Mapa de largo plazo}{11}
-\contentsline {section}{\numberline {3.3}Construcci\IeC {\'o}n del mapa final}{12}
+\contentsline {subsection}{\numberline {3.2.3}Mapa de largo plazo}{12}
+\contentsline {section}{\numberline {3.3}Construcci\IeC {\'o}n del mapa final}{13}
