@@ -175,11 +175,22 @@ Este mapa tambien es dinámico, por lo que tambien elimina los objetos del mapa 
         .
       }
     }
-  } 
+  }
 
 \end{lstlisting}
 
 En el código mostrado en \ref{lst:addobjectlongmap} muestra el proceso de adición de un objeto al mapa de largo plazo. Para ello se recorren los valores del mapa de corto plazo y si alguno tiene un valor mayor a 95, valor que consideramos lo suficientemente alto como para que sea muy fiable que esa celda está ocupada, se incluye con ese valor al mapa.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=10cm,height=6cm]{img/cap4/addingobject-gazebo}
+    \includegraphics[width=10cm,height=5cm]{img/cap4/addingobject-longmap}
+  \end{center}
+  \caption{Añadimos un objeto al mapa de largo plazo}
+  \label{fig:addobjectlongmap}
+\end{figure}
+\pagebreak
+
 
 \begin{lstlisting}[caption=Procedimiento para eliminar un objeto al mapa de largo plazo, label={lst:deleteobjectlongmap}]
   void
@@ -198,9 +209,16 @@ En el código mostrado en \ref{lst:addobjectlongmap} muestra el proceso de adici
 
 En el código mostrado en \ref{lst:deleteobjectlongmap} se compara el mapa de largo plazo con el mapa de corto plazo. Si una celda en el mapa de largo plazo tiene un valor que indica que está ocupada y en el mapa de corto plazo esa misma celda tiene un valor que indica que está libre, siempre y cuando esa celda no pertenezca a una celda de una pared, se decrementa su valor en el mapa de largo plazo. La cuantia de este decremento tambien puede modelarse,longterm\_cost\_dec, regulando asi la memoria que tenemos de los objetos que hemos añadido a este mapa.\\
 
-{EJEMPLO GRAFICO}\\
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=10cm,height=5cm]{img/cap4/deletingobject-gazebo}
+    \includegraphics[width=10cm,height=5cm]{img/cap4/deletingobject-longmap}
+  \end{center}
+  \caption{Borramos un objeto del mapa de largo plazo}
+  \label{fig:deleteobjectlongmap}
+\end{figure}
 
-Adicionalmente este mapa se guarda cada cierto tiempo en un fichero. Asi por ejemplo podemos tener un cuenta una mesa dentro del salón de una casa. Esto nos permitiria planificar una ruta para la navegación mejor ya que podriamos esquivar esta mesa con facilidad y llegar a nuestro destino lo más rápido posible. Si no tuvieramos esta mesa en cuenta el algoritmo podria planificar una ruta a traves de las celdas ocuapas por la mesa. Seguramente el robot no llegaria a chocar, ya que el planificador de rutas usa un pequeño mapa local para evitar estos problemas, pero es seguro que tardaría más en alcanzar su destino ya que al encontrarse frente a la mesa el robot se pararía y tendría que recalcular una nueva ruta. 
+Adicionalmente este mapa se guarda cada cierto tiempo en un fichero. Asi por ejemplo podemos tener un cuenta una mesa dentro del salón de una casa para una futura ejecución del algoritmo. Esto nos permitiría planificar una ruta para la navegación mejor, ya que podriamos esquivar esta mesa con facilidad y llegar a nuestro destino lo más rápido posible. Si no tuvieramos esta mesa en cuenta el algoritmo podria planificar una ruta a traves de las celdas ocuapas por la mesa. Seguramente el robot no llegaria a chocar, ya que el planificador de rutas usa un pequeño mapa local para evitar estos problemas, pero es seguro que tardaría más en alcanzar su destino ya que al encontrarse frente a la mesa el robot se pararía y tendría que recalcular una nueva ruta. 
 
 
 
