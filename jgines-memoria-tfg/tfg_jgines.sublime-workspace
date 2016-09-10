@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"pagebreak"
+			],
+			[
 				"ros",
 				"ROS_INFO"
 			],
@@ -316,10 +320,6 @@
 				"map2obj"
 			],
 			[
-				"pa",
-				"point_A_x"
-			],
-			[
 				"mo",
 				"mod_y"
 			],
@@ -539,7 +539,7 @@
 			"file": "cap4.tex",
 			"settings":
 			{
-				"buffer_size": 11058,
+				"buffer_size": 12869,
 				"line_ending": "Unix"
 			}
 		},
@@ -775,6 +775,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stepobstacledetector",
 			".\n",
 			"resetMap",
 			"Metadata",
@@ -901,8 +902,7 @@
 			"posRobot_w",
 			"robot",
 			"	\n",
-			"ros::Rate",
-			"  ros::Rate"
+			"ros::Rate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -987,15 +987,15 @@
 					"file": "cap4.tex",
 					"settings":
 					{
-						"buffer_size": 11058,
+						"buffer_size": 12869,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9351,
-								9351
+								12798,
+								12798
 							]
 						],
 						"settings":
@@ -1006,7 +1006,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2491.0,
+						"translation.y": 3698.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
