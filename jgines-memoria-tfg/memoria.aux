@@ -11,6 +11,14 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{cap:introduccion}{{1}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Rob\IeC {\'o}tica m\IeC {\'o}vil}{1}}
+\newlabel{cap:roboticamovil}{{1.1}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Mapeado}{1}}
+\newlabel{cap:mapeado}{{1.2}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}RoboCup@Home}{1}}
+\newlabel{cap:robocup}{{1.3}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Estructura de la memoria}{1}}
+\newlabel{cap:estructuradelamemoria}{{1.4}{1}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Objetivos y Metodolog\IeC {\'\i }a}{2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -26,73 +34,109 @@
 \newlabel{fig:modelo_espiral}{{2.1}{4}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Plan de trabajo}{5}}
 \newlabel{sec:plandetrabajo}{{2.4}{5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Servidor de mapas din\IeC {\'a}mico}{6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Entorno y herramientas}{6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{cap:sevidordemapasdinamico}{{3}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Costmap\_2D}{6}}
-\newlabel{sec:costmap2d}{{3.1}{6}}
+\newlabel{cap:entorno}{{3}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Robot Kobuki}{6}}
+\newlabel{cap:robot}{{3.1}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}ROS}{6}}
+\newlabel{cap:ros}{{3.2}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Software en ROS para el mapeado, localizaci\IeC {\'o}n y navegaci\IeC {\'o}n}{6}}
+\newlabel{cap:softwarederos}{{3.3}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Costmap\_2D}{6}}
+\newlabel{sec:costmap2d}{{3.3.1}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo visual de un costmap.\relax }}{6}}
 \newlabel{fig:costmap-ejemplo}{{3.1}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{tf}{7}}
-\newlabel{subsubsec:tf}{{3.1}{7}}
+\newlabel{subsubsec:tf}{{3.3.1}{7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces A la izquierda el frame map y a la derecha los frames de odom y base\_footprint\relax }}{7}}
 \newlabel{fig:frames}{{3.2}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Tipos de mapas}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Mapa est\IeC {\'a}tico}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Mapa est\IeC {\'a}tico\relax }}{8}}
-\newlabel{fig:mapaestatico}{{3.3}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Mapa de corto plazo}{8}}
-\newlabel{lst:initcostmap}{{3.1}{9}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.1}Inicializaci\IeC {\'o}n del cost\_map correspondiente al mapa de corto plazo}{9}}
-\newlabel{lst:updatecostmap}{{3.2}{9}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.2}Funci\IeC {\'o}n que actualiza el mapa en cada iteraci\IeC {\'o}n}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Visi\IeC {\'o}n del simulador, (a) y (b), y mapa a corto plazo (c).\relax }}{10}}
-\newlabel{fig:initserver}{{3.4}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces A\IeC {\~n}adimos un objeto al escenario\relax }}{10}}
-\newlabel{fig:includeobject}{{3.5}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Eliminamos un objeto del escenario\relax }}{11}}
-\newlabel{fig:deleteobject}{{3.6}{11}}
-\newlabel{lst:obstacledetectorconfig}{{3.3}{11}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.3}Fichero de configuraci\IeC {\'o}n obstacle\_detector.yaml}{11}}
-\newlabel{lst:stepobstacledetector}{{3.4}{12}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.4}Step del nodo obstacle\_detector}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Mapa de largo plazo}{12}}
-\newlabel{lst:addobjectlongmap}{{3.5}{13}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.5}Procedimiento para a\IeC {\~n}adir un objeto al mapa de largo plazo}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces A\IeC {\~n}adimos un objeto al mapa de largo plazo\relax }}{13}}
-\newlabel{fig:addobjectlongmap}{{3.7}{13}}
-\newlabel{lst:deleteobjectlongmap}{{3.6}{14}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.6}Procedimiento para eliminar un objeto al mapa de largo plazo}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Borramos un objeto del mapa de largo plazo\relax }}{14}}
-\newlabel{fig:deleteobjectlongmap}{{3.8}{14}}
-\newlabel{lst:longmappublish}{{3.7}{15}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.7}Publicaci\IeC {\'o}n del mapa de largo plazo}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Construcci\IeC {\'o}n del mapa final}{15}}
-\newlabel{sec:construccionmap}{{3.3}{15}}
-\newlabel{lst:buildEffectivemap}{{3.8}{16}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.8}Composici\IeC {\'o}n del mapa final}{16}}
-\newlabel{lst:effectivemappublish}{{3.9}{16}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.9}Publicaci\IeC {\'o}n del mapa final}{16}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Aplicaciones}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}AMCL}{8}}
+\newlabel{sec:amcl}{{3.3.2}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{Filtro de part\IeC {\'\i }culas}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Inicializaci\IeC {\'o}n del filtro de part\IeC {\'\i }culas\relax }}{8}}
+\newlabel{fig:initamcl}{{3.3}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces El robot se v\IeC {\'a} acercando a la posici\IeC {\'o}n ideal\relax }}{9}}
+\newlabel{fig:actamcl}{{3.4}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces El robot se encuentra totalmente localizado\relax }}{10}}
+\newlabel{fig:finamcl}{{3.5}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Navigation}{11}}
+\newlabel{sec:navigation}{{3.3.3}{11}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Montaje del robot}{12}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{cap:aplicaciones}{{4}{17}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}AMCL}{17}}
-\newlabel{sec:amcl}{{4.1}{17}}
-\@writefile{toc}{\contentsline {subsubsection}{Filtro de part\IeC {\'\i }culas}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Inicializaci\IeC {\'o}n del filtro de part\IeC {\'\i }culas\relax }}{18}}
-\newlabel{fig:initamcl}{{4.1}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces El robot se v\IeC {\'a} acercando a la posici\IeC {\'o}n ideal\relax }}{18}}
-\newlabel{fig:actamcl}{{4.2}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces El robot se encuentra totalmente localizado\relax }}{19}}
-\newlabel{fig:finamcl}{{4.3}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Escenario extendido\relax }}{20}}
-\newlabel{fig:grannieAnne-ext}{{4.4}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Detalle de la localizaci\IeC {\'o}n\relax }}{20}}
-\newlabel{fig:localization-ext}{{4.5}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapas del escenario extendido\relax }}{21}}
-\newlabel{fig:maps-ext}{{4.6}{21}}
+\newlabel{cap:montajedelrobot}{{4}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Estructrura}{12}}
+\newlabel{cap:estructuradelrobot}{{4.1}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de conectividad}{12}}
+\newlabel{cap:conectividad}{{4.2}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Modelo de Gazebo}{12}}
+\newlabel{cap:modelodegazebo}{{4.3}{12}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Mapas din\IeC {\'a}micos}{13}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{cap:mapasdinamicos}{{5}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{13}}
+\newlabel{cap:arquitecturadelsistema}{{5.1}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Dynamic map server}{13}}
+\newlabel{cap:sevidordemapasdinamico}{{5.2}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Mapa est\IeC {\'a}tico}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Mapa est\IeC {\'a}tico\relax }}{13}}
+\newlabel{fig:mapaestatico}{{5.1}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Mapa de corto plazo}{13}}
+\newlabel{lst:initcostmap}{{5.1}{15}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}Inicializaci\IeC {\'o}n del cost\_map correspondiente al mapa de corto plazo}{15}}
+\newlabel{lst:updatecostmap}{{5.2}{15}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.2}Funci\IeC {\'o}n que actualiza el mapa en cada iteraci\IeC {\'o}n}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Visi\IeC {\'o}n del simulador, (a) y (b), y mapa a corto plazo (c).\relax }}{16}}
+\newlabel{fig:initserver}{{5.2}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces A\IeC {\~n}adimos un objeto al escenario\relax }}{16}}
+\newlabel{fig:includeobject}{{5.3}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Eliminamos un objeto del escenario\relax }}{17}}
+\newlabel{fig:deleteobject}{{5.4}{17}}
+\newlabel{lst:obstacledetectorconfig}{{5.3}{17}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.3}Fichero de configuraci\IeC {\'o}n obstacle\_detector.yaml}{17}}
+\newlabel{lst:stepobstacledetector}{{5.4}{18}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.4}Step del nodo obstacle\_detector}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Mapa de largo plazo}{18}}
+\newlabel{lst:addobjectlongmap}{{5.5}{19}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.5}Procedimiento para a\IeC {\~n}adir un objeto al mapa de largo plazo}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces A\IeC {\~n}adimos un objeto al mapa de largo plazo\relax }}{19}}
+\newlabel{fig:addobjectlongmap}{{5.5}{19}}
+\newlabel{lst:deleteobjectlongmap}{{5.6}{20}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.6}Procedimiento para eliminar un objeto al mapa de largo plazo}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Borramos un objeto del mapa de largo plazo\relax }}{20}}
+\newlabel{fig:deleteobjectlongmap}{{5.6}{20}}
+\newlabel{lst:longmappublish}{{5.7}{21}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.7}Publicaci\IeC {\'o}n del mapa de largo plazo}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Construcci\IeC {\'o}n del mapa final}{21}}
+\newlabel{sec:construccionmap}{{5.3}{21}}
+\newlabel{lst:buildEffectivemap}{{5.8}{22}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.8}Composici\IeC {\'o}n del mapa final}{22}}
+\newlabel{lst:effectivemappublish}{{5.9}{22}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.9}Publicaci\IeC {\'o}n del mapa final}{22}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Navegaci\IeC {\'o}n sem\IeC {\'a}ntica}{22}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Experimentaci\IeC {\'o}n}{23}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{cap:experimentacion}{{6}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Mapeado en entorno dom\IeC {\'e}stico}{23}}
+\newlabel{cap:mapeadodomestico}{{6.1}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Navegaci\IeC {\'o}n con obst\IeC {\'a}culos din\IeC {\'a}micos}{23}}
+\newlabel{cap:navegacionconobstaculos}{{6.2}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Experimentaci\IeC {\'o}n en la Robocup}{23}}
+\newlabel{cap:experimentacionrobocup}{{6.3}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Escenario extendido\relax }}{23}}
+\newlabel{fig:grannieAnne-ext}{{6.1}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Detalle de la localizaci\IeC {\'o}n\relax }}{24}}
+\newlabel{fig:localization-ext}{{6.2}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Mapas del escenario extendido\relax }}{25}}
+\newlabel{fig:maps-ext}{{6.3}{25}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusiones y trabajos futuros}{26}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{cap:conclusiones}{{7}{26}}
 \citation{*}
 \bibstyle{named}
 \bibdata{bibliografia}

@@ -1,87 +1,252 @@
-\chapter{Aplicaciones}
-\label{cap:aplicaciones}
+\chapter{Mapas dinámicos}
+\label{cap:mapasdinamicos}
+\section{Arquitectura del sistema}
+\label{cap:arquitecturadelsistema}
 
-En este capítulo se enumeran y describen las aplicaciones que usarán el mapa que construimos dinámicamente. Estas aplicaciones serán, principalmente, el nodo de localización y el nodo de navegación.
+
+
+\section{Dynamic map server}
+\label{cap:sevidordemapasdinamico}
 
 
 
-\section{AMCL}
-\label{sec:amcl}
-\textit{AMCL}\footnote{http://wiki.ros.org/amcl} es un paquete de localización que implementa un algoritmo de Monte Carlo, el cual usa un filtro de partículas para localizar al robot sobre un mapa que previamente le proporcionamos.
-\subsubsection{Filtro de partículas}
-El algoritmo del filtro de partículas se divide en 4 etapas: Inicialización, actualización, estimación y predicción. 
-En la etapa de inicialización se ``lanzan'' una serie de partículas cercanas a la posición inicial del robot. Estas partículas ademas de una posición en el espacio también tendrán una dirección. Podemos ver un ejemplo gráfico en la imagen \ref{fig:initamcl}
 
-\begin{figure}[hbtp]
+\subsection{Mapa estático}
+El mapa estático se caracteriza por incluir las partes inmutables del escenario, como son las paredes o las puertas. La mejor manera de construirlo es medir todo el escenario y crear el mapa usando una herramienta de diseño gráfico. En este caso se ha usado \textit{Gimp}.
+Este mapa nos servirá como base para crear el mapa de largo plazo.
+
+\begin{figure} [hbtp]
   \begin{center}
-    \includegraphics[width=10cm,height=7cm]{img/cap5/initamcl}
+    \includegraphics[width=7cm]{img/cap4/mapaestatico}
   \end{center}
-  \caption{Inicialización del filtro de partículas}
-  \label{fig:initamcl}
+  \caption{Mapa estático}
+  \label{fig:mapaestatico}
 \end{figure}
-Vemos como se han generado muchas partículas alrededor del robot y que cada una tiene una dirección más o menos acertada con la dirección del robot.
 
-En este punto del algoritmo se compara la percepción del láser del robot en el punto en el que se encuentra con la percepción que tendría si tuviera la posición y la dirección de cada una de las partículas que generamos. Cuanto más acertada sea la suposición anterior, más valor se le da a esa partícula. Así nos encontraremos que las partículas que están más cercanas a la posición del robot cobran más valor y las que están más lejos y con una dirección totalmente errónea tienen menos valor. Esta fase es la llamada de Actualización. 
+\subsection{Mapa de corto plazo}
+El mapa de corto plazo se caracteriza por ser un mapa en el que se representa los objetos que el robot va percibiendo. Este mapa se inicializa con el valor 255, lo que indica una incertidumbre total. En el instante en el que el algoritmo de construcción del mapa comienza a iterar comenzarán a corregirse estos valores iniciales, asignando el valor 0 a las celdas que corresponden con zonas libres e incrementando desde 0 hasta 254 el valor de las celdas que se perciben como ocupadas. \pagebreak
 
-En la siguiente fase, llamada de Estimación, nos quedamos con las partículas que más valor tenían para volver a lanzarlas en la siguiente fase del algoritmo.
+\renewcommand{\lstlistingname}{Código}
+\begin{lstlisting}[caption=Inicialización del cost\_map correspondiente al mapa de corto plazo, label={lst:initcostmap}]
 
-En la ultima fase, fase de Predicción, lanzamos las partículas de nuevo con el valor que tenían y su posición, añadiéndole un pequeño ruido.
-En este punto del algoritmo también se corrige la posición del robot a la posición de la partícula con más valor.
-Una vez completado el algoritmo se vuelve a la fase de Actualización y se repite hasta que el robot esté perfectamente localizado en el 
-mapa.
+  metadata = getMetadata();
+  tf::TransformListener tf(ros::Duration(10));
+  cells_size_x = metadata.width;
+  cells_size_y = metadata.height;
+  resolution = metadata.resolution;
+  origin_x = metadata.origin.position.x;
+  origin_y = metadata.origin.position.y;
+  default_value = 255;
+  scan_ready = false;
+  pos_ready = false;
+  cost_map.resizeMap(cells_size_x,cells_size_y, resolution, origin_x, origin_y);
+  cost_map.setDefaultValue(default_value);
+  cost_map.resetMap(0,0,cost_map.getSizeInCellsX(), cost_map.getSizeInCellsY());
+\end{lstlisting}
 
-\begin{figure}[hbtp]
+
+El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al mapa, si no ademas eliminarlos si los objetos desaparecen del lugar que ocupaban. Para ello se compara cada muestra de datos con el mapa que estamos generando y si en dicha muestra existen celdas libres que en el mapa están ocupadas se decrementa el valor de dicha celda en el mapa. La cuantía del decremento se puede modelar, consiguiendo así que el robot olvide más lentamente o más rápidamente los objetos que desaparecen del escenario.\\
+
+\renewcommand{\lstlistingname}{Código}
+\begin{lstlisting}[caption=Función que actualiza el mapa en cada iteración, label={lst:updatecostmap}]
+  void
+  ObstacleDetector::updateCostmap(){
+    if(scan_ready && pos_ready){
+      incrementCostProcedure();
+      decrementCostProcedure();
+    }
+    pVectorList_.clear();
+    pointList_.clear();
+  }
+\end{lstlisting}
+
+La figura \ref{fig:initserver} fue captada al iniciar el algoritmo. Observamos que la mayor parte del mapa de corto plazo se encuentra en una posición de desconocimiento y que se han ido incluyendo en este las zonas libres, las paredes y la estantería. Los puntos morados y verdes corresponden a la representación de las muestras tomadas por el láser.
+
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=10cm,height=7cm]{img/cap5/actamcl}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap4/incrementmap}}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap4/incrementmap2}}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap4/incrementmap-rviz}}
   \end{center}
-  \caption{El robot se vá acercando a la posición ideal}
-  \label{fig:actamcl}
+  \caption{Visión del simulador, (a) y (b), y mapa a corto plazo (c).}
+  \label{fig:initserver}
+\end{figure}
+
+Tras el inicio del algoritmo se añadió un objeto nuevo al escenario. Esto se representa en la figura \ref{fig:includeobject}. Vemos como el algoritmo añade el objeto al mapa y lo sitúa en una posición coherente respecto a la posición que ocupa el objeto en el escenario simulado.
+
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[width=6cm,height=5cm]{img/cap4/incrementmap-object3}
+    \includegraphics[width=6cm,height=5cm]{img/cap4/incrementmap-object}
+  \end{center}
+  \caption{Añadimos un objeto al escenario}
+  \label{fig:includeobject}
+\end{figure}
+
+Una vez que el algoritmo a incluido el objeto en el mapa procedemos a eliminarlo del escenario simulado. Esto se representa en la figura  \ref{fig:deleteobject}. Vemos como el algoritmo ha comenzado a borrar el objeto, por lo que el valor de las celdas que estaban ocupadas por el objeto ahora es mucho menor.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=6cm,height=5cm]{img/cap4/incrementmap2}
+    \includegraphics[width=6cm,height=5cm]{img/cap4/incrementmap-object2}
+  \end{center}
+  \caption{Eliminamos un objeto del escenario}
+  \label{fig:deleteobject}
+\end{figure}
+
+El proceso de añadir o eliminar un objeto puede ser más o menos rápido dependiendo de los valores de las variables que modelan estas operaciones. Para el caso de nuestro algoritmo contamos un fichero con extensión yaml en el que modificamos los valores de los parámetros.
+\renewcommand{\lstlistingname}{Código}
+\begin{lstlisting}[caption=Fichero de configuración obstacle\_detector.yaml, label={lst:obstacledetectorconfig}]
+  cost_inc: 4
+  cost_dec: 1
+  min_lenght: 0.23
+  max_lenght: 2.5
+\end{lstlisting}
+Los valores asociados a cost\_inc y cost\_dec representan el incremento o decremento del valor de una celda por cada iteración del algoritmo. Los otros valores configurables representan la longitud máxima y mínima que se tiene en cuenta para cada medida que el láser nos proporciona. Las muestras obtenidas del láser que estén fuera de estos valores son ignoradas.
+
+{Explicar como se borran los objetos? (decremento)}\\
+
+Al final de cada iteración del algoritmo el mapa de corto plazo es publicado en un topic para que pueda ser usado por el resto de nodos que conforman el servidor de mapas dinámico. Para llevar a cabo esta operación usamos una estructura de datos proporcionada por ROS, \textit{Costmap2DPublisher}\footnote{http://docs.ros.org/indigo/api/costmap\_2d/html/classcostmap\_\_2d\_1\_1Costmap2DPublisher.html}. Este publicador publica nuestro mapa en el topic \textit{costmap\_auto}.\pagebreak
+\renewcommand{\lstlistingname}{Código}
+\begin{lstlisting}[caption=Step del nodo obstacle\_detector, label={lst:stepobstacledetector}]
+  void
+  ObstacleDetector::step(){
+    updateCostmap();
+    cost_map_publisher_.publishCostmap();
+  }
+
+  int
+  main(int argc, char** argv)
+  {
+    ros::init(argc, argv, "obstacle_detector");   //Inicializa el nodo
+    ObstacleDetector obs;
+    ros::Rate loop_rate(5);
+
+    while (ros::ok()){
+      obs.step();
+      ros::spinOnce();
+      loop_rate.sleep();
+    }
+    return 0;
+  }
+
+\end{lstlisting}
+
+Existe un pequeño cambio en los valores del mapa que se publica. El tipo de mensaje que se usa para publicar un costmap es \textit{nav\_msgs::OccupancyGrid}\footnote{http://docs.ros.org/indigo/api/nav\_msgs/html/msg/OccupancyGrid.html}. Este tipo de mensaje contiene, ademas de los metadatos asociados al mapa, un array de datos que representa al mapa. La principal diferencia con un costmap es que los valores en un OccupancyGrid van de 0 a 100 y -1 para las celdas desconocidas ,y no de 0 a 255 como en un costmap.
+
+\subsection{Mapa de largo plazo}
+El mapa de largo plazo se inicializa con los valores del mapa estático y se caracteriza por incluir los objetos que tienen un valor muy alto en el mapa de corto plazo, por tanto tenemos un mapa con objetos que han perdurado en el mapa a corto plazo durante un largo periodo de tiempo y que podemos considerar que nos van a influir a la hora de planificar nuestra ruta por el escenario. 
+Este mapa también es dinámico, por lo que también elimina los objetos del mapa si estos desaparecen o cambian su posición.
+\pagebreak 
+
+\begin{lstlisting}[caption=Procedimiento para añadir un objeto al mapa de largo plazo, label={lst:addobjectlongmap}]
+  void
+  MapController::updateLongTermMap(nav_msgs::OccupancyGrid s_map){
+    for(int i = 0;i<s_map.data.size();i++){
+      if(s_map.data[i] > 95){
+        longTerm_map.data[i] = s_map.data[i]; 
+        .
+        .
+        .
+      }
+    }
+  }
+
+\end{lstlisting}
+
+En el código mostrado en \ref{lst:addobjectlongmap} muestra el proceso de adición de un objeto al mapa de largo plazo. Para ello se recorren los valores del mapa de corto plazo y si alguno tiene un valor mayor a 95, valor que consideramos lo suficientemente alto como para que sea muy fiable que esa celda está ocupada, se incluye con ese valor al mapa.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=10cm,height=6cm]{img/cap4/addingobject-gazebo}
+    \includegraphics[width=10cm,height=5cm]{img/cap4/addingobject-longmap}
+  \end{center}
+  \caption{Añadimos un objeto al mapa de largo plazo}
+  \label{fig:addobjectlongmap}
 \end{figure}
 \pagebreak
 
-Observamos como la linea color de la parte derecha de la imagen \ref{fig:actamcl}, correspondiente a las muestras tomadas con el láser, está más cerca de la linea del mapa que en la imagen \ref{fig:initamcl} que se aprecia que no está alineada. Esto es fruto de la corrección que se va haciendo de la posición. También observamos que hay menos partículas, esto es fruto de la convergencia hacia la posición correcta.
 
-\begin{figure}[hbtp]
+\begin{lstlisting}[caption=Procedimiento para eliminar un objeto al mapa de largo plazo, label={lst:deleteobjectlongmap}]
+  void
+  MapController::updateLongTermMap(nav_msgs::OccupancyGrid s_map){
+    for(int i = 0;i<s_map.data.size();i++){
+      .
+      .
+      .
+      }else if(s_map.data[i] < 5 && s_map.data[i] >= 0 && longTerm_map.data[i] >= longterm_cost_dec && static_map.data[i] < 95){
+        longTerm_map.data[i] = longTerm_map.data[i] - longterm_cost_dec;
+      }
+    }
+  } 
+
+\end{lstlisting}
+
+En el código mostrado en \ref{lst:deleteobjectlongmap} se compara el mapa de largo plazo con el mapa de corto plazo. Si una celda en el mapa de largo plazo tiene un valor que indica que está ocupada y en el mapa de corto plazo esa misma celda tiene un valor que indica que está libre, siempre y cuando esa celda no pertenezca a una celda de una pared, se decrementa su valor en el mapa de largo plazo. La cuantía de este decremento también puede modelarse, longterm\_cost\_dec, regulando así la memoria que tenemos de los objetos que hemos añadido a este mapa.\\
+
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=10cm,height=7cm]{img/cap5/finamcl}
+    \includegraphics[width=10cm,height=5cm]{img/cap4/deletingobject-gazebo}
+    \includegraphics[width=10cm,height=5cm]{img/cap4/deletingobject-longmap}
   \end{center}
-  \caption{El robot se encuentra totalmente localizado}
-  \label{fig:finamcl}
+  \caption{Borramos un objeto del mapa de largo plazo}
+  \label{fig:deleteobjectlongmap}
 \end{figure}
 
-En la imagen \ref{fig:finamcl} vemos como el número de partículas se ha reducido mucho, ya que se ha llegado a casi una estimación de la posición del robot muy cerca de la posición real. Vemos también que las lineas de color correspondientes a las muestras del láser están alineadas con el mapa.
+Por último publicamos el mapa en el topic \textit{/longTerm\_map}.
 
-Para el uso del paquete \textit{amcl} en nuestro algoritmo fue necesaria la realización de una pequeña modificación. Esta modificación se refiere a que el paquete por defecto solo usa un mapa y lo obtiene al principio de la ejecución del algoritmo. Si le llegaba un nuevo mapa reiniciaba por completo el algoritmo. Esto nos generaba un problema, ya que en el algoritmo propuesto se publica un mapa por cada iteración y el paquete por defecto se reiniciaba constantemente. El efecto que producía es que el robot siempre se encontraba en la posición inicial y aunque lo moviéramos siempre ocupaba la misma posición en el mapa. En nuestro \textit{amcl} modificado se usa el mapa que se obtiene en cada iteración y sobre el se calcula la posición del robot, sin reiniciar en ningún momento el algoritmo.
+\begin{lstlisting}[caption=Publicación del mapa de largo plazo, label={lst:longmappublish}]
+longTermMap_pub   = nh_.advertise<nav_msgs::OccupancyGrid>("/longTerm_map", 5); 
 
-Además esta modificación nos ha permitido localizarnos en entornos desconocidos, es decir, ahora contamos con la capacidad de navegar por estancias de una casa que no tenemos en el mapa. Estas estancias se irán añadiendo al mapa de corto plazo primero y más tarde al mapa de largo plazo y el algoritmo de localización puede seguir calculando nuestra posición en los nuevos mapas.
-
-\begin{figure}[hbtp]
-  \begin{center}
-    \includegraphics[width=12cm,height=7cm]{img/cap5/grannieAnne-ext}
-  \end{center}
-  \caption{Escenario extendido}
-  \label{fig:grannieAnne-ext}
-\end{figure}
-
-\begin{figure}[hbtp]
-  \begin{center}
-    \includegraphics[width=10cm,height=6cm]{img/cap5/localization-ext}
-  \end{center}
-  \caption{Detalle de la localización}
-  \label{fig:localization-ext}
-\end{figure}
+void
+MapController::publishAll(){
+  .
+  .
+  .
+  longTerm_map.header.stamp = ros::Time::now();
+  longTermMap_pub.publish(longTerm_map);
+}
+\end{lstlisting}
 
 
-\begin{figure}[hbtp]
-  \begin{center}
-    \subfigure[Mapa total]{\includegraphics[width=12cm,height=7cm]{img/cap5/map-ext}}
-    \subfigure[Mapa de largo plazo]{\includegraphics[width=12cm,height=7cm]{img/cap5/longmap-ext}}
-    \subfigure[Mapa de corto plazo]{\includegraphics[width=12cm,height=7cm]{img/cap5/shortmap-ext}}
-  \end{center}
-  \caption{Mapas del escenario extendido}
-  \label{fig:maps-ext}
-\end{figure}
+Adicionalmente este mapa se guarda cada cierto tiempo en un fichero, usando el nodo por defecto de ROS para este fin ,\textit{map\_saver}\footnote{http://wiki.ros.org/action/fullsearch/map\_server\#map\_saver}. Así por ejemplo podemos tener un cuenta una mesa dentro del salón de una casa para una futura ejecución del algoritmo. Esto nos permitiría planificar una ruta mejor para la navegación, ya que podríamos esquivar esta mesa con facilidad y llegar a nuestro destino lo más rápido posible. Si no tuviéramos esta mesa en cuenta el algoritmo podría planificar una ruta a través de las celdas ocupadas por la mesa. Seguramente el robot no llegaría a chocar, ya que el planificador de rutas usa un pequeño mapa local para evitar estos problemas, pero es seguro que tardaría más en alcanzar su destino ya que al encontrarse frente a la mesa el robot se pararía y tendría que recalcular una nueva ruta. 
 
 
 
-En la figura \ref{fig:grannieAnne-ext} vemos como el escenario ha sido extendido, añadiéndole unos pasillos a la derecha de la casa. El mapa estático usado es el mismo que el mostrado en la figura \ref{fig:mapaestatico}. Vemos como después de recorrer la parte desconocida del mapa se ha añadido al mapa de largo plazo y también al mapa total, figura \ref{fig:maps-ext}. Observamos en las flechas rojas bajo el robot que la incertidumbre en la posición del robot es mínima, figura \ref{fig:localization-ext}. 
+\section{Construcción del mapa final}
+\label{sec:construccionmap}
+El mapa final será la composición de los mapas de largo plazo, que ya incluye el mapa estático, y de corto plazo. Este mapa será usado por el nodo de la navegación y por el nodo de la localización para navegar y localizar al robot en el escenario. La composición del mapa final o mapa efectivo será el resultado de la operación de máximo entre los mapas de corto y de largo plazo, como vemos en el código del apartado \ref{lst:buildEffectivemap}. De esta manera incluiremos en el mapa final toda la información relacionada con los objetos que llevan un tiempo en la escena y también incluiremos, aunque con un menor valor, personas o cosas que acaban de entrar en las inmediaciones del robot.
+\pagebreak
+
+\begin{lstlisting}[caption=Composición del mapa final, label={lst:buildEffectivemap}]
+  void
+  MapController::buildEffectiveMap(nav_msgs::OccupancyGrid s_map,nav_msgs::OccupancyGrid l_map){
+    for(int i = 0;i<s_map.data.size();i++){
+      effective_map.data[i] = std::max(s_map.data[i],l_map.data[i]);
+    }
+  }
+\end{lstlisting}
+
+Tras la creación del mapa este es publicado en el topic \textit{/map}. 
+
+\begin{lstlisting}[caption=Publicación del mapa final, label={lst:effectivemappublish}]
+effectiveMap_pub = nh_.advertise<nav_msgs::OccupancyGrid>("/map", 5);
+
+void
+MapController::publishAll(){
+  effective_map.header.stamp = ros::Time::now();
+  effectiveMap_pub.publish(effective_map);
+  .
+  .
+  .
+}
+\end{lstlisting}
+
+
+Este topic es usado por defecto por las aplicaciones que necesitan un mapa como parámetro de entrada. En nuestro caso las aplicaciones que usarán nuestro mapa son el nodo de localización y el nodo de navegación, como veremos en el siguiente capitulo. 
+
+
+
+\section{Navegación semántica}
+
+
