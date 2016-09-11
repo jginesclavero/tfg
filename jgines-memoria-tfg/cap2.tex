@@ -6,11 +6,11 @@
 \section{Descripción del problema y requisitos}
 \label{sec:descripciondelproblema}
 
-La navegación en entornos dinámicos, como puede ser una casa o una institución pública, supone un gran reto que superar ya que las personas o las mascotas pueden acercarse o cruzarse delante del robot o podriamos encontrarnos objetos del mobiliario que han sido movidos de su posicion original y se encuentran en nuestro camimo. En este escenario el robot no deberia nunca ni chocar ni perderse en el entorno y debe llegar al destino impuesto por la mejor ruta disponible.\\
+La navegación en entornos dinámicos, como puede ser una casa o una institución pública, supone un gran reto que superar ya que las personas o las mascotas pueden acercarse o cruzarse delante del robot o podríamos encontrarnos objetos del mobiliario que han sido movidos de su posición original y se encuentran en nuestro camino. En este escenario el robot no debería nunca ni chocar ni perderse en el entorno y debe llegar al destino impuesto por la mejor ruta disponible.\\
 
-Por ejemplo, si nuestro robot está llendo desde el salón a la cocina de nuestra casa pero en su camino habitual y más optimo se encuentra un mueble, el robot debe darse cuenta rápidamente, esquivarlo, proseguir con su camino y ademas recordarlo para que cuando volvamos al salón de vuelta podamos esquivarlo más facilmente.Por otro lado en nuestra casa tambien habrá personas, estas personas se moverán casi constantemente por la estancia por lo que no será del todo correcto tenerlas en cuenta a la hora de planificar nuestra ruta para navegar de un sitio a otro de la casa pero si que será muy importante no chocar con ellas.\\
+Por ejemplo, si nuestro robot está yendo desde el salón a la cocina de nuestra casa pero en su camino habitual y más optimo se encuentra un mueble, el robot debe darse cuenta rápidamente, esquivarlo, proseguir con su camino y ademas recordarlo para que cuando volvamos al salón de vuelta podamos esquivarlo más fácilmente.Por otro lado en nuestra casa también habrá personas, estas personas se moverán casi constantemente por la estancia por lo que no será del todo correcto tenerlas en cuenta a la hora de planificar nuestra ruta para navegar de un sitio a otro de la casa pero si que será muy importante no chocar con ellas.\\
 
-Para analizar el entorno del robot usaremos el sensor laser, este sensor destaca por su alta precisión y su corto tiempo de procesado.\\
+Para analizar el entorno del robot usaremos el sensor láser, este sensor destaca por su alta precisión y su corto tiempo de procesado.\\
 
 %\begin{figure}[hbtp]
 %  \centering
@@ -42,7 +42,7 @@ Para analizar el entorno del robot usaremos el sensor laser, este sensor destaca
 
 Se quiere diseñar un algoritmo genere un mapa en tiempo real, el cual será usado por el nodo de navegación de ROS para navegar por un entorno doméstico, ya sea indicando una posición x,y en el mapa o indicándole una estancia a la que navegar. Este mapa se construirá a partir de la mezcla de 3 mapas, mapa estático, mapa de largo plazo y mapa de corto plazo.\\
 %hablar del mapa semántico
-En primera instancia el algoritmo se validará haciendo uso de un simulador en el que se representa una casa con varios tipos de muebles, ya que resulta más facil de depurar un algoritmo en un entorno virtual, que en un entorno real. Posteriormente el algoritmo se probará en distintas recreaciones de escenarios reales ,y se harán las modificaciones oportunas para adaptarlo al entorno real, y por ultimo se llevará a la competición.\\
+En primera instancia el algoritmo se validará haciendo uso de un simulador en el que se representa una casa con varios tipos de muebles, ya que resulta más fácil de depurar un algoritmo en un entorno virtual, que en un entorno real. Posteriormente el algoritmo se probará en distintas recreaciones de escenarios reales ,y se harán las modificaciones oportunas para adaptarlo al entorno real, y por ultimo se llevará a la competición.\\
 
 Para simplificar la resolución del problema se ha dividido el proyecto en varios subobjetivos:
 
@@ -52,7 +52,7 @@ Para simplificar la resolución del problema se ha dividido el proyecto en vario
 \item Se desarrollará un algoritmo para mezclar los mapas entre sí y así generar tanto el mapa de largo plazo como el mapa que usaremos para la navegación.
 \item Se creará un servidor de mapas dinámicos que se inicializará con los mapas estático y de largo plazo y que generará el mapa final mezclando de loa mapas de largo plazo y de corto plazo.
 \item Se usará el mapa final como parámetro del paquete de navegación de ROS, \textit{move base}, y del paquete de localización de ROS \textit{amcl}.
-\item se generará y usará un mapa semántico, en el que cada nivel de gris se asocie con una etiqueta para despues ordenar al robot que navegue a dichas etiquetas.
+\item se generará y usará un mapa semántico, en el que cada nivel de gris se asocie con una etiqueta para después ordenar al robot que navegue a dichas etiquetas.
 \end{enumerate}
 
 \section{Metodología de desarrollo}
@@ -85,7 +85,7 @@ Para poder abordar el problema se han marcado una serie de subobjetivos ha compl
 \begin{enumerate}
 \item Estudio y comprensión de la composición de un mapa y como construirlo. Nos apoyaremos en las herramienta ofrecidas por ROS y que resultaran básicas para este fin, dicha herramientas son \textit{TF} \footnote{http://wiki.ros.org/tf} y \textit{Costmap}\footnotemark .
 \footnotetext{http://wiki.ros.org/costmap\_2D}
-\item Primer subobjetivo. Una vez conocido como funcionan los \textit{costmap} procederemos a crear un pequeño nodo en el que se cree un mapa con las observaciones instantáneas que percibimos con el laser.
+\item Primer subobjetivo. Una vez conocido como funcionan los \textit{costmap} procederemos a crear un pequeño nodo en el que se cree un mapa con las observaciones instantáneas que percibimos con el láser.
 \item Segundo subobjetivo. Extender el algoritmo anterior para poder añadir y eliminar objetos según entren o salgan de la escena.
 \item Tercer subobjetivo. Modificar el paquete \textit{map\_server} para que acepte varios mapas como entrada y estudiar la manera de mezclar los mapas entre sí.
 \item Fase de pruebas. Se le pasará al paquete de navegación de ROS, \textit{move\_base} ,el mapa resultante y se harán pruebas de navegación en el simulador y en el robot real.
