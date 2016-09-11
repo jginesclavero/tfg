@@ -13,7 +13,7 @@
 Un \textit{costmap} es una estructura de datos ofrecida por ROS y compuesta por un grid de ocupación y los metadatos de este grid. Cada celda del grid toma valores entre 0 y 255, donde 0 corresponde a una celda vacía, los valores entre 1 y 254 representan la probabilidad de que una celda está ocupada y el valor 255 se reserva para el desconocimiento. Cada valor se asocia con un nivel de gris, como se puede ver en la imagen.
 \begin{figure} [hbtp]
   \begin{center}
-    \includegraphics[width=7.5cm]{img/cap4/costmap-ejemplo}
+    \includegraphics[width=7.5cm]{img/cap3/costmap-ejemplo}
   \end{center}
   \caption{Ejemplo visual de un costmap.}
   \label{fig:costmap-ejemplo}
@@ -26,7 +26,7 @@ Para poder representar la ocupación de un objeto en un \textit{costmap} es nece
 Cualquier robot está compuesto por multitud de piezas móviles, como puede ser la propia base del robot o la pinza de un brazo robótico. Cada una de estas piezas se pueden representar con un \textit{frame}. Ademas existen también otros \textit{frames} que pueden interesarnos, como puede ser el \textit{frame} de world o el \textit{frame} de map.
 \begin{figure} [hbtp]
   \begin{center}
-    \includegraphics[width=12cm]{img/cap4/frames}
+    \includegraphics[width=12cm]{img/cap3/frames}
   \end{center}
   \caption{A la izquierda el frame map y a la derecha los frames de odom y base\_footprint}
   \label{fig:frames}
