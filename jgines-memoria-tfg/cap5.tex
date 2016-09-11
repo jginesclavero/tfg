@@ -1,14 +1,16 @@
 \chapter{Aplicaciones}
 \label{cap:aplicaciones}
 
-En este capítulo se enumeran y describen las aplicaciones que usarán el mapa que construimos dinamicamente. Estas aplicaciones serán, principalmente, el nodo de localización y el nodo de navegación.
+En este capítulo se enumeran y describen las aplicaciones que usarán el mapa que construimos dinámicamente. Estas aplicaciones serán, principalmente, el nodo de localización y el nodo de navegación.
+
+
 
 \section{AMCL}
 \label{sec:amcl}
 \textit{AMCL}\footnote{http://wiki.ros.org/amcl} es un paquete de localización que implementa un algoritmo de Monte Carlo, el cual usa un filtro de partículas para localizar al robot sobre un mapa que previamente le proporcionamos.
 \subsubsection{Filtro de partículas}
 El algoritmo del filtro de partículas se divide en 4 etapas: Inicialización, actualización, estimación y predicción. 
-En la etapa de inicialización se ``lanzan'' una serie de partículas cercanas a la posición inicial del robot. Estas partículas ademas de una posición en el espacio tambien tendrán una dirección. Podemos ver un ejemplo gráfico en la imagen \ref{fig:initamcl}
+En la etapa de inicialización se ``lanzan'' una serie de partículas cercanas a la posición inicial del robot. Estas partículas ademas de una posición en el espacio también tendrán una dirección. Podemos ver un ejemplo gráfico en la imagen \ref{fig:initamcl}
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -19,12 +21,12 @@ En la etapa de inicialización se ``lanzan'' una serie de partículas cercanas a
 \end{figure}
 Vemos como se han generado muchas partículas alrededor del robot y que cada una tiene una dirección más o menos acertada con la dirección del robot.
 
-En este punto del algoritmo se compara la percepción del laser del robot en el punto en el que se encuentra con la percepción que tendria si tuviera la posición y la dirección de cada una de las partículas que generamos. Cuanto más acertada sea la suposición anterior, más valor se le dá a esa partícula. Asi nos encontraremos que las partículas que estan más cercanas a la posición del robot cobran más valor y las que están más lejos y con una dirección totalmente erronea tienen menos valor. Esta fase es la llamada de Actualización. 
+En este punto del algoritmo se compara la percepción del láser del robot en el punto en el que se encuentra con la percepción que tendría si tuviera la posición y la dirección de cada una de las partículas que generamos. Cuanto más acertada sea la suposición anterior, más valor se le da a esa partícula. Así nos encontraremos que las partículas que están más cercanas a la posición del robot cobran más valor y las que están más lejos y con una dirección totalmente errónea tienen menos valor. Esta fase es la llamada de Actualización. 
 
-En la siguiente fase, llamada de Estimación, nos quedamos con las partículas que más valor tenian para volver a lanzarlas en la siguiente fase del algoritmo.
+En la siguiente fase, llamada de Estimación, nos quedamos con las partículas que más valor tenían para volver a lanzarlas en la siguiente fase del algoritmo.
 
-En la ultima fase, fase de Precicción, lanzamos las partículas de nuevo con el valor que tenian y su posición, añadiendole un pequeño ruido.
-En este punto del algortimo tambien se corrige la posición del robot a la posición de la partícula con más valor.
+En la ultima fase, fase de Predicción, lanzamos las partículas de nuevo con el valor que tenían y su posición, añadiéndole un pequeño ruido.
+En este punto del algoritmo también se corrige la posición del robot a la posición de la partícula con más valor.
 Una vez completado el algoritmo se vuelve a la fase de Actualización y se repite hasta que el robot esté perfectamente localizado en el 
 mapa.
 
@@ -37,7 +39,7 @@ mapa.
 \end{figure}
 \pagebreak
 
-Observamos como la linea color de la parte derecha de la imagen \ref{fig:actamcl}, correspondiente a las muestras tomadas con el laser, está más cerca de la linea del mapa que en la imagen \ref{fig:initamcl} que se aprecia que no está alineada. Esto es fruto de la corrección que se va haciendo de la posición. Tambien observamos que hay menos partículas, esto es fruto de la convergencia hacia la posición correcta.
+Observamos como la linea color de la parte derecha de la imagen \ref{fig:actamcl}, correspondiente a las muestras tomadas con el láser, está más cerca de la linea del mapa que en la imagen \ref{fig:initamcl} que se aprecia que no está alineada. Esto es fruto de la corrección que se va haciendo de la posición. También observamos que hay menos partículas, esto es fruto de la convergencia hacia la posición correcta.
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -47,8 +49,39 @@ Observamos como la linea color de la parte derecha de la imagen \ref{fig:actamcl
   \label{fig:finamcl}
 \end{figure}
 
-En la imagen \ref{fig:finamcl} vemos como el número de partículas se ha reducido mucho, ya que se ha llegado a casi una estimación de la posición del robot muy cerca de la posición real. Vemos tambien que las lineas de color correspondientes a las muestras del laser están alineadas con el mapa.
+En la imagen \ref{fig:finamcl} vemos como el número de partículas se ha reducido mucho, ya que se ha llegado a casi una estimación de la posición del robot muy cerca de la posición real. Vemos también que las lineas de color correspondientes a las muestras del láser están alineadas con el mapa.
 
-Para el uso del paquete \textit{amcl} en nuestro algoritmo fué necesaria la realización de una pequeña modificación. Esta modificación se refiere a que el paquete por defecto solo usa un mapa y lo obtiene al principio de la ejecución del algoritmo. Si le llegaba un nuevo mapa reiniciaba por completo el algoritmo. Esto nos generaba un problema, ya que en el algoritmo propuesto se publica un mapa por cada iteración y el paquete por defecto se reiniciaba constantemente. El efecto que producía es que el robot siempre se encontraba en la posición inicial y aunque lo movieramos siempre ocupaba la misma posición en el mapa. En nuestro \textit{amcl} modificado se usa el mapa que se obtiene en cada iteración y sobre el se calcula la posición del robot, sin reiniciar en ningún momento el algoritmo.
+Para el uso del paquete \textit{amcl} en nuestro algoritmo fue necesaria la realización de una pequeña modificación. Esta modificación se refiere a que el paquete por defecto solo usa un mapa y lo obtiene al principio de la ejecución del algoritmo. Si le llegaba un nuevo mapa reiniciaba por completo el algoritmo. Esto nos generaba un problema, ya que en el algoritmo propuesto se publica un mapa por cada iteración y el paquete por defecto se reiniciaba constantemente. El efecto que producía es que el robot siempre se encontraba en la posición inicial y aunque lo moviéramos siempre ocupaba la misma posición en el mapa. En nuestro \textit{amcl} modificado se usa el mapa que se obtiene en cada iteración y sobre el se calcula la posición del robot, sin reiniciar en ningún momento el algoritmo.
 
 Además esta modificación nos ha permitido localizarnos en entornos desconocidos, es decir, ahora contamos con la capacidad de navegar por estancias de una casa que no tenemos en el mapa. Estas estancias se irán añadiendo al mapa de corto plazo primero y más tarde al mapa de largo plazo y el algoritmo de localización puede seguir calculando nuestra posición en los nuevos mapas.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=12cm,height=7cm]{img/cap5/grannieAnne-ext}
+  \end{center}
+  \caption{Escenario extendido}
+  \label{fig:grannieAnne-ext}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=10cm,height=6cm]{img/cap5/localization-ext}
+  \end{center}
+  \caption{Detalle de la localización}
+  \label{fig:localization-ext}
+\end{figure}
+
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \subfigure[Mapa total]{\includegraphics[width=12cm,height=7cm]{img/cap5/map-ext}}
+    \subfigure[Mapa de largo plazo]{\includegraphics[width=12cm,height=7cm]{img/cap5/longmap-ext}}
+    \subfigure[Mapa de corto plazo]{\includegraphics[width=12cm,height=7cm]{img/cap5/shortmap-ext}}
+  \end{center}
+  \caption{Mapas del escenario extendido}
+  \label{fig:maps-ext}
+\end{figure}
+
+
+
+En la figura \ref{fig:grannieAnne-ext} vemos como el escenario ha sido extendido, añadiéndole unos pasillos a la derecha de la casa. El mapa estático usado es el mismo que el mostrado en la figura \ref{fig:mapaestatico}. Vemos como después de recorrer la parte desconocida del mapa se ha añadido al mapa de largo plazo y también al mapa total, figura \ref{fig:maps-ext}. Observamos en las flechas rojas bajo el robot que la incertidumbre en la posición del robot es mínima, figura \ref{fig:localization-ext}. 

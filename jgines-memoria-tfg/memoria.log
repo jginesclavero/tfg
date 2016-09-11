@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.4)  10 SEP 2016 19:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.4)  11 SEP 2016 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -992,7 +992,7 @@ LaTeX Info: Redefining \% on input line 1.
  [16]
 Cap\'{\i }tulo 4.
 
-Underfull \hbox (badness 1533) in paragraph at lines 10--12
+Underfull \hbox (badness 1533) in paragraph at lines 12--14
 []\OT1/cmr/m/n/12 El al-go-rit-mo del fil-tro de part^^S^^Pcu-las se di-vi-de e
 n 4 eta-pas: Ini-cia-li-za-ci^^Son,
  []
@@ -1001,7 +1001,7 @@ n 4 eta-pas: Ini-cia-li-za-ci^^Son,
 File: img/cap5/initamcl.png Graphic file (type png)
 
 <use img/cap5/initamcl.png>
-Package pdftex.def Info: img/cap5/initamcl.png used on input line 15.
+Package pdftex.def Info: img/cap5/initamcl.png used on input line 17.
 (pdftex.def)             Requested size: 284.53099pt x 199.16994pt.
  [17
 
@@ -1010,27 +1010,70 @@ Package pdftex.def Info: img/cap5/initamcl.png used on input line 15.
 File: img/cap5/actamcl.png Graphic file (type png)
 
 <use img/cap5/actamcl.png>
-Package pdftex.def Info: img/cap5/actamcl.png used on input line 33.
+Package pdftex.def Info: img/cap5/actamcl.png used on input line 35.
 (pdftex.def)             Requested size: 284.52061pt x 199.17276pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
  [18 <./img/cap5/initamcl.png (PNG copy)> <./img/cap5/actamcl.png (PNG copy)>]
 <img/cap5/finamcl.png, id=122, 654.94687pt x 435.87843pt>
 File: img/cap5/finamcl.png Graphic file (type png)
 
 <use img/cap5/finamcl.png>
-Package pdftex.def Info: img/cap5/finamcl.png used on input line 44.
+Package pdftex.def Info: img/cap5/finamcl.png used on input line 46.
 (pdftex.def)             Requested size: 284.52983pt x 199.16966pt.
+
+<img/cap5/grannieAnne-ext.png, id=123, 726.46407pt x 408.77719pt>
+File: img/cap5/grannieAnne-ext.png Graphic file (type png)
+
+<use img/cap5/grannieAnne-ext.png>
+Package pdftex.def Info: img/cap5/grannieAnne-ext.png used on input line 60.
+(pdftex.def)             Requested size: 341.43816pt x 199.1736pt.
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+ [19 <./img/cap5/finamcl.png (PNG copy)>]
+<img/cap5/localization-ext.png, id=127, 602.25pt x 368.87813pt>
+File: img/cap5/localization-ext.png Graphic file (type png)
+
+<use img/cap5/localization-ext.png>
+Package pdftex.def Info: img/cap5/localization-ext.png used on input line 68.
+(pdftex.def)             Requested size: 284.53705pt x 170.71602pt.
+
+<img/cap5/map-ext.png, id=128, 660.96938pt x 429.85594pt>
+File: img/cap5/map-ext.png Graphic file (type png)
+
+<use img/cap5/map-ext.png>
+Package pdftex.def Info: img/cap5/map-ext.png used on input line 77.
+(pdftex.def)             Requested size: 341.44688pt x 199.17256pt.
+
+<img/cap5/longmap-ext.png, id=129, 534.49687pt x 376.40625pt>
+File: img/cap5/longmap-ext.png Graphic file (type png)
+
+<use img/cap5/longmap-ext.png>
+Package pdftex.def Info: img/cap5/longmap-ext.png used on input line 78.
+(pdftex.def)             Requested size: 341.44884pt x 199.17271pt.
+
+<img/cap5/shortmap-ext.png, id=130, 618.05907pt x 354.57469pt>
+File: img/cap5/shortmap-ext.png Graphic file (type png)
+
+<use img/cap5/shortmap-ext.png>
+Package pdftex.def Info: img/cap5/shortmap-ext.png used on input line 79.
+(pdftex.def)             Requested size: 341.44246pt x 199.17184pt.
+
+
+LaTeX Warning: Float too large for page by 0.23402pt on input line 83.
+
 )
 LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
- [19 <./img/cap5/finamcl.png (PNG copy)>]
+ [20 <./img/cap5/grannieAnne-ext.png (PNG copy)> <./img/cap5/localization-ext.p
+ng (PNG copy)>]
 LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
- [20]
+ [21 <./img/cap5/map-ext.png (PNG copy)> <./img/cap5/longmap-ext.png (PNG copy)
+> <./img/cap5/shortmap-ext.png (PNG copy)>]
 No file memoria.bbl.
 No file memoria.ind.
 (./memoria.aux
@@ -1038,10 +1081,10 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 8625 strings out of 493304
- 122314 string characters out of 6139872
+ 8653 strings out of 493304
+ 123051 string characters out of 6139872
  233688 words of memory out of 5000000
- 11873 multiletter control sequences out of 15000+600000
+ 11896 multiletter control sequences out of 15000+600000
  13576 words of font info for 52 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  44i,8n,58p,958b,1189s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1055,10 +1098,10 @@ type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb>
-Output written on memoria.pdf (30 pages, 14865356 bytes).
+Output written on memoria.pdf (31 pages, 21349027 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 172 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

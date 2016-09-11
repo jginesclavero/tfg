@@ -2,7 +2,7 @@
 \label{cap:sevidordemapasdinamico}
 
 
-En este capítulo se explica la construcción y el funcionamiento del servidor de mapas dinámico. En primer lugar se explica que és, para que se utiliza y como se construye un \textit{costmap}. En segundo lugar se explica como se construyen los mapas que componen el algoritmo y por último se explica como se combinan estos mapas para generar el mapa usado en la navegación.
+En este capítulo se explica la construcción y el funcionamiento del servidor de mapas dinámico. En primer lugar se explica que es, para que se utiliza y como se construye un \textit{costmap}. En segundo lugar se explica como se construyen los mapas que componen el algoritmo y por último se explica como se combinan estos mapas para generar el mapa usado en la navegación.
 
 \section{Costmap\_2D}
 \label{sec:costmap2d}
@@ -19,7 +19,7 @@ Para poder representar la ocupación de un objeto en un \textit{costmap} es nece
 
 \subsubsection{tf}
 \label{subsubsec:tf}
-Cualquier robot está compuesto por multitud de piezas moviles, como puede ser la propia base del robot o la pinza de un brazo robótico. Cada una de estas piezas se pueden representar con un \textit{frame}. Ademas existen tambien otros \textit{frames} que pueden interesarnos, como puede ser el \textit{frame} de world o el \textit{frame} de map.
+Cualquier robot está compuesto por multitud de piezas móviles, como puede ser la propia base del robot o la pinza de un brazo robótico. Cada una de estas piezas se pueden representar con un \textit{frame}. Ademas existen también otros \textit{frames} que pueden interesarnos, como puede ser el \textit{frame} de world o el \textit{frame} de map.
 \begin{figure} [hbtp]
   \begin{center}
     \includegraphics[width=12cm]{img/cap4/frames}
@@ -28,13 +28,13 @@ Cualquier robot está compuesto por multitud de piezas moviles, como puede ser l
   \label{fig:frames}
 \end{figure}
 
-Usamos las \textit{tf} para poder representar información relativa a uno de estos frames. Esto puede sernos de utilidad, por ejemplo, si queremos conocer la posición de un objeto que hemos cogido con nuestra pinza respecto a la base de nuestro robot, o cual es la posición relativa de un objeto que estamos percibiendo con el laser respecto a nosotros o respecto al mapa.
+Usamos las \textit{tf} para poder representar información relativa a uno de estos frames. Esto puede sernos de utilidad, por ejemplo, si queremos conocer la posición de un objeto que hemos cogido con nuestra pinza respecto a la base de nuestro robot, o cual es la posición relativa de un objeto que estamos percibiendo con el láser respecto a nosotros o respecto al mapa.
 
 Cuando trabajamos con mapas es importante que todo lo que se representa en él sea respecto al frame map. De este modo nuestro mapa puede ser usado por otros nodos, como el nodo de navegación, o en cualquier otro escenario. \pagebreak
 
 \section{Tipos de mapas}
 
-En este apartado se describirá la metodologia seguida para la construcción de cada uno de los tres mapas usados por el algoritmo.
+En este apartado se describirá la metodología seguida para la construcción de cada uno de los tres mapas usados por el algoritmo.
 
 \subsection{Mapa estático}
 El mapa estático se caracteriza por incluir las partes inmutables del escenario, como son las paredes o las puertas. La mejor manera de construirlo es medir todo el escenario y crear el mapa usando una herramienta de diseño gráfico. En este caso se ha usado \textit{Gimp}.
@@ -70,7 +70,7 @@ El mapa de corto plazo se caracteriza por ser un mapa en el que se representa lo
 \end{lstlisting}
 
 
-El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al mapa, si no ademas eliminarlos si los objetos desaparecen del lugar que ocupaban. Para ello se compara cada muestra de datos con el mapa que estamos generando y si en dicha muestra existen celdas libres que en el mapa están ocupadas se decrementa el valor de dicha celda en el mapa. La cuantia del decremento se puede modelar, consiguiendo asi que el robot olvide más lentamente o más rapidamente los objetos que desaparecen del escenario.\\
+El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al mapa, si no ademas eliminarlos si los objetos desaparecen del lugar que ocupaban. Para ello se compara cada muestra de datos con el mapa que estamos generando y si en dicha muestra existen celdas libres que en el mapa están ocupadas se decrementa el valor de dicha celda en el mapa. La cuantía del decremento se puede modelar, consiguiendo así que el robot olvide más lentamente o más rápidamente los objetos que desaparecen del escenario.\\
 
 \renewcommand{\lstlistingname}{Código}
 \begin{lstlisting}[caption=Función que actualiza el mapa en cada iteración, label={lst:updatecostmap}]
@@ -85,7 +85,7 @@ El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al ma
   }
 \end{lstlisting}
 
-La figura \ref{fig:initserver} fué captada al iniciar el algoritmo. Observamos que la mayor parte del mapa de corto plazo se encuentra en una posición de desconocimiento y que se han ido incluyendo en este las zonas libres, las paredes y la estantería. Los puntos morados y verdes corresponden a la representación de las muestras tomadas por el laser.
+La figura \ref{fig:initserver} fue captada al iniciar el algoritmo. Observamos que la mayor parte del mapa de corto plazo se encuentra en una posición de desconocimiento y que se han ido incluyendo en este las zonas libres, las paredes y la estantería. Los puntos morados y verdes corresponden a la representación de las muestras tomadas por el láser.
 
 \begin{figure}[H]
   \begin{center}
@@ -97,7 +97,7 @@ La figura \ref{fig:initserver} fué captada al iniciar el algoritmo. Observamos 
   \label{fig:initserver}
 \end{figure}
 
-Tras el inicio del algortimo se añadió un objeto nuevo al escenario. Esto se representa en la figura \ref{fig:includeobject}. Vemos como el algoritmo añade el objeto al mapa y lo situa en una posición coherente respecto a la posición que ocupa el objeto en el escenario simulado.
+Tras el inicio del algoritmo se añadió un objeto nuevo al escenario. Esto se representa en la figura \ref{fig:includeobject}. Vemos como el algoritmo añade el objeto al mapa y lo sitúa en una posición coherente respecto a la posición que ocupa el objeto en el escenario simulado.
 
 \begin{figure} [H]
   \begin{center}
@@ -119,7 +119,7 @@ Una vez que el algoritmo a incluido el objeto en el mapa procedemos a eliminarlo
   \label{fig:deleteobject}
 \end{figure}
 
-El proceso de añadir o eliminar un objeto puede ser más o menos rápido dependiendo de los valores de las varibles que modelan estas operaciones. Para el caso de nuestro algoritmo contamos un fichero con extensión yaml en el que modificamos los valores de los parámetros.
+El proceso de añadir o eliminar un objeto puede ser más o menos rápido dependiendo de los valores de las variables que modelan estas operaciones. Para el caso de nuestro algoritmo contamos un fichero con extensión yaml en el que modificamos los valores de los parámetros.
 \renewcommand{\lstlistingname}{Código}
 \begin{lstlisting}[caption=Fichero de configuración obstacle\_detector.yaml, label={lst:obstacledetectorconfig}]
   cost_inc: 4
@@ -127,7 +127,7 @@ El proceso de añadir o eliminar un objeto puede ser más o menos rápido depend
   min_lenght: 0.23
   max_lenght: 2.5
 \end{lstlisting}
-Los valores asociados a cost\_inc y cost\_dec representan el incremento o decremento del valor de una celda por cada iteración del algortimo. Los otros valores configurables representan la longitud máxima y mínima que se tiene en cuenta para cada medida que el laser nos proporciona. Las muestras obtenidas del laser que estén fuera de estos valores son ignoradas.
+Los valores asociados a cost\_inc y cost\_dec representan el incremento o decremento del valor de una celda por cada iteración del algoritmo. Los otros valores configurables representan la longitud máxima y mínima que se tiene en cuenta para cada medida que el láser nos proporciona. Las muestras obtenidas del láser que estén fuera de estos valores son ignoradas.
 
 {Explicar como se borran los objetos? (decremento)}\\
 
@@ -157,11 +157,11 @@ Al final de cada iteración del algoritmo el mapa de corto plazo es publicado en
 
 \end{lstlisting}
 
-Existe un pequeño cambio en los valores del mapa que se publica. El tipo de mensaje que se usa para publicar un costmap es \textit{nav\_msgs::OccupancyGrid}\footnote{http://docs.ros.org/indigo/api/nav\_msgs/html/msg/OccupancyGrid.html}. Este tipo de mensaje contiene, ademas de los metadatos asociados al mapa, un array de datos que representa al mapa. La pricipal diferencia con un costmap es que los valores en un OccupancyGrid van de 0 a 100 y -1 para las celdas desconocidas,y no de 0 a 255 como en un costmap.
+Existe un pequeño cambio en los valores del mapa que se publica. El tipo de mensaje que se usa para publicar un costmap es \textit{nav\_msgs::OccupancyGrid}\footnote{http://docs.ros.org/indigo/api/nav\_msgs/html/msg/OccupancyGrid.html}. Este tipo de mensaje contiene, ademas de los metadatos asociados al mapa, un array de datos que representa al mapa. La principal diferencia con un costmap es que los valores en un OccupancyGrid van de 0 a 100 y -1 para las celdas desconocidas ,y no de 0 a 255 como en un costmap.
 
 \subsection{Mapa de largo plazo}
 El mapa de largo plazo se inicializa con los valores del mapa estático y se caracteriza por incluir los objetos que tienen un valor muy alto en el mapa de corto plazo, por tanto tenemos un mapa con objetos que han perdurado en el mapa a corto plazo durante un largo periodo de tiempo y que podemos considerar que nos van a influir a la hora de planificar nuestra ruta por el escenario. 
-Este mapa tambien es dinámico, por lo que tambien elimina los objetos del mapa si estos desaparecen o cambian su posición.
+Este mapa también es dinámico, por lo que también elimina los objetos del mapa si estos desaparecen o cambian su posición.
 \pagebreak 
 
 \begin{lstlisting}[caption=Procedimiento para añadir un objeto al mapa de largo plazo, label={lst:addobjectlongmap}]
@@ -207,7 +207,7 @@ En el código mostrado en \ref{lst:addobjectlongmap} muestra el proceso de adici
 
 \end{lstlisting}
 
-En el código mostrado en \ref{lst:deleteobjectlongmap} se compara el mapa de largo plazo con el mapa de corto plazo. Si una celda en el mapa de largo plazo tiene un valor que indica que está ocupada y en el mapa de corto plazo esa misma celda tiene un valor que indica que está libre, siempre y cuando esa celda no pertenezca a una celda de una pared, se decrementa su valor en el mapa de largo plazo. La cuantia de este decremento tambien puede modelarse,longterm\_cost\_dec, regulando asi la memoria que tenemos de los objetos que hemos añadido a este mapa.\\
+En el código mostrado en \ref{lst:deleteobjectlongmap} se compara el mapa de largo plazo con el mapa de corto plazo. Si una celda en el mapa de largo plazo tiene un valor que indica que está ocupada y en el mapa de corto plazo esa misma celda tiene un valor que indica que está libre, siempre y cuando esa celda no pertenezca a una celda de una pared, se decrementa su valor en el mapa de largo plazo. La cuantía de este decremento también puede modelarse, longterm\_cost\_dec, regulando así la memoria que tenemos de los objetos que hemos añadido a este mapa.\\
 
 \begin{figure}[H]
   \begin{center}
@@ -234,13 +234,13 @@ MapController::publishAll(){
 \end{lstlisting}
 
 
-Adicionalmente este mapa se guarda cada cierto tiempo en un fichero, usando el nodo por defecto de ROS para este fin ,\textit{map\_saver}\footnote{http://wiki.ros.org/action/fullsearch/map\_server\#map\_saver}. Asi por ejemplo podemos tener un cuenta una mesa dentro del salón de una casa para una futura ejecución del algoritmo. Esto nos permitiría planificar una ruta mejor para la navegación, ya que podriamos esquivar esta mesa con facilidad y llegar a nuestro destino lo más rápido posible. Si no tuvieramos esta mesa en cuenta el algoritmo podria planificar una ruta a traves de las celdas ocuapas por la mesa. Seguramente el robot no llegaria a chocar, ya que el planificador de rutas usa un pequeño mapa local para evitar estos problemas, pero es seguro que tardaría más en alcanzar su destino ya que al encontrarse frente a la mesa el robot se pararía y tendría que recalcular una nueva ruta. 
+Adicionalmente este mapa se guarda cada cierto tiempo en un fichero, usando el nodo por defecto de ROS para este fin ,\textit{map\_saver}\footnote{http://wiki.ros.org/action/fullsearch/map\_server\#map\_saver}. Así por ejemplo podemos tener un cuenta una mesa dentro del salón de una casa para una futura ejecución del algoritmo. Esto nos permitiría planificar una ruta mejor para la navegación, ya que podríamos esquivar esta mesa con facilidad y llegar a nuestro destino lo más rápido posible. Si no tuviéramos esta mesa en cuenta el algoritmo podría planificar una ruta a través de las celdas ocupadas por la mesa. Seguramente el robot no llegaría a chocar, ya que el planificador de rutas usa un pequeño mapa local para evitar estos problemas, pero es seguro que tardaría más en alcanzar su destino ya que al encontrarse frente a la mesa el robot se pararía y tendría que recalcular una nueva ruta. 
 
 
 
 \section{Construcción del mapa final}
 \label{sec:construccionmap}
-El mapa final será la composición de los mapas de largo plazo, que ya incluye el mapa estático, y de corto plazo. Este mapa será usado por el nodo de la navegación y por el nodo de la localización para navegar y localizar al robot en el escenario. La composición del mapa final o mapa efectivo será el resultado de la operación de máximo entre los mapas de corto y de largo plazo, como vemos en el codigo del apartado \ref{lst:buildEffectivemap}. De esta manera incluiremos en el mapa final toda la información relacionada con los objetos que llevan un tiempo en la escena y tambien incluiremos, aunque con un menor valor, personas o cosas que acaban de entrar en las inmediaciones del robot.
+El mapa final será la composición de los mapas de largo plazo, que ya incluye el mapa estático, y de corto plazo. Este mapa será usado por el nodo de la navegación y por el nodo de la localización para navegar y localizar al robot en el escenario. La composición del mapa final o mapa efectivo será el resultado de la operación de máximo entre los mapas de corto y de largo plazo, como vemos en el código del apartado \ref{lst:buildEffectivemap}. De esta manera incluiremos en el mapa final toda la información relacionada con los objetos que llevan un tiempo en la escena y también incluiremos, aunque con un menor valor, personas o cosas que acaban de entrar en las inmediaciones del robot.
 \pagebreak
 
 \begin{lstlisting}[caption=Composición del mapa final, label={lst:buildEffectivemap}]
