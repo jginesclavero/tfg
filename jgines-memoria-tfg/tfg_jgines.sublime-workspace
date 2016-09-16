@@ -520,10 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "cap3.tex",
+			"file": "cap1.tex",
 			"settings":
 			{
-				"buffer_size": 37965,
+				"buffer_size": 255,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,15 @@
 			"file": "cap2.tex",
 			"settings":
 			{
-				"buffer_size": 9346,
+				"buffer_size": 8973,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cap3.tex",
+			"settings":
+			{
+				"buffer_size": 6565,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +547,7 @@
 			"file": "cap4.tex",
 			"settings":
 			{
-				"buffer_size": 15719,
+				"buffer_size": 225,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +555,23 @@
 			"file": "cap5.tex",
 			"settings":
 			{
-				"buffer_size": 4699,
+				"buffer_size": 13302,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cap6.tex",
+			"settings":
+			{
+				"buffer_size": 2043,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cap7.tex",
+			"settings":
+			{
+				"buffer_size": 67,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,7 +587,7 @@
 			"file": "memoria.tex",
 			"settings":
 			{
-				"buffer_size": 3976,
+				"buffer_size": 4001,
 				"line_ending": "Unix"
 			}
 		},
@@ -758,6 +782,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cap4",
+			"ext",
 			"stepobstacledetector",
 			".\n",
 			"resetMap",
@@ -883,9 +909,7 @@
 			"functionS",
 			"list::",
 			"posRobot_w",
-			"robot",
-			"	\n",
-			"ros::Rate"
+			"robot"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -906,34 +930,31 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "cap3.tex",
+					"file": "cap1.tex",
 					"settings":
 					{
-						"buffer_size": 37965,
+						"buffer_size": 255,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26359,
-								26359
+								183,
+								183
 							]
 						],
 						"settings":
 						{
-							"spell_check": false,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 6331.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -943,42 +964,42 @@
 					"file": "cap2.tex",
 					"settings":
 					{
-						"buffer_size": 9346,
+						"buffer_size": 8973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6522,
-								6522
+								3932,
+								3932
 							]
 						],
 						"settings":
 						{
-							"spell_check": false,
+							"spell_check": true,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1207.0,
+						"translation.y": 663.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "cap4.tex",
+					"file": "cap3.tex",
 					"settings":
 					{
-						"buffer_size": 15719,
+						"buffer_size": 6565,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10988,
-								10988
+								219,
+								219
 							]
 						],
 						"settings":
@@ -989,42 +1010,125 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3451.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "cap5.tex",
+					"file": "cap4.tex",
 					"settings":
 					{
-						"buffer_size": 4699,
+						"buffer_size": 225,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4699,
-								4699
+								57,
+								57
 							]
 						],
 						"settings":
 						{
-							"spell_check": false,
+							"spell_check": true,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 816.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "cap5.tex",
+					"settings":
+					{
+						"buffer_size": 13302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10536,
+								10536
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3978.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "cap6.tex",
+					"settings":
+					{
+						"buffer_size": 2043,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "cap7.tex",
+					"settings":
+					{
+						"buffer_size": 67,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "ejemploalgoritmo",
 					"settings":
 					{
@@ -1053,19 +1157,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 8,
 					"file": "memoria.tex",
 					"settings":
 					{
-						"buffer_size": 3976,
+						"buffer_size": 4001,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								107,
-								107
+								3767,
+								3767
 							]
 						],
 						"settings":
@@ -1075,13 +1179,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2856.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 9,
 					"file": "/home/jgines/catkin_ws/dynamic_navigation/memoria_proyecto.txt",
 					"settings":
 					{

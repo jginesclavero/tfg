@@ -11,13 +11,14 @@
 \contentsline {section}{\numberline {2.4}Plan de trabajo}{5}
 \contentsline {chapter}{\numberline {3}Entorno y herramientas}{6}
 \contentsline {section}{\numberline {3.1}Robot Kobuki}{6}
-\contentsline {section}{\numberline {3.2}ROS}{6}
-\contentsline {section}{\numberline {3.3}Software en ROS para el mapeado, localizaci\IeC {\'o}n y navegaci\IeC {\'o}n}{6}
-\contentsline {subsection}{\numberline {3.3.1}Costmap\_2D}{6}
+\contentsline {section}{\numberline {3.2}ROS}{7}
+\contentsline {section}{\numberline {3.3}Software en ROS para el mapeado, localizaci\IeC {\'o}n y navegaci\IeC {\'o}n}{7}
+\contentsline {subsection}{\numberline {3.3.1}Costmap\_2D}{7}
 \contentsline {subsubsection}{tf}{7}
 \contentsline {subsection}{\numberline {3.3.2}AMCL}{8}
 \contentsline {subsubsection}{Filtro de part\IeC {\'\i }culas}{8}
 \contentsline {subsection}{\numberline {3.3.3}Navigation}{11}
+\contentsline {subsubsection}{Move\_base}{11}
 \contentsline {chapter}{\numberline {4}Montaje del robot}{12}
 \contentsline {section}{\numberline {4.1}Estructrura}{12}
 \contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de conectividad}{12}

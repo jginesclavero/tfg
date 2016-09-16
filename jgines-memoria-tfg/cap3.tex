@@ -1,17 +1,32 @@
 \chapter{Entorno y herramientas}
 \label{cap:entorno}
+En este capítulo se presentaran y describirán las herramientas hardware y software que se han usado para el desarrollo del proyecto. En primer lugar se presentará el robot sobre el que hemos trabajado, el robot kobuki. En segundo lugar se presentará el \textit{framework} sobre el que hemos construido el algoritmo, ROS , y por ultimo se describirán las herramientas de dicho framework que han resultado esenciales para la realización del proyecto.
+
 
 \section{Robot Kobuki}
 \label{cap:robot}
+El robot kobuki o Turtlebot es un robot \textit{lowcost} que cuenta con un software de código abierto. Su estructura principal es una base móvil de forma circular y una serie de baldas y barras metálicas para adaptar su configuración física a nuestras necesidades. Cuenta con una integración total con ROS, el framework que se usará para el proyecto, y además es el robot usado por la mayoría de alumnos de la universidad para cursar la asignatura de robótica.
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[width=7.5cm]{img/cap3/kobuki}
+  \end{center}
+  \caption{Robot kobuki.}
+  \label{fig:kobuki}
+\end{figure}
+
+
 \section{ROS}
 \label{cap:ros}
+
+
 \section{Software en ROS para el mapeado, localización y navegación}
 \label{cap:softwarederos}
+En esta sección se describirá el funcionamiento de los diferentes paquetes que ROS nos proporciona y que resultan esenciales para la creación de mapas, la localización y la navegación por distintos entornos.
 
 \subsection{Costmap\_2D}
 \label{sec:costmap2d}
-Un \textit{costmap} es una estructura de datos ofrecida por ROS y compuesta por un grid de ocupación y los metadatos de este grid. Cada celda del grid toma valores entre 0 y 255, donde 0 corresponde a una celda vacía, los valores entre 1 y 254 representan la probabilidad de que una celda está ocupada y el valor 255 se reserva para el desconocimiento. Cada valor se asocia con un nivel de gris, como se puede ver en la imagen.
-\begin{figure} [hbtp]
+Un \textit{costmap} es una estructura de datos ofrecida por ROS y compuesta por un grid de ocupación y los metadatos de este grid. Cada celda del grid toma valores entre 0 y 255, donde 0 corresponde a una celda vacía, los valores entre 1 y 254 representan la probabilidad de que una celda está ocupada y el valor 255 se reserva para el total desconocimiento sobre el estado de una celda. Cada valor se asocia con un nivel de gris, como se puede ver en la imagen.
+\begin{figure} [H]
   \begin{center}
     \includegraphics[width=7.5cm]{img/cap3/costmap-ejemplo}
   \end{center}
@@ -34,7 +49,7 @@ Cualquier robot está compuesto por multitud de piezas móviles, como puede ser 
 
 Usamos las \textit{tf} para poder representar información relativa a uno de estos frames. Esto puede sernos de utilidad, por ejemplo, si queremos conocer la posición de un objeto que hemos cogido con nuestra pinza respecto a la base de nuestro robot, o cual es la posición relativa de un objeto que estamos percibiendo con el láser respecto a nosotros o respecto al mapa.
 
-Cuando trabajamos con mapas es importante que todo lo que se representa en él sea respecto al frame map. De este modo nuestro mapa puede ser usado por otros nodos, como el nodo de navegación, o en cualquier otro escenario. \pagebreak
+Cuando trabajamos con mapas es importante que todo lo que se representa en él sea respecto al frame \textit{map}. De este modo nuestro mapa puede ser usado por otros nodos, como el nodo de navegación, o por otro robot situado en el escenario representado en el mapa.
 
 
 \subsection{AMCL}
@@ -69,7 +84,6 @@ mapa.
   \caption{El robot se vá acercando a la posición ideal}
   \label{fig:actamcl}
 \end{figure}
-\pagebreak
 
 Observamos como la linea color de la parte derecha de la imagen \ref{fig:actamcl}, correspondiente a las muestras tomadas con el láser, está más cerca de la linea del mapa que en la imagen \ref{fig:initamcl} que se aprecia que no está alineada. Esto es fruto de la corrección que se va haciendo de la posición. También observamos que hay menos partículas, esto es fruto de la convergencia hacia la posición correcta.
 
@@ -87,4 +101,12 @@ Para el uso del paquete \textit{amcl} en nuestro algoritmo fue necesaria la real
 
 \subsection{Navigation}
 \label{sec:navigation}
-\textit{Navigation}\footnote{http://wiki.ros.org/navigation} es un paquete de ROS que toma información de la odometria, los sensores y la posición inicial y la posición a 
+\textit{Navigation}\footnote{http://wiki.ros.org/navigation} es un conjunto de paquetes de ROS que toman información de la odometría, los sensores y la posición inicial y la posición a la que el robot tiene que llegar, ejecuta distintos algoritmos para calcular la ruta desde el punto inicial al final y ejecuta los comandos de movimiento necesarios para que el robot ejecute esa ruta.
+
+
+\subsubsection{Move\_base}
+\label{sec:movebase}
+El paquete principal para la navegación es el paquete \textit{move\_base}\footnotemark. Este paquete es el encargado de, proporcionándole un punto de meta, calcular el plan necesario para llegar hasta dicho punto y ejecutar dicho plan para que el robot alcance su destino. \textit{Move\_base} cuenta con dos procesos o \textit{planners} que calculan y ejecutan la ruta, \textit{global} y \textit{local planner}. El global planner se encarga de planificar la ruta teniendo en cuenta el mapa que obtiene de nuestro algoritmo, por ejemplo, esquivará distintos objetos que haya en el mapa y planificará la ruta más rápida para llegar al destino. Además recalculará una nueva ruta si el robot se parara a causa de un objeto o si en medio del camino se da cuenta que la ruta no puede llevarse a cabo. 
+
+El local planner se encarga de esquivar objetos que no están en el mapa y de navegar de una forma segura, sin chocar con las paredes o los muebles del escenario.
+\footnotetext{http://wiki.ros.org/move\_base?distro=indigo}
