@@ -40,7 +40,7 @@ Para simplificar la resolución del problema se ha dividido el proyecto en vario
 \item Se desarrollará un algoritmo para mezclar los mapas entre sí y así generar tanto el mapa de largo plazo como el mapa que usaremos para la navegación.
 \item Se creará un servidor de mapas dinámicos que se inicializará con los mapas estático y de largo plazo y que generará el mapa final mezclando de loa mapas de largo plazo y de corto plazo.
 \item Se usará el mapa final como parámetro del paquete de navegación de ROS, \textit{move base}, y del paquete de localización de ROS \textit{amcl}.
-\item se generará y usará un mapa semántico, en el que cada nivel de gris se asocie con una etiqueta para después ordenar al robot que navegue a dichas etiquetas.
+\item Se generará y usará un mapa semántico, en el que cada nivel de gris se asocie con una etiqueta para después ordenar al robot que navegue a dichas etiquetas.
 \end{enumerate}
 
 \section{Metodología de desarrollo}
@@ -78,5 +78,4 @@ Para poder abordar el problema se han marcado una serie de subobjetivos ha compl
 \item Tercer subobjetivo. Modificar el paquete \textit{map\_server} para que acepte varios mapas como entrada y estudiar la manera de mezclar los mapas entre sí.
 \item Fase de pruebas. Se le pasará al paquete de navegación de ROS, \textit{move\_base} ,el mapa resultante y se harán pruebas de navegación en el simulador y en el robot real.
 \item Cuarto subobjetivo. Crear el mapa semántico, especificando las etiquetas naturales que tendrá una casa, salón, cocina, habitación... y usarlo para poder ir a la estancia que le indiquemos.
-
 \end{enumerate}

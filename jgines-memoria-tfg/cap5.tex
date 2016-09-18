@@ -1,20 +1,43 @@
 \chapter{Mapas dinámicos}
 \label{cap:mapasdinamicos}
+En este capítulo se expondrá el sistema creado para la composición de un mapa dinámico que pueda ser usado por paquetes de ROS como \textit{move\_base} o \textit{amcl} y que nos sirva para navegar por el ámbito doméstico de una forma más eficaz y segura de lo que lo haríamos usando un mapa estático o un sistema de \textit{SLAM}.
+
 \section{Arquitectura del sistema}
 \label{cap:arquitecturadelsistema}
+El sistema propuesto pretende sustituir al nodo map\_server, ya que este nodo solo publica un mapa estático y esto presenta una serie de problemas que veremos más adelante, por tanto nos centramos en esa parte del modelo de navegación de ROS.
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[width=16cm]{img/cap5/navigationstackzoom}
+  \end{center}
+  \caption{Encuadre de nuestro sistema dentro del modelo de navegación de ROS}
+  \label{fig:navigationstackzoom}
+\end{figure}
 
+El sistema de mapeado propuesto consta de 3 nodos principales:
 
+\begin{enumerate}
+\item Map\_server: Este nodo se encarga de cargar desde fichero el mapa estático y el mapa de largo plazo y activa un servicio para que cualquier otro nodo pueda pedir estos mapas. 
+\item Obs\_detector: La función principal de este nodo es la de detectar objetos, leyendo la información proporcionada por el láser, y componer con dicha información el mapa de corto plazo. Para ello solicita los Metadatos de los mapas cargados al nodo Map\_server, creando así un mapa de las mismas medidas y misma resolución que los mapas que maneja el map\_server. Este mapa es publicado para que sea utilizado por el nodo Map\_controller o sea visualizado por la herramienta Rviz.
+\item Map\_controller: Nodo que se encarga de la composición del mapa final y de actualizar el mapa de largo plazo con la información obtenida del mapa de corto plazo. Estos mapas son también publicados en distintos topics para que sean utilizados por los nodos encargados de la navegación.
+\end{enumerate}
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[width=16cm]{img/cap5/esquemaSistema}
+  \end{center}
+  \caption{Esquema del sistema}
+  \label{fig:esquemaSistema}
+\end{figure}
 
-\section{Dynamic map server}
+\section{Servidor de mapas dinámico}
 \label{cap:sevidordemapasdinamico}
 
-En esta sección se describirá el proceso de construcción de los distintos mapas que el servidor de mapas dinámico ofrece, mapa estático, mapa de largo plazo y mapa de corto plazo, así como el proceso de combinación entre ellos para dar lugar al mapa final que será usado por componentes de ROS vistos anteriormente como son el \textit{amcl} o el \textit{move\_base}.
+En esta sección se describirá el proceso de construcción de los distintos mapas que el servidor de mapas dinámico ofrece, mapa estático, mapa de largo plazo y mapa de corto plazo, así como el proceso de combinación entre ellos para dar lugar al mapa final que será usado por componentes de ROS vistos anteriormente.
 
 \subsection{Mapa estático}
 El mapa estático se caracteriza por incluir las partes inmutables del escenario, como son las paredes o las puertas. La mejor manera de construirlo es medir todo el escenario y crear el mapa usando una herramienta de diseño gráfico. En este caso se ha usado \textit{Gimp}.
 Este mapa nos servirá como base para crear el mapa de largo plazo.
 
-\begin{figure} [hbtp]
+\begin{figure} [H]
   \begin{center}
     \includegraphics[width=7cm]{img/cap5/mapaestatico}
   \end{center}
@@ -23,7 +46,7 @@ Este mapa nos servirá como base para crear el mapa de largo plazo.
 \end{figure}
 
 \subsection{Mapa de corto plazo}
-El mapa de corto plazo se caracteriza por ser un mapa en el que se representa los objetos que el robot va percibiendo. Este mapa se inicializa con el valor 255, lo que indica una incertidumbre total. En el instante en el que el algoritmo de construcción del mapa comienza a iterar comenzarán a corregirse estos valores iniciales, asignando el valor 0 a las celdas que corresponden con zonas libres e incrementando desde 0 hasta 254 el valor de las celdas que se perciben como ocupadas. \pagebreak
+El mapa de corto plazo se caracteriza por ser un mapa en el que se representa los objetos que el robot va percibiendo. Este mapa se inicializa con el valor 255, lo que indica una incertidumbre total. En el instante en el que el algoritmo de construcción del mapa comienza a iterar comenzarán a corregirse estos valores iniciales, asignando el valor 0 a las celdas que corresponden con zonas libres e incrementando desde 0 hasta 254 el valor de las celdas que se perciben como ocupadas.
 
 \renewcommand{\lstlistingname}{Código}
 \begin{lstlisting}[caption=Inicialización del cost\_map correspondiente al mapa de corto plazo, label={lst:initcostmap}]
@@ -44,7 +67,19 @@ El mapa de corto plazo se caracteriza por ser un mapa en el que se representa lo
 \end{lstlisting}
 
 
-El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al mapa, si no ademas eliminarlos si los objetos desaparecen del lugar que ocupaban. Para ello se compara cada muestra de datos con el mapa que estamos generando y si en dicha muestra existen celdas libres que en el mapa están ocupadas se decrementa el valor de dicha celda en el mapa. La cuantía del decremento se puede modelar, consiguiendo así que el robot olvide más lentamente o más rápidamente los objetos que desaparecen del escenario.\\
+El algoritmo propuesto destaca por la capacidad de, no solo añadir objetos al mapa, si no ademas eliminarlos si los objetos desaparecen del lugar que ocupaban. Esto con las herramientas de ROS no puede conseguirse, ya que si solo utilizamos el nodo map\_server para publicar nuestro mapa, tanto el algoritmo de navegación como el de localización cogerán ese mapa y calcularán sobre el nuestra localización y las rutas al destino, pero ese mapa no tendrá en cuenta cambios en el entorno como puede ser una persona paseando por la casa o un mueble cambiado de sitio, es un mapa estático, por lo que puede resultar totalmente erróneo. Por otro lado si usamos la herramienta gmapping para crear nuestro mapa y localizarnos simultáneamente en él, tenemos el mismo problema. En un entorno dinámico con personas moviéndose u objetos cambiando de sitio, se generará un mapa con muchísimo ruido en las zonas libres y con objetos que se mantienen en su lugar cuando ya no están, por lo que la localización empezará a fallar, ya que las muestras del láser no corresponderán con el mapa. 
+
+La solución a este problema se resuelve con la creación de un algoritmo que pueda borrar elementos del mapa. Para ello se compara cada muestra de datos con el mapa que estamos generando y si en dicha muestra existen celdas libres que en el mapa están ocupadas se decrementa el valor de dicha celda en el mapa. La figura \ref{fig:lecturalaser} representa un modelo de una muestra del láser en el que podemos observar lo descrito anteriormente, celdas que marcaremos como ocupadas y celdas que marcaremos como libres. También observamos el límite del láser, que se sitúa en 2.5 metros, a las celdas de mas allá del límite no se les modificará su valor.
+La cuantía del decremento se puede modelar, consiguiendo así que el robot olvide más lentamente o más rápidamente los objetos que desaparecen del escenario.
+
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[width=10cm]{img/cap5/lecturaLaser}
+  \end{center}
+  \caption{Esquematización de una lectura de láser con un objeto.}
+  \label{fig:lecturalaser}
+\end{figure}
+
 
 \renewcommand{\lstlistingname}{Código}
 \begin{lstlisting}[caption=Función que actualiza el mapa en cada iteración, label={lst:updatecostmap}]
@@ -59,40 +94,6 @@ El algoritmo propuesto destaca por la capacidad de no solo añadir objetos al ma
   }
 \end{lstlisting}
 
-La figura \ref{fig:initserver} fue captada al iniciar el algoritmo. Observamos que la mayor parte del mapa de corto plazo se encuentra en una posición de desconocimiento y que se han ido incluyendo en este las zonas libres, las paredes y la estantería. Los puntos morados y verdes corresponden a la representación de las muestras tomadas por el láser.
-
-\begin{figure}[H]
-  \begin{center}
-    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap5/incrementmap}}
-    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap5/incrementmap2}}
-    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap5/incrementmap-rviz}}
-  \end{center}
-  \caption{Visión del simulador, (a) y (b), y mapa a corto plazo (c).}
-  \label{fig:initserver}
-\end{figure}
-
-Tras el inicio del algoritmo se añadió un objeto nuevo al escenario. Esto se representa en la figura \ref{fig:includeobject}. Vemos como el algoritmo añade el objeto al mapa y lo sitúa en una posición coherente respecto a la posición que ocupa el objeto en el escenario simulado.
-
-\begin{figure} [H]
-  \begin{center}
-    \includegraphics[width=6cm,height=5cm]{img/cap5/incrementmap-object3}
-    \includegraphics[width=6cm,height=5cm]{img/cap5/incrementmap-object}
-  \end{center}
-  \caption{Añadimos un objeto al escenario}
-  \label{fig:includeobject}
-\end{figure}
-
-Una vez que el algoritmo a incluido el objeto en el mapa procedemos a eliminarlo del escenario simulado. Esto se representa en la figura  \ref{fig:deleteobject}. Vemos como el algoritmo ha comenzado a borrar el objeto, por lo que el valor de las celdas que estaban ocupadas por el objeto ahora es mucho menor.
-
-\begin{figure}[H]
-  \begin{center}
-    \includegraphics[width=6cm,height=5cm]{img/cap5/incrementmap2}
-    \includegraphics[width=6cm,height=5cm]{img/cap5/incrementmap-object2}
-  \end{center}
-  \caption{Eliminamos un objeto del escenario}
-  \label{fig:deleteobject}
-\end{figure}
-
 El proceso de añadir o eliminar un objeto puede ser más o menos rápido dependiendo de los valores de las variables que modelan estas operaciones. Para el caso de nuestro algoritmo contamos un fichero con extensión yaml en el que modificamos los valores de los parámetros.
 \renewcommand{\lstlistingname}{Código}
 \begin{lstlisting}[caption=Fichero de configuración obstacle\_detector.yaml, label={lst:obstacledetectorconfig}]
@@ -101,11 +102,11 @@ El proceso de añadir o eliminar un objeto puede ser más o menos rápido depend
   min_lenght: 0.23
   max_lenght: 2.5
 \end{lstlisting}
-Los valores asociados a cost\_inc y cost\_dec representan el incremento o decremento del valor de una celda por cada iteración del algoritmo. Los otros valores configurables representan la longitud máxima y mínima que se tiene en cuenta para cada medida que el láser nos proporciona. Las muestras obtenidas del láser que estén fuera de estos valores son ignoradas.
+Los valores asociados a cost\_inc y cost\_dec representan el incremento o decremento del valor de una celda por cada iteración del algoritmo. Los otros valores configurables representan la longitud máxima y mínima que se tiene en cuenta para cada medida que el láser nos proporciona.
 
-{Explicar como se borran los objetos? (decremento)}\\
+Al final de cada iteración del algoritmo el mapa de corto plazo es publicado en un topic para que pueda ser usado por el resto de nodos que conforman el servidor de mapas dinámico. Para llevar a cabo esta operación usamos una estructura de datos proporcionada por ROS, \textit{Costmap2DPublisher}\footnote{http://docs.ros.org/indigo/api/costmap\_2d/html/classcostmap\_\_2d\_1\_1Costmap2DPublisher.html}. Este publicador publica nuestro mapa en el topic \textit{/shortterm\_map}.
 
-Al final de cada iteración del algoritmo el mapa de corto plazo es publicado en un topic para que pueda ser usado por el resto de nodos que conforman el servidor de mapas dinámico. Para llevar a cabo esta operación usamos una estructura de datos proporcionada por ROS, \textit{Costmap2DPublisher}\footnote{http://docs.ros.org/indigo/api/costmap\_2d/html/classcostmap\_\_2d\_1\_1Costmap2DPublisher.html}. Este publicador publica nuestro mapa en el topic \textit{costmap\_auto}.\pagebreak
+
 \renewcommand{\lstlistingname}{Código}
 \begin{lstlisting}[caption=Step del nodo obstacle\_detector, label={lst:stepobstacledetector}]
   void
@@ -136,7 +137,7 @@ Existe un pequeño cambio en los valores del mapa que se publica. El tipo de men
 \subsection{Mapa de largo plazo}
 El mapa de largo plazo se inicializa con los valores del mapa estático y se caracteriza por incluir los objetos que tienen un valor muy alto en el mapa de corto plazo, por tanto tenemos un mapa con objetos que han perdurado en el mapa a corto plazo durante un largo periodo de tiempo y que podemos considerar que nos van a influir a la hora de planificar nuestra ruta por el escenario. 
 Este mapa también es dinámico, por lo que también elimina los objetos del mapa si estos desaparecen o cambian su posición.
-\pagebreak 
+
 
 \begin{lstlisting}[caption=Procedimiento para añadir un objeto al mapa de largo plazo, label={lst:addobjectlongmap}]
   void
@@ -155,17 +156,6 @@ Este mapa también es dinámico, por lo que también elimina los objetos del map
 
 En el código mostrado en \ref{lst:addobjectlongmap} muestra el proceso de adición de un objeto al mapa de largo plazo. Para ello se recorren los valores del mapa de corto plazo y si alguno tiene un valor mayor a 95, valor que consideramos lo suficientemente alto como para que sea muy fiable que esa celda está ocupada, se incluye con ese valor al mapa.
 
-\begin{figure}[H]
-  \begin{center}
-    \includegraphics[width=10cm,height=6cm]{img/cap5/addingobject-gazebo}
-    \includegraphics[width=10cm,height=5cm]{img/cap5/addingobject-longmap}
-  \end{center}
-  \caption{Añadimos un objeto al mapa de largo plazo}
-  \label{fig:addobjectlongmap}
-\end{figure}
-\pagebreak
-
-
 \begin{lstlisting}[caption=Procedimiento para eliminar un objeto al mapa de largo plazo, label={lst:deleteobjectlongmap}]
   void
   MapController::updateLongTermMap(nav_msgs::OccupancyGrid s_map){
@@ -181,16 +171,7 @@ En el código mostrado en \ref{lst:addobjectlongmap} muestra el proceso de adici
 
 \end{lstlisting}
 
-En el código mostrado en \ref{lst:deleteobjectlongmap} se compara el mapa de largo plazo con el mapa de corto plazo. Si una celda en el mapa de largo plazo tiene un valor que indica que está ocupada y en el mapa de corto plazo esa misma celda tiene un valor que indica que está libre, siempre y cuando esa celda no pertenezca a una celda de una pared, se decrementa su valor en el mapa de largo plazo. La cuantía de este decremento también puede modelarse, longterm\_cost\_dec, regulando así la memoria que tenemos de los objetos que hemos añadido a este mapa.\\
-
-\begin{figure}[H]
-  \begin{center}
-    \includegraphics[width=10cm,height=5cm]{img/cap5/deletingobject-gazebo}
-    \includegraphics[width=10cm,height=5cm]{img/cap5/deletingobject-longmap}
-  \end{center}
-  \caption{Borramos un objeto del mapa de largo plazo}
-  \label{fig:deleteobjectlongmap}
-\end{figure}
+En el código mostrado en \ref{lst:deleteobjectlongmap} se compara el mapa de largo plazo con el mapa de corto plazo. Si una celda en el mapa de largo plazo tiene un valor que indica que está ocupada y en el mapa de corto plazo esa misma celda tiene un valor que indica que está libre, siempre y cuando esa celda no pertenezca a una celda de una pared, se decrementa su valor en el mapa de largo plazo. La cuantía de este decremento también puede modelarse, longterm\_cost\_dec, regulando así la memoria que tenemos de los objetos que hemos añadido a este mapa.\pagebreak
 
 Por último publicamos el mapa en el topic \textit{/longTerm\_map}.
 
@@ -245,7 +226,5 @@ MapController::publishAll(){
 Este topic es usado por defecto por las aplicaciones que necesitan un mapa como parámetro de entrada. En nuestro caso las aplicaciones que usarán nuestro mapa son el nodo de localización y el nodo de navegación, como veremos en el siguiente capitulo. 
 
 
-
-\section{Navegación semántica}
 
 
