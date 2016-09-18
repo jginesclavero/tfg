@@ -223,8 +223,9 @@ MapController::publishAll(){
 \end{lstlisting}
 
 
-Este topic es usado por defecto por las aplicaciones que necesitan un mapa como parámetro de entrada. En nuestro caso las aplicaciones que usarán nuestro mapa son el nodo de localización y el nodo de navegación, como veremos en el siguiente capitulo. 
+\subsubsection{Mapeado de zonas desconocidas}
+La creación de un mapa de corto plazo a partir de las muestras del láser y la posterior incorporación del mapa de largo plazo para generar un mapa conjunto cuenta con una gran versatilidad y eficacia, tanto que es posible mapear nuevas zonas o estancias del escenario. Generar un mapa así nos permite también localizarnos en este e incluso navegar por el. 
 
-
+No contamos con un sistema de SLAM, ya que partimos de unos mapas, pero poder incluir en un mapa objetos o nuevas estancias nos permite mantener nuestro robot doméstico por mucho más tiempo navegando por nuestra casa, lo que lo hace mucho más robusto y versátil. Esta ventaja podría, por ejemplo, aplicarse a un robot sirviente en una universidad. Al principio, como prueba de la tecnología, puede que nos interese darle una pequeña zona mapeada por la que moverse, pero si un día queremos que su rango de efectividad se amplíe solo tendremos que moverlo por la zona deseada y se añadirá al mapa perfectamente.
 
 

@@ -32,6 +32,7 @@
 \contentsline {subsection}{\numberline {5.2.2}Mapa de corto plazo}{18}
 \contentsline {subsection}{\numberline {5.2.3}Mapa de largo plazo}{21}
 \contentsline {section}{\numberline {5.3}Construcci\IeC {\'o}n del mapa final}{23}
+\contentsline {subsubsection}{Mapeado de zonas desconocidas}{24}
 \contentsline {chapter}{\numberline {6}Navegaci\IeC {\'o}n sem\IeC {\'a}ntica}{25}
 \contentsline {chapter}{\numberline {7}Experimentaci\IeC {\'o}n}{26}
 \contentsline {section}{\numberline {7.1}Mapeado en entorno dom\IeC {\'e}stico}{26}
