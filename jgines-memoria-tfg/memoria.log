@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.4)  18 SEP 2016 16:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.4)  19 SEP 2016 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -579,10 +579,6 @@ Writing index file memoria.idx
 (./memoria.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-
-
-LaTeX Warning: Label `sec:mapserver' multiply defined.
-
 )
 \openout1 = `memoria.aux'.
 
@@ -1014,45 +1010,50 @@ LaTeX Info: Redefining \% on input line 140.
 [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 175.
-LaTeX Info: Redefining \% on input line 175.
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
  [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 200.
-LaTeX Info: Redefining \% on input line 200.
- [23])
-(./cap6.tex
+LaTeX Warning: Reference `lst:buildEffectivemap' on page 23 undefined on input 
+line 196.
+
+) (./cap6.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [24]
+ [23]
 Cap\'{\i }tulo 6.
-) (./cap7.tex [25
+<img/cap6/semanticmap.png, id=141, 258.9675pt x 238.8925pt>
+File: img/cap6/semanticmap.png Graphic file (type png)
 
-]
+<use img/cap6/semanticmap.png>
+Package pdftex.def Info: img/cap6/semanticmap.png used on input line 10.
+(pdftex.def)             Requested size: 284.52756pt x 262.49821pt.
+ [24
+
+]) (./cap7.tex [25 <./img/cap6/semanticmap.png>]
 Cap\'{\i }tulo 7.
-<img/cap5/incrementmap.png, id=148, 759.83875pt x 610.28pt>
+<img/cap5/incrementmap.png, id=150, 759.83875pt x 610.28pt>
 File: img/cap5/incrementmap.png Graphic file (type png)
 
 <use img/cap5/incrementmap.png>
 Package pdftex.def Info: img/cap5/incrementmap.png used on input line 14.
 (pdftex.def)             Requested size: 142.26071pt x 142.26111pt.
 
-<img/cap5/incrementmap2.png, id=149, 508.90125pt x 394.47375pt>
+<img/cap5/incrementmap2.png, id=151, 508.90125pt x 394.47375pt>
 File: img/cap5/incrementmap2.png Graphic file (type png)
 
 <use img/cap5/incrementmap2.png>
 Package pdftex.def Info: img/cap5/incrementmap2.png used on input line 15.
 (pdftex.def)             Requested size: 142.26619pt x 142.26324pt.
 
-<img/cap5/incrementmap-rviz.png, id=150, 587.19376pt x 428.35031pt>
+<img/cap5/incrementmap-rviz.png, id=152, 587.19376pt x 428.35031pt>
 File: img/cap5/incrementmap-rviz.png Graphic file (type png)
 
 <use img/cap5/incrementmap-rviz.png>
 Package pdftex.def Info: img/cap5/incrementmap-rviz.png used on input line 16.
 (pdftex.def)             Requested size: 142.26439pt x 142.26454pt.
 
-<img/cap5/incrementmap-object3.png, id=151, 478.78876pt x 374.14781pt>
+<img/cap5/incrementmap-object3.png, id=153, 478.78876pt x 374.14781pt>
 File: img/cap5/incrementmap-object3.png Graphic file (type png)
 
 <use img/cap5/incrementmap-object3.png>
@@ -1060,7 +1061,7 @@ Package pdftex.def Info: img/cap5/incrementmap-object3.png used on input line 2
 6.
 (pdftex.def)             Requested size: 170.71272pt x 142.26328pt.
 
-<img/cap5/incrementmap-object.png, id=152, 596.98032pt x 434.37282pt>
+<img/cap5/incrementmap-object.png, id=154, 596.98032pt x 434.37282pt>
 File: img/cap5/incrementmap-object.png Graphic file (type png)
 
 <use img/cap5/incrementmap-object.png>
@@ -1079,7 +1080,7 @@ File: img/cap5/incrementmap2.png Graphic file (type png)
 Package pdftex.def Info: img/cap5/incrementmap2.png used on input line 37.
 (pdftex.def)             Requested size: 170.71786pt x 142.26324pt.
 
-<img/cap5/incrementmap-object2.png, id=156, 599.23875pt x 432.86719pt>
+<img/cap5/incrementmap-object2.png, id=158, 599.23875pt x 432.86719pt>
 File: img/cap5/incrementmap-object2.png Graphic file (type png)
 
 <use img/cap5/incrementmap-object2.png>
@@ -1087,7 +1088,7 @@ Package pdftex.def Info: img/cap5/incrementmap-object2.png used on input line 3
 8.
 (pdftex.def)             Requested size: 170.71167pt x 142.26537pt.
 
-<img/cap5/addingobject-gazebo.png, id=157, 475.7775pt x 327.47343pt>
+<img/cap5/addingobject-gazebo.png, id=159, 475.7775pt x 327.47343pt>
 File: img/cap5/addingobject-gazebo.png Graphic file (type png)
 
 <use img/cap5/addingobject-gazebo.png>
@@ -1095,7 +1096,7 @@ Package pdftex.def Info: img/cap5/addingobject-gazebo.png used on input line 57
 .
 (pdftex.def)             Requested size: 284.53944pt x 170.71689pt.
 
-<img/cap5/addingobject-longmap.png, id=158, 667.74469pt x 360.59718pt>
+<img/cap5/addingobject-longmap.png, id=160, 667.74469pt x 360.59718pt>
 File: img/cap5/addingobject-longmap.png Graphic file (type png)
 
 <use img/cap5/addingobject-longmap.png>
@@ -1109,7 +1110,7 @@ LaTeX Info: Redefining \. on input line 63.
 LaTeX Info: Redefining \% on input line 63.
  [27 <./img/cap5/incrementmap-object3.png> <./img/cap5/incrementmap-object.png 
 (PNG copy)> <./img/cap5/incrementmap-object2.png (PNG copy)>]
-<img/cap5/deletingobject-gazebo.png, id=163, 493.0922pt x 306.39468pt>
+<img/cap5/deletingobject-gazebo.png, id=165, 493.0922pt x 306.39468pt>
 File: img/cap5/deletingobject-gazebo.png Graphic file (type png)
 
 <use img/cap5/deletingobject-gazebo.png>
@@ -1117,7 +1118,7 @@ Package pdftex.def Info: img/cap5/deletingobject-gazebo.png used on input line
 66.
 (pdftex.def)             Requested size: 284.54153pt x 142.26167pt.
 
-<img/cap5/deletingobject-longmap.png, id=164, 734.745pt x 438.8897pt>
+<img/cap5/deletingobject-longmap.png, id=166, 734.745pt x 438.8897pt>
 File: img/cap5/deletingobject-longmap.png Graphic file (type png)
 
 <use img/cap5/deletingobject-longmap.png>
@@ -1125,7 +1126,7 @@ Package pdftex.def Info: img/cap5/deletingobject-longmap.png used on input line
  67.
 (pdftex.def)             Requested size: 284.53136pt x 142.26244pt.
 
-<img/cap7/grannieAnne-ext.png, id=165, 726.46407pt x 408.77719pt>
+<img/cap7/grannieAnne-ext.png, id=167, 726.46407pt x 408.77719pt>
 File: img/cap7/grannieAnne-ext.png Graphic file (type png)
 
 <use img/cap7/grannieAnne-ext.png>
@@ -1136,28 +1137,28 @@ LaTeX Info: Redefining \% on input line 83.
  [28 <./img/cap5/addingobject-gazebo.png (PNG copy)> <./img/cap5/addingobject-l
 ongmap.png> <./img/cap5/deletingobject-gazebo.png (PNG copy)> <./img/cap5/delet
 ingobject-longmap.png (PNG copy)>]
-<img/cap7/localization-ext.png, id=170, 602.25pt x 368.87813pt>
+<img/cap7/localization-ext.png, id=172, 602.25pt x 368.87813pt>
 File: img/cap7/localization-ext.png Graphic file (type png)
 
 <use img/cap7/localization-ext.png>
 Package pdftex.def Info: img/cap7/localization-ext.png used on input line 87.
 (pdftex.def)             Requested size: 284.53705pt x 170.71602pt.
 
-<img/cap7/map-ext.png, id=171, 660.96938pt x 429.85594pt>
+<img/cap7/map-ext.png, id=173, 660.96938pt x 429.85594pt>
 File: img/cap7/map-ext.png Graphic file (type png)
 
 <use img/cap7/map-ext.png>
 Package pdftex.def Info: img/cap7/map-ext.png used on input line 96.
 (pdftex.def)             Requested size: 341.44688pt x 199.17256pt.
 
-<img/cap7/longmap-ext.png, id=172, 534.49687pt x 376.40625pt>
+<img/cap7/longmap-ext.png, id=174, 534.49687pt x 376.40625pt>
 File: img/cap7/longmap-ext.png Graphic file (type png)
 
 <use img/cap7/longmap-ext.png>
 Package pdftex.def Info: img/cap7/longmap-ext.png used on input line 97.
 (pdftex.def)             Requested size: 341.44884pt x 199.17271pt.
 
-<img/cap7/shortmap-ext.png, id=173, 618.05907pt x 354.57469pt>
+<img/cap7/shortmap-ext.png, id=175, 618.05907pt x 354.57469pt>
 File: img/cap7/shortmap-ext.png Graphic file (type png)
 
 <use img/cap7/shortmap-ext.png>
@@ -1187,14 +1188,14 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8724 strings out of 493304
- 124516 string characters out of 6139872
+ 8738 strings out of 493304
+ 124751 string characters out of 6139872
  234688 words of memory out of 5000000
- 11948 multiletter control sequences out of 15000+600000
+ 11960 multiletter control sequences out of 15000+600000
  13576 words of font info for 52 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  44i,8n,58p,1141b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1208,10 +1209,10 @@ ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb>
-Output written on memoria.pdf (43 pages, 21880043 bytes).
+Output written on memoria.pdf (43 pages, 21883720 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
+ 222 PDF objects out of 1000 (max. 8388607)
  129 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

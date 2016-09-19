@@ -539,7 +539,7 @@
 			"file": "cap3.tex",
 			"settings":
 			{
-				"buffer_size": 14212,
+				"buffer_size": 14211,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +555,7 @@
 			"file": "cap5.tex",
 			"settings":
 			{
-				"buffer_size": 13942,
+				"buffer_size": 15343,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,12 +563,20 @@
 			"file": "cap6.tex",
 			"settings":
 			{
-				"buffer_size": 2043,
+				"buffer_size": 1012,
 				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "cap7.tex",
+			"settings":
+			{
+				"buffer_size": 4237,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cap8.tex",
 			"settings":
 			{
 				"buffer_size": 67,
@@ -587,7 +595,7 @@
 			"file": "memoria.tex",
 			"settings":
 			{
-				"buffer_size": 4001,
+				"buffer_size": 4013,
 				"line_ending": "Unix"
 			}
 		},
@@ -636,6 +644,7 @@
 	},
 	"file_history":
 	[
+		"/home/jgines/redaccion_tfg/tfg/jgines-memoria-tfg/cap7.tex",
 		"/home/jgines/redaccion_tfg/tfg/jgines-memoria-tfg/cap6.tex",
 		"/home/jgines/redaccion_tfg/tfg/jgines-memoria-tfg/cap5.tex",
 		"/home/jgines/redaccion_tfg/abellagonzalo-memoria-tfm-8564049e0e35/cap4.tex",
@@ -762,8 +771,7 @@
 		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/velocity_smoother.launch.xml",
 		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/safety_controller.launch.xml",
 		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/move_base.launch.xml",
-		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/gmapping.launch.xml",
-		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/amcl.launch.xml"
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/gmapping.launch.xml"
 	],
 	"find":
 	{
@@ -782,6 +790,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"obstacledetectorconfig",
+			"obstacledetectorconfigobstacledetectorconfig",
+			"}\n",
+			"mapserver",
+			"hbtp",
+			"mapserver",
+			"sec:mapserver",
+			"\n",
+			"cap6",
 			"_base",
 			"pagebreak",
 			"cap4",
@@ -900,16 +917,7 @@
 			"cell_pos_robot_x",
 			"posRobot_x",
 			"posRobot_w",
-			"print()",
-			"*/\n",
-			"cost_now",
-			"xy2cells",
-			"u",
-			"setCost",
-			"rx",
-			"ptu_d46",
-			"functionS",
-			"list::"
+			"print()"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -930,7 +938,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -981,7 +989,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1479.0,
+						"translation.y": 595.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -991,15 +999,15 @@
 					"file": "cap3.tex",
 					"settings":
 					{
-						"buffer_size": 14212,
+						"buffer_size": 14211,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14212,
-								14212
+								8607,
+								8607
 							]
 						],
 						"settings":
@@ -1010,7 +1018,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3409.0,
+						"translation.y": 2115.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1049,15 +1057,15 @@
 					"file": "cap5.tex",
 					"settings":
 					{
-						"buffer_size": 13942,
+						"buffer_size": 15343,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								455,
-								455
+								13899,
+								13899
 							]
 						],
 						"settings":
@@ -1068,7 +1076,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4458.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1078,43 +1086,15 @@
 					"file": "cap6.tex",
 					"settings":
 					{
-						"buffer_size": 2043,
+						"buffer_size": 1012,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								284,
-								284
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "cap7.tex",
-					"settings":
-					{
-						"buffer_size": 67,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								65,
-								65
+								875,
+								875
 							]
 						],
 						"settings":
@@ -1128,7 +1108,61 @@
 					"type": "text"
 				},
 				{
+					"buffer": 6,
+					"file": "cap7.tex",
+					"settings":
+					{
+						"buffer_size": 4237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2899,
+								2899
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
 					"buffer": 7,
+					"file": "cap8.tex",
+					"settings":
+					{
+						"buffer_size": 67,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "ejemploalgoritmo",
 					"settings":
 					{
@@ -1157,19 +1191,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "memoria.tex",
 					"settings":
 					{
-						"buffer_size": 4001,
+						"buffer_size": 4013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3767,
-								3767
+								3768,
+								3768
 							]
 						],
 						"settings":
@@ -1179,13 +1213,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2856.0,
+						"translation.y": 2805.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "/home/jgines/catkin_ws/dynamic_navigation/memoria_proyecto.txt",
 					"settings":
 					{
