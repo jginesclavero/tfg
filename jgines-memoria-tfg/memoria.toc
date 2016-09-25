@@ -20,21 +20,21 @@
 \contentsline {subsection}{\numberline {3.3.4}AMCL}{11}
 \contentsline {subsubsection}{Filtro de part\IeC {\'\i }culas}{11}
 \contentsline {subsection}{\numberline {3.3.5}Move\_base}{14}
-\contentsline {subsection}{\numberline {3.3.6}gmapping}{14}
-\contentsline {chapter}{\numberline {4}Montaje del robot}{15}
-\contentsline {section}{\numberline {4.1}Estructrura}{15}
-\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de conectividad}{15}
-\contentsline {section}{\numberline {4.3}Modelo de Gazebo}{15}
-\contentsline {chapter}{\numberline {5}Mapas din\IeC {\'a}micos}{16}
-\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{16}
-\contentsline {section}{\numberline {5.2}Servidor de mapas din\IeC {\'a}mico}{18}
-\contentsline {subsection}{\numberline {5.2.1}Mapa est\IeC {\'a}tico}{18}
-\contentsline {subsection}{\numberline {5.2.2}Mapa de corto plazo}{18}
-\contentsline {subsection}{\numberline {5.2.3}Mapa de largo plazo}{21}
-\contentsline {section}{\numberline {5.3}Construcci\IeC {\'o}n del mapa final}{23}
-\contentsline {chapter}{\numberline {6}Navegaci\IeC {\'o}n sem\IeC {\'a}ntica}{24}
-\contentsline {chapter}{\numberline {7}Experimentaci\IeC {\'o}n}{26}
-\contentsline {section}{\numberline {7.1}Mapeado en entorno dom\IeC {\'e}stico}{26}
-\contentsline {section}{\numberline {7.2}Navegaci\IeC {\'o}n con obst\IeC {\'a}culos din\IeC {\'a}micos}{27}
-\contentsline {section}{\numberline {7.3}Experimentaci\IeC {\'o}n en la Robocup}{27}
-\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{31}
+\contentsline {subsection}{\numberline {3.3.6}gmapping}{15}
+\contentsline {chapter}{\numberline {4}Montaje del robot}{16}
+\contentsline {section}{\numberline {4.1}Estructrura}{16}
+\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de conectividad}{16}
+\contentsline {section}{\numberline {4.3}Modelo de Gazebo}{16}
+\contentsline {chapter}{\numberline {5}Mapas din\IeC {\'a}micos}{17}
+\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{17}
+\contentsline {section}{\numberline {5.2}Servidor de mapas din\IeC {\'a}mico}{19}
+\contentsline {subsection}{\numberline {5.2.1}Mapa est\IeC {\'a}tico}{19}
+\contentsline {subsection}{\numberline {5.2.2}Mapa de corto plazo}{19}
+\contentsline {subsection}{\numberline {5.2.3}Mapa de largo plazo}{22}
+\contentsline {section}{\numberline {5.3}Construcci\IeC {\'o}n del mapa final}{24}
+\contentsline {chapter}{\numberline {6}Navegaci\IeC {\'o}n sem\IeC {\'a}ntica}{25}
+\contentsline {chapter}{\numberline {7}Experimentaci\IeC {\'o}n}{27}
+\contentsline {section}{\numberline {7.1}Mapeado en entorno dom\IeC {\'e}stico}{27}
+\contentsline {section}{\numberline {7.2}Navegaci\IeC {\'o}n con obst\IeC {\'a}culos din\IeC {\'a}micos}{29}
+\contentsline {section}{\numberline {7.3}Experimentaci\IeC {\'o}n en la Robocup}{29}
+\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{33}

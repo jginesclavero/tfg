@@ -10,22 +10,24 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo visual de un costmap.\relax }}{11}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Inicializaci\IeC {\'o}n del filtro de part\IeC {\'\i }culas\relax }}{12}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces El robot se v\IeC {\'a} acercando a la posici\IeC {\'o}n ideal\relax }}{13}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces El robot se encuentra totalmente localizado\relax }}{13}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces El robot se encuentra totalmente localizado.\relax }}{13}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Mapa de navegaci\IeC {\'o}n usado por move\_base.\relax }}{14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Encuadre de nuestro sistema dentro del modelo de navegaci\IeC {\'o}n de ROS\relax }}{16}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Esquema del sistema\relax }}{17}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Mapa est\IeC {\'a}tico\relax }}{18}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquematizaci\IeC {\'o}n de una lectura de l\IeC {\'a}ser con un objeto.\relax }}{20}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Encuadre de nuestro sistema dentro del modelo de navegaci\IeC {\'o}n de ROS\relax }}{17}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Esquema del sistema\relax }}{18}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Mapa est\IeC {\'a}tico\relax }}{19}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquematizaci\IeC {\'o}n de una lectura de l\IeC {\'a}ser con un objeto.\relax }}{21}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Mapa sem\IeC {\'a}ntico.\relax }}{25}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Composici\IeC {\'o}n del mapa sem\IeC {\'a}ntico y mapa de move\_base.\relax }}{26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Visi\IeC {\'o}n del simulador, (a) y (b), y mapa a corto plazo (c).\relax }}{26}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces A\IeC {\~n}adimos un objeto al escenario\relax }}{27}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Eliminamos un objeto del escenario\relax }}{27}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces A\IeC {\~n}adimos un objeto al mapa de largo plazo\relax }}{28}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Borramos un objeto del mapa de largo plazo\relax }}{28}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Escenario extendido\relax }}{29}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Detalle de la localizaci\IeC {\'o}n\relax }}{29}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Mapas del escenario extendido\relax }}{30}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Visi\IeC {\'o}n del simulador, (a) y (b), y mapa a corto plazo (c).\relax }}{28}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces A\IeC {\~n}adimos un objeto al escenario\relax }}{28}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Eliminamos un objeto del escenario\relax }}{29}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces A\IeC {\~n}adimos un objeto al mapa de largo plazo\relax }}{29}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Borramos un objeto del mapa de largo plazo\relax }}{30}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Escenario extendido\relax }}{30}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Detalle de la localizaci\IeC {\'o}n\relax }}{31}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Mapas del escenario extendido\relax }}{32}
 \addvspace {10\p@ }

@@ -145,7 +145,7 @@ Observamos como la linea color de la parte derecha de la imagen \ref{fig:actamcl
   \begin{center}
     \includegraphics[width=10cm,height=7cm]{img/cap3/finamcl}
   \end{center}
-  \caption{El robot se encuentra totalmente localizado}
+  \caption{El robot se encuentra totalmente localizado.}
   \label{fig:finamcl}
 \end{figure}
 
@@ -159,7 +159,16 @@ Para el uso del paquete \textit{amcl} en nuestro algoritmo fue necesaria la real
 
 \subsection{Move\_base}
 \label{sec:movebase}
-El paquete principal para la navegación es el paquete \textit{move\_base}\footnotemark. Este paquete es el encargado de, proporcionándole un punto de meta y un mapa sobre el que navegar, calcular el plan necesario para llegar hasta dicho punto y ejecutar dicho plan para que el robot alcance su destino. \textit{Move\_base} cuenta nodos que calculan y ejecutan la ruta, \textit{global planner} y \textit{local planner}. El \textit{global planner} se encarga de planificar la ruta teniendo en cuenta el mapa que obtiene del servidor de mapas. Este nodo se asegurará de que la ruta no atraviesa ningún objeto y que la ruta calculada es la mejor para llegar al destino. Además calculará una nueva ruta si el robot se parara a causa de un objeto o si en medio del camino se da cuenta que la ruta no puede llevarse a cabo. 
+El paquete principal para la navegación es el paquete \textit{move\_base}\footnotemark. Este paquete es el encargado de, proporcionándole un punto de meta y un mapa sobre el que navegar, calcular el plan necesario para llegar hasta dicho punto y ejecutar dicho plan para que el robot alcance su destino. \textit{Move\_base} cuenta nodos que calculan y ejecutan la ruta, \textit{global planner} y \textit{local planner}. El \textit{global planner} se encarga de planificar la ruta teniendo en cuenta el mapa que obtiene del servidor de mapas. Este nodo se asegurará de que la ruta no atraviesa ningún objeto y que la ruta calculada es la mejor para llegar al destino. Para ello creará un nuevo mapa, partiendo del mapa que le proporcionamos, en el que todas las paredes y los objetos están inflados una distancia igual al radio del robot. Además calculará una nueva ruta si el robot se parara a causa de un objeto o si en medio del camino se da cuenta que la ruta no puede llevarse a cabo.
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=7cm,height=7cm]{img/cap3/movebase}
+  \end{center}
+  \caption{Mapa de navegación usado por move\_base.}
+  \label{fig:movebasemap}
+\end{figure}
+
+
 
 El \textit{local planner} se encarga de ejecutar el plan calculado por el \textit{global planner}, así como de esquivar objetos que no están en el mapa y de navegar de una forma segura, sin chocar con las paredes o los muebles del escenario.
 \footnotetext{http://wiki.ros.org/move\_base?distro=indigo}

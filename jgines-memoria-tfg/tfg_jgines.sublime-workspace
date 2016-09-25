@@ -539,7 +539,7 @@
 			"file": "cap3.tex",
 			"settings":
 			{
-				"buffer_size": 14211,
+				"buffer_size": 14588,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,7 +563,7 @@
 			"file": "cap6.tex",
 			"settings":
 			{
-				"buffer_size": 1012,
+				"buffer_size": 2850,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "cap7.tex",
 			"settings":
 			{
-				"buffer_size": 4237,
+				"buffer_size": 4948,
 				"line_ending": "Unix"
 			}
 		},
@@ -579,7 +579,7 @@
 			"file": "cap8.tex",
 			"settings":
 			{
-				"buffer_size": 67,
+				"buffer_size": 676,
 				"line_ending": "Unix"
 			}
 		},
@@ -595,7 +595,7 @@
 			"file": "memoria.tex",
 			"settings":
 			{
-				"buffer_size": 4013,
+				"buffer_size": 4017,
 				"line_ending": "Unix"
 			}
 		},
@@ -938,7 +938,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -999,15 +999,15 @@
 					"file": "cap3.tex",
 					"settings":
 					{
-						"buffer_size": 14211,
+						"buffer_size": 14588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8607,
-								8607
+								13770,
+								13770
 							]
 						],
 						"settings":
@@ -1018,7 +1018,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2115.0,
+						"translation.y": 3698.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1064,8 +1064,8 @@
 						"selection":
 						[
 							[
-								13899,
-								13899
+								8106,
+								8106
 							]
 						],
 						"settings":
@@ -1076,7 +1076,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4458.0,
+						"translation.y": 463.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1086,15 +1086,15 @@
 					"file": "cap6.tex",
 					"settings":
 					{
-						"buffer_size": 1012,
+						"buffer_size": 2850,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								875,
-								875
+								1826,
+								1826
 							]
 						],
 						"settings":
@@ -1112,15 +1112,15 @@
 					"file": "cap7.tex",
 					"settings":
 					{
-						"buffer_size": 4237,
+						"buffer_size": 4948,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2899,
-								2899
+								764,
+								764
 							]
 						],
 						"settings":
@@ -1130,7 +1130,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 969.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1140,15 +1140,15 @@
 					"file": "cap8.tex",
 					"settings":
 					{
-						"buffer_size": 67,
+						"buffer_size": 676,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								675,
+								675
 							]
 						],
 						"settings":
@@ -1195,15 +1195,15 @@
 					"file": "memoria.tex",
 					"settings":
 					{
-						"buffer_size": 4013,
+						"buffer_size": 4017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3768,
-								3768
+								1530,
+								1530
 							]
 						],
 						"settings":
@@ -1213,7 +1213,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2805.0,
+						"translation.y": 782.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

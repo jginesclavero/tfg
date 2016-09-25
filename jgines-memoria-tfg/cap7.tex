@@ -1,19 +1,20 @@
 \chapter{Experimentación}
 \label{cap:experimentacion}
+En este capitulo desarrollaremos e ilustraremos los diferentes experimentos o pruebas unitarias que se han realizado para la validación del sistema de mapeado dinámico y el sistema de navegación semántica. En primer lugar se realizarán test de mapeado en un entorno doméstico. Con esto comprobaremos que los objetos son eliminados del mapa si desaparecen y como el mapa va cambiando. También haremos pruebas en una estancia de la casa que no aparece en los mapas y comprobaremos como se añade correctamente al mapa. En segundo lugar haremos pruebas de navegación en un entorno doméstico y dinámico y por ultimo expondremos los experimentos llevados a cabo en la RoboCup@Home en el transcurso de la competición.
 
 \section {Mapeado en entorno doméstico}
 \label{cap:mapeadodomestico}
 
-pruebas unitarias. CAMBIAR LAS IMAGENES DE DIRECTORIO
+pruebas unitarias. 
 
 
 La figura \ref{fig:initserver} fue captada al iniciar el algoritmo. Observamos que la mayor parte del mapa de corto plazo se encuentra en una posición de desconocimiento y que se han ido incluyendo en este las zonas libres, las paredes y la estantería. Los puntos morados y verdes corresponden a la representación de las muestras tomadas por el láser.
 
 \begin{figure}[H]
   \begin{center}
-    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap5/incrementmap}}
-    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap5/incrementmap2}}
-    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap5/incrementmap-rviz}}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap7/incrementmap}}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap7/incrementmap2}}
+    \subfigure[]{\includegraphics[width=5cm,height=5cm]{img/cap7/incrementmap-rviz}}
   \end{center}
   \caption{Visión del simulador, (a) y (b), y mapa a corto plazo (c).}
   \label{fig:initserver}
@@ -23,8 +24,8 @@ Tras el inicio del algoritmo se añadió un objeto nuevo al escenario. Esto se r
 
 \begin{figure} [H]
   \begin{center}
-    \includegraphics[width=6cm,height=5cm]{img/cap5/incrementmap-object3}
-    \includegraphics[width=6cm,height=5cm]{img/cap5/incrementmap-object}
+    \includegraphics[width=6cm,height=5cm]{img/cap7/incrementmap-object3}
+    \includegraphics[width=6cm,height=5cm]{img/cap7/incrementmap-object}
   \end{center}
   \caption{Añadimos un objeto al escenario}
   \label{fig:includeobject}
@@ -34,8 +35,8 @@ Una vez que el algoritmo a incluido el objeto en el mapa procedemos a eliminarlo
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=6cm,height=5cm]{img/cap5/incrementmap2}
-    \includegraphics[width=6cm,height=5cm]{img/cap5/incrementmap-object2}
+    \includegraphics[width=6cm,height=5cm]{img/cap7/incrementmap2}
+    \includegraphics[width=6cm,height=5cm]{img/cap7/incrementmap-object2}
   \end{center}
   \caption{Eliminamos un objeto del escenario}
   \label{fig:deleteobject}
@@ -54,8 +55,8 @@ LARGO PLAZO
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=10cm,height=6cm]{img/cap5/addingobject-gazebo}
-    \includegraphics[width=10cm,height=5cm]{img/cap5/addingobject-longmap}
+    \includegraphics[width=10cm,height=6cm]{img/cap7/addingobject-gazebo}
+    \includegraphics[width=10cm,height=5cm]{img/cap7/addingobject-longmap}
   \end{center}
   \caption{Añadimos un objeto al mapa de largo plazo}
   \label{fig:addobjectlongmap}
@@ -63,8 +64,8 @@ LARGO PLAZO
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=10cm,height=5cm]{img/cap5/deletingobject-gazebo}
-    \includegraphics[width=10cm,height=5cm]{img/cap5/deletingobject-longmap}
+    \includegraphics[width=10cm,height=5cm]{img/cap7/deletingobject-gazebo}
+    \includegraphics[width=10cm,height=5cm]{img/cap7/deletingobject-longmap}
   \end{center}
   \caption{Borramos un objeto del mapa de largo plazo}
   \label{fig:deleteobjectlongmap}

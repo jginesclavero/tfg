@@ -7,7 +7,7 @@ La aplicación se define como un sistema de navegación semántica o por etiquet
 
 \begin{figure} [hbtp]
   \begin{center}
-    \includegraphics[width=10cm]{img/cap6/semanticmap}
+    \includegraphics[width=7cm]{img/cap6/semanticmap}
   \end{center}
   \caption{Mapa semántico.}
   \label{fig:semanticmap}
@@ -24,11 +24,16 @@ En un fichero de configuración, \textit{semantic\_navigation.yaml}, escribiremo
 \end{lstlisting}
 
 (intentar destacar los yaml)
+{Esquema de la aplicación}
 
 El esquema del sistema de navegación sigue la estructura de la figura xxx, en la que el nodo \textit{load\_semantic\_map\_node} carga desde fichero el mapa semántico y crea desde él un \textit{costmap} para poder ser analizado con mayor facilidad. 
 Uno de los puntos fuertes del sistema es que siempre encontrará una celda libre que tomar como destino para enviársela a 
-\textit{move\_base}. Esto es gracias a la composición del mapa semántico con el mapa que \textit{move\_base} genera a partir del mapa que le suministramos desde el servidor de mapas dinámico. Este mapa que genera \textit{move\_base} es un tanto especial, ya que todas las celdas ocupadas se engordan tanto como el radio del robot, aunque este valor es configurable en el fichero \textit{costmap\_common\_params.yaml}. De esta manera nos aseguramos de no planear rutas que pasen muy cerca de las paredes o de los objetos, consiguiendo así una navegación más segura. 
+\textit{move\_base}. Esto es gracias a la composición del mapa semántico con el mapa que \textit{move\_base} genera a partir del mapa que le suministramos desde el servidor de mapas dinámico, figura \ref{fig:movebasemap}
 Usando esta composición nos aseguramos que el algoritmo que busca un punto que corresponda a la etiqueta que le hemos pasado no fije como destino un punto justo en la siguiente celda a una pared o a un mueble.
-
-(imagenes del mapa de pareddes engordadas e imagen del mapa semantico compuesto por el anterior.)
-
+\begin{figure} [hbtp]
+  \begin{center}
+    \includegraphics[width=7cm]{img/cap6/semanticmapcomp}
+  \end{center}
+  \caption{Composición del mapa semántico y mapa de move\_base.}
+  \label{fig:semanticmapcomp}
+\end{figure}
