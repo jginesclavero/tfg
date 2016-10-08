@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.4)  29 SEP 2016 20:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.4)  8 OCT 2016 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,22 +1208,38 @@ Package pdftex.def Info: img/cap7/shortmap-ext.png used on input line 98.
 
 LaTeX Warning: Float too large for page by 0.23402pt on input line 102.
 
-) (./cap8.tex
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
  [32 <./img/cap7/grannieAnne-ext.png (PNG copy)> <./img/cap7/localization-ext.p
 ng (PNG copy)>]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
  [33 <./img/cap7/map-ext.png (PNG copy)> <./img/cap7/longmap-ext.png (PNG copy)
 > <./img/cap7/shortmap-ext.png (PNG copy)>]
+Underfull \hbox (badness 1603) in paragraph at lines 117--118
+\OT1/cmr/m/n/12 XXX, fue el RB1. Las prue-bas a dispu-tar fue-ron las si-guien-
+tes: Na-vi-ga-tion,
+ []
+
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+[34]
+Underfull \hbox (badness 1406) in paragraph at lines 128--129
+[]\OT1/cmr/bx/n/12 D^^S^^Pa 4. \OT1/cmr/m/n/12 El cuar-to d^^S^^Pa fue nues-tro
+ ^^Sulti-mo d^^S^^Pa co-mo par-ti-ci-pan-tes en la
+ []
+
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+[35]) (./cap8.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [34]
+ [36]
 Cap\'{\i }tulo 8.
-) [35
+) [37
 
 ]
 No file memoria.bbl.
@@ -1243,7 +1259,7 @@ Here is how much of TeX's memory you used:
  11980 multiletter control sequences out of 15000+600000
  13576 words of font info for 52 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,8n,58p,1141b,1961s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,8n,58p,1448b,1961s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
@@ -1254,10 +1270,10 @@ ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb>
-Output written on memoria.pdf (47 pages, 21909876 bytes).
+Output written on memoria.pdf (49 pages, 21916571 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
+ 244 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
