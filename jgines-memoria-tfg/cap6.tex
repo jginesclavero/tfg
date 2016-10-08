@@ -23,17 +23,24 @@ En un fichero de configuración, \textit{semantic\_navigation.yaml}, escribiremo
 	# Options: principal room, bathroom, living room, kitchen
 \end{lstlisting}
 
-(intentar destacar los yaml)
-{Esquema de la aplicación}
+\begin{figure} [hbtp]
+  \begin{center}
+    \includegraphics[width=18cm]{img/cap6/esquemasemantic}
+  \end{center}
+  \caption{Esquema del sistema de navegación semántica.}
+  \label{fig:esquemasemantic}
+\end{figure}
 
 El esquema del sistema de navegación sigue la estructura de la figura xxx, en la que el nodo \textit{load\_semantic\_map\_node} carga desde fichero el mapa semántico y crea desde él un \textit{costmap} para poder ser analizado con mayor facilidad. 
 Uno de los puntos fuertes del sistema es que siempre encontrará una celda libre que tomar como destino para enviársela a 
 \textit{move\_base}. Esto es gracias a la composición del mapa semántico con el mapa que \textit{move\_base} genera a partir del mapa que le suministramos desde el servidor de mapas dinámico, figura \ref{fig:movebasemap}
-Usando esta composición nos aseguramos que el algoritmo que busca un punto que corresponda a la etiqueta que le hemos pasado no fije como destino un punto justo en la siguiente celda a una pared o a un mueble.
-\begin{figure} [hbtp]
+
+\begin{figure} [H]
   \begin{center}
     \includegraphics[width=7cm]{img/cap6/semanticmapcomp}
   \end{center}
   \caption{Composición del mapa semántico y mapa de move\_base.}
   \label{fig:semanticmapcomp}
 \end{figure}
+
+Usando esta composición nos aseguramos que el algoritmo que busca un punto que corresponda a la etiqueta que le hemos pasado no fije como destino un punto justo en la siguiente celda a una pared o a un mueble.

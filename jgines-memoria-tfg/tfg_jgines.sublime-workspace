@@ -563,7 +563,7 @@
 			"file": "cap6.tex",
 			"settings":
 			{
-				"buffer_size": 2850,
+				"buffer_size": 3005,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "cap7.tex",
 			"settings":
 			{
-				"buffer_size": 4948,
+				"buffer_size": 7257,
 				"line_ending": "Unix"
 			}
 		},
@@ -790,6 +790,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pagebra",
 			"obstacledetectorconfig",
 			"obstacledetectorconfigobstacledetectorconfig",
 			"}\n",
@@ -916,8 +917,7 @@
 			");*/\n",
 			"cell_pos_robot_x",
 			"posRobot_x",
-			"posRobot_w",
-			"print()"
+			"posRobot_w"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1018,7 +1018,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3698.0,
+						"translation.y": 3273.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1076,7 +1076,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 463.0,
+						"translation.y": 2125.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1086,20 +1086,22 @@
 					"file": "cap6.tex",
 					"settings":
 					{
-						"buffer_size": 2850,
+						"buffer_size": 3005,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1826,
-								1826
+								1769,
+								1769
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1112,15 +1114,15 @@
 					"file": "cap7.tex",
 					"settings":
 					{
-						"buffer_size": 4948,
+						"buffer_size": 7257,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								764,
-								764
+								7084,
+								7084
 							]
 						],
 						"settings":
@@ -1130,7 +1132,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1785.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

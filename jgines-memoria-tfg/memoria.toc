@@ -33,8 +33,13 @@
 \contentsline {subsection}{\numberline {5.2.3}Mapa de largo plazo}{22}
 \contentsline {section}{\numberline {5.3}Construcci\IeC {\'o}n del mapa final}{24}
 \contentsline {chapter}{\numberline {6}Navegaci\IeC {\'o}n sem\IeC {\'a}ntica}{25}
-\contentsline {chapter}{\numberline {7}Experimentaci\IeC {\'o}n}{27}
-\contentsline {section}{\numberline {7.1}Mapeado en entorno dom\IeC {\'e}stico}{27}
-\contentsline {section}{\numberline {7.2}Navegaci\IeC {\'o}n con obst\IeC {\'a}culos din\IeC {\'a}micos}{29}
-\contentsline {section}{\numberline {7.3}Experimentaci\IeC {\'o}n en la Robocup}{29}
-\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{33}
+\contentsline {chapter}{\numberline {7}Experimentaci\IeC {\'o}n}{28}
+\contentsline {section}{\numberline {7.1}Mapeado en entorno dom\IeC {\'e}stico}{28}
+\contentsline {subsection}{\numberline {7.1.1}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de corto plazo en entorno simulado}{28}
+\contentsline {subsection}{\numberline {7.1.2}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de corto plazo en entorno real}{29}
+\contentsline {subsection}{\numberline {7.1.3}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de largo plazo en entorno simulado}{30}
+\contentsline {subsection}{\numberline {7.1.4}Mapeado de zonas desconocidas.}{30}
+\contentsline {subsection}{\numberline {7.1.5}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de largo plazo en entorno real}{34}
+\contentsline {section}{\numberline {7.2}Navegaci\IeC {\'o}n con obst\IeC {\'a}culos din\IeC {\'a}micos}{34}
+\contentsline {section}{\numberline {7.3}Experimentaci\IeC {\'o}n en la Robocup}{34}
+\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{35}
