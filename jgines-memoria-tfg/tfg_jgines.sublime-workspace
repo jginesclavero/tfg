@@ -571,7 +571,7 @@
 			"file": "cap7.tex",
 			"settings":
 			{
-				"buffer_size": 7257,
+				"buffer_size": 12822,
 				"line_ending": "Unix"
 			}
 		},
@@ -790,6 +790,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"&",
+			"4",
 			"pagebra",
 			"obstacledetectorconfig",
 			"obstacledetectorconfigobstacledetectorconfig",
@@ -915,9 +917,7 @@
 			"updateShortMapTopic(){",
 			"cell_pos_robot_x",
 			");*/\n",
-			"cell_pos_robot_x",
-			"posRobot_x",
-			"posRobot_w"
+			"cell_pos_robot_x"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -938,7 +938,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -979,8 +979,8 @@
 						"selection":
 						[
 							[
-								8971,
-								8971
+								6509,
+								6509
 							]
 						],
 						"settings":
@@ -989,7 +989,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 595.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1114,15 +1114,15 @@
 					"file": "cap7.tex",
 					"settings":
 					{
-						"buffer_size": 7257,
+						"buffer_size": 12822,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7084,
-								7084
+								7169,
+								7169
 							]
 						],
 						"settings":
@@ -1132,7 +1132,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1785.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1215,7 +1215,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 782.0,
+						"translation.y": 1683.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
