@@ -29,13 +29,37 @@ Crear un mapa de un escenario puede sernos realmente útil ya que servirán al r
 \end{figure}
 Para llevar a cabo el mapeo de un escenario con un robot móvil deberemos equipar a nuestro robot con sensores capaces de medir distancias, tales como una cámara RGBD o un láser. La cámara RGBD nos proporciona una nube de puntos en 3D, por lo que nos proporciona una información muy rica del entorno pero el tratamiento de esta información resulta muy costoso. El láser nos proporciona un array de distancias en 270º, estas distancias suelen ser muy precisas y su tratamiento es muy liviano, aunque solo contamos con el plano en el que se ubica el láser. 
 
-
-
+En ese trabajo se expondrá una nueva opción de mapeado que resultará de la mezcla de las dos opciones vistas anteriormente. Partiremos de un mapa creado por nosotros de un escenario y el robot irá añadiendo dinámicamente los objetos que vaya encontrando y no estén representados en este mapa inicial. Esta nueva visión nos ha proporcionado muy buenos resultados, tanto que fue integrada como algoritmo de navegación en el robot del equipo GentleBots, del cual formamos parte, y con el que participamos en la Robocup 2016 de Leipzig, en la categoría RoboCup@Home.
 
 \section{RoboCup@Home}
 \label{cap:robocup}
+La categoría RoboCup@Home tiene como objetivo desarrollar la tecnología de robots de servicio y asistencia para futuras aplicaciones domésticas. Es el mayor concurso anual internacional de robots de servicio autónomos y es parte de la Robocup.
+
+\begin{figure} [hbtp]
+  \begin{center}
+    \includegraphics[width=5cm]{img/cap1/logoRobocupHome}
+  \end{center}
+  \caption{Robocup@Home.}
+  \label{fig:logoRobocupHome}
+\end{figure}
+
+Se utiliza un conjunto de pruebas de referencia  para evaluar las capacidades y el rendimiento de los robots en un entorno del hogar no estandarizado. La atención se centra en los siguientes dominios, pero no se limita exclusivamente a ellos:
+
+\begin{itemize}
+\item \textbf{Interacción y cooperación robot-humano} 
+\item \textbf{Navegación y cartografía en entornos dinámicos} 
+\item \textbf{Visión artificial y reconocimiento de objetos en condiciones de luz natural} 
+\item \textbf{Manipulación de objetos} 
+\item \textbf{Comportamientos adaptativos} 
+\item \textbf{Integración de comportamientos}
+\item \textbf{Inteligencia ambiental}  
+\item \textbf{Normalización e integración de Sistemas}  
+\end{itemize}
+
+Cada año el escenario en el que se realizan las pruebas se actualiza para parecerse cada vez más a un escenario real de un ambiente doméstico. En los primeros años solo constaba de una salón y una cocina pero cada vez se incorporan más estancias, como pasillos, habitaciones o zonas de jardín. Los escenarios del año 2016 constaban de cocina, sala de estar, habitación, pasillo y entrada. Además cada escenario tenia 3 puertas para salir al exterior.
+
+RoboCup@Home acaba con las finales, donde los 5 equipos con las puntuaciones más altas pueden realizar la prueba final. Los equipos son calificados por un jurado formado por especialistas y no especialistas en robótica, como puede ser empresarios, especialistas en interacción hombre-máquina, personas de diseño industrial, el público o la prensa. En las finales se enfatiza menos en las cuestiones técnicas, ya que si se llega a la final significa que los equipos son muy buenos en el plano técnico.
 
 \section{Estructura de la memoria}
 \label{cap:estructuradelamemoria}
-
-
+En este documento se describen los aspectos más relevantes del desarrollo del algoritmo. La memoria está dividida en ocho capítulos. En este primer capítulo se ha presentado el contexto en el que se va a desarrollar el proyecto. En el segundo capítulo se define el problema concreto y se establecen los requisitos y los objetivos del proyecto. En el tercer capítulo se exponen y describen el robot con el que se ha trabajado y las distintas herramientas que hemos utilizado o mejorado. El montaje del robot y el diseño de conectividad seguido se explica en el capítulo cuatro. En el capítulo cinco se expone el algoritmo de mapping creado. El sexto capítulo expondrá la navegación semántica desarrollada y como usa el algoritmo de mapping. En el séptimo capítulo expondremos los experimentos llevados a cabo y un pequeño diario de nuestra experiencia en la Robocup. Por último en el octavo capítulo se expondrán las conclusiones del trabajo.

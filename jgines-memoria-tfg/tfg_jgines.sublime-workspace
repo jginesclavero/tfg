@@ -523,7 +523,7 @@
 			"file": "cap1.tex",
 			"settings":
 			{
-				"buffer_size": 255,
+				"buffer_size": 5552,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "cap7.tex",
 			"settings":
 			{
-				"buffer_size": 12822,
+				"buffer_size": 12835,
 				"line_ending": "Unix"
 			}
 		},
@@ -938,7 +938,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -946,15 +946,15 @@
 					"file": "cap1.tex",
 					"settings":
 					{
-						"buffer_size": 255,
+						"buffer_size": 5552,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								183,
-								183
+								5502,
+								5502
 							]
 						],
 						"settings":
@@ -962,7 +962,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 774.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -979,8 +979,8 @@
 						"selection":
 						[
 							[
-								6509,
-								6509
+								4466,
+								4466
 							]
 						],
 						"settings":
@@ -989,7 +989,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 816.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1006,8 +1006,8 @@
 						"selection":
 						[
 							[
-								13770,
-								13770
+								10476,
+								10476
 							]
 						],
 						"settings":
@@ -1018,7 +1018,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3273.0,
+						"translation.y": 2644.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1076,7 +1076,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2125.0,
+						"translation.y": 1292.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1114,15 +1114,15 @@
 					"file": "cap7.tex",
 					"settings":
 					{
-						"buffer_size": 12822,
+						"buffer_size": 12835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7169,
-								7169
+								6420,
+								6420
 							]
 						],
 						"settings":
@@ -1132,7 +1132,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1794.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
