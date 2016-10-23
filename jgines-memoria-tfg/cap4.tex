@@ -13,7 +13,16 @@ La estructura establecida consta de:
 
 \section{Diseño de conectividad}
 \label{cap:conectividad}
+Se optó por un diseño de conectividad distribuido, aprovechando así el modelo distribuido que nos ofrece ROS, para vencer las dificultades e incomodidades de tener que poner nuestro ordenador encima del robot y este conectado directamente al él, como se estaba haciendo hasta ahora. En este nuevo modelo será una Raspberry Pi la que esté conectada al robot, creará un Access Point y nosotros nos conectaremos a este AP para lanzar nuestro sistema de navegación. De esta manera la Raspberry Pi se convierte en un mero puente para la información del robot y de los sensores entre el robot y nuestro ordenador. Conseguimos así poder ejecutar pruebas o depurar nuestro algoritmo de una manera más cómoda y sencilla. 
 
+Los requisitos con los que tiene que contar nuestra Raspberry Pi son los siguientes:
+\begin{itemize}
+\item \textbf{Raspberry Pi 2 Model B.} Para poder instalar el sistema operativo necesario y contar con un mínimo aceptable de capacidad de cómputo, memoria RAM y puertos USB, el primer requisito es contar con una placa del modelo mencionado, aunque puede ser también superior.
+\item \textbf{Ubuntu 14.04 y ROS Indigo.} La distribución sobre la que trabajaremos tanto en el ordenador como en la Raspberry Pi será ROS Indigo, asociada a la distribución de Ubuntu 14.
+\item \textbf{Alimentación.} Raspberry Pi puede alimentarse directamente con un transformador enchufado a la corriente, pero en nuestro caso, para evitar tener cables y que el robot sea totalmente autónomo, se necesitará una batería externa. En nuestro caso usamos un Power Bank de xxxxx mAh.
+\item \textbf{Módulo WIFI.} La placa elegida no cuenta con módulo por defecto por lo que será necesario conectarle un módulo externo USB.
+\item \textbf{Tarjeta de memoria.} Raspberry Pi necesita una tarjeta de memoria externa para poder funcionar. En nuestro caso usaremos una de xxxx GB. Esta capacidad es suficiente para albergar el SO, la distribución de ROS y los drivers del robot y los sensores.
+\end{itemize}
 
 
 
