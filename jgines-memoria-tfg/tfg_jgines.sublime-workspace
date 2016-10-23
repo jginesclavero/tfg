@@ -523,7 +523,7 @@
 			"file": "cap1.tex",
 			"settings":
 			{
-				"buffer_size": 5552,
+				"buffer_size": 7627,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "cap2.tex",
 			"settings":
 			{
-				"buffer_size": 8972,
+				"buffer_size": 8160,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "cap4.tex",
 			"settings":
 			{
-				"buffer_size": 225,
+				"buffer_size": 224,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +555,7 @@
 			"file": "cap5.tex",
 			"settings":
 			{
-				"buffer_size": 15343,
+				"buffer_size": 15456,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "cap7.tex",
 			"settings":
 			{
-				"buffer_size": 12835,
+				"buffer_size": 13000,
 				"line_ending": "Unix"
 			}
 		},
@@ -595,7 +595,7 @@
 			"file": "memoria.tex",
 			"settings":
 			{
-				"buffer_size": 4017,
+				"buffer_size": 3994,
 				"line_ending": "Unix"
 			}
 		},
@@ -644,6 +644,7 @@
 	},
 	"file_history":
 	[
+		"/home/jgines/redaccion_tfg/tfg/jgines-memoria-tfg/plots/exp1.p",
 		"/home/jgines/redaccion_tfg/tfg/jgines-memoria-tfg/cap7.tex",
 		"/home/jgines/redaccion_tfg/tfg/jgines-memoria-tfg/cap6.tex",
 		"/home/jgines/redaccion_tfg/tfg/jgines-memoria-tfg/cap5.tex",
@@ -770,8 +771,7 @@
 		"/home/jgines/Robotica/dynamic_navigation/dn_robot/launch/map_builder.launch",
 		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/velocity_smoother.launch.xml",
 		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/safety_controller.launch.xml",
-		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/move_base.launch.xml",
-		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/gmapping.launch.xml"
+		"/home/jgines/Robotica/dynamic_navigation/dn_navigation/launch/includes/move_base.launch.xml"
 	],
 	"find":
 	{
@@ -790,6 +790,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\n%\\",
 			"&",
 			"4",
 			"pagebra",
@@ -916,8 +917,7 @@
 			"kobuki_",
 			"updateShortMapTopic(){",
 			"cell_pos_robot_x",
-			");*/\n",
-			"cell_pos_robot_x"
+			");*/\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -938,7 +938,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -946,15 +946,15 @@
 					"file": "cap1.tex",
 					"settings":
 					{
-						"buffer_size": 5552,
+						"buffer_size": 7627,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5502,
-								5502
+								47,
+								47
 							]
 						],
 						"settings":
@@ -962,7 +962,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 774.0,
+						"translation.y": 408.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -972,15 +972,15 @@
 					"file": "cap2.tex",
 					"settings":
 					{
-						"buffer_size": 8972,
+						"buffer_size": 8160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4466,
-								4466
+								6199,
+								6199
 							]
 						],
 						"settings":
@@ -989,7 +989,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 816.0,
+						"translation.y": 1581.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1006,8 +1006,8 @@
 						"selection":
 						[
 							[
-								10476,
-								10476
+								12289,
+								12289
 							]
 						],
 						"settings":
@@ -1018,7 +1018,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2644.0,
+						"translation.y": 1887.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1028,15 +1028,15 @@
 					"file": "cap4.tex",
 					"settings":
 					{
-						"buffer_size": 225,
+						"buffer_size": 224,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								27,
-								27
+								108,
+								108
 							]
 						],
 						"settings":
@@ -1057,15 +1057,15 @@
 					"file": "cap5.tex",
 					"settings":
 					{
-						"buffer_size": 15343,
+						"buffer_size": 15456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8106,
-								8106
+								7410,
+								7410
 							]
 						],
 						"settings":
@@ -1076,7 +1076,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1292.0,
+						"translation.y": 1840.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1114,15 +1114,15 @@
 					"file": "cap7.tex",
 					"settings":
 					{
-						"buffer_size": 12835,
+						"buffer_size": 13000,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6420,
-								6420
+								7842,
+								7842
 							]
 						],
 						"settings":
@@ -1132,7 +1132,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1794.0,
+						"translation.y": 2039.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1197,15 +1197,15 @@
 					"file": "memoria.tex",
 					"settings":
 					{
-						"buffer_size": 4017,
+						"buffer_size": 3994,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1530,
-								1530
+								172,
+								172
 							]
 						],
 						"settings":
@@ -1215,7 +1215,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1683.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -1,8 +1,15 @@
 \chapter{Montaje del robot}
 \label{cap:montajedelrobot}
+En este capítulo se describirá la estructura que hemos compuesto con las barras y las bases del robot para que este se adaptara a las necesidades del proyecto. Para controlar nuestro robot de una forma más cómoda se le dotó de una \textit{Raspberry Pi} que hará de puente entre nuestro ordenador, en el que lanzaremos los nodos necesarios para el completo funcionamiento del sistema de navegación, y el robot ya que los conectará vía WIFI, esto se explicará más en detalle en el apartado de Diseño de conectividad. Por último se expondrá el modelo de Gazebo creado para nuestro robot, el cual nos ayudará a simular el robot real de la mejor forma posible .
 
-\section{Estructrura}
+\section{Estructura}
 \label{cap:estructuradelrobot}
+La estructura establecida consta de:
+\begin{enumerate}
+\item Base móvil. Es la base por defecto del robot Kobuki. Sobre esta base se colocará la batería que alimentará a la \textit{Raspberry Pi} y algunos reductores de voltaje o tensión para poder adecuar las tensiones de salida del robot con las tensiones de entrada de los componentes que compondrán la parte hardware
+\item Plataforma. Anclada a la base móvil por 4 pequeñas barras metálicas situaremos una primera plataforma. Con ella cubriremos muchos cables, la batería externa y algunos componentes electrónicos, proporcionándoles protección y evitando que se vean. Sobre esta colocaremos un hub usb y nuestra Raspberry Pi. 
+\item Segunda plataforma. Anclaremos esta segunda plataforma a la primera con barras metálicas, esta vez más largas. Sobre ella colocaremos nuestro sensor láser, de esta manera el sensor no se verá obstaculizado por ningún objeto como pudiera ser las barras metálicas.
+\end{enumerate}
 
 \section{Diseño de conectividad}
 \label{cap:conectividad}

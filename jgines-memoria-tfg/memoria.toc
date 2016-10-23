@@ -22,24 +22,24 @@
 \contentsline {subsection}{\numberline {3.3.5}Move\_base}{18}
 \contentsline {subsection}{\numberline {3.3.6}gmapping}{19}
 \contentsline {chapter}{\numberline {4}Montaje del robot}{20}
-\contentsline {section}{\numberline {4.1}Estructrura}{20}
-\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de conectividad}{20}
-\contentsline {section}{\numberline {4.3}Modelo de Gazebo}{20}
-\contentsline {chapter}{\numberline {5}Mapas din\IeC {\'a}micos}{21}
-\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{21}
-\contentsline {section}{\numberline {5.2}Servidor de mapas din\IeC {\'a}mico}{23}
-\contentsline {subsection}{\numberline {5.2.1}Mapa est\IeC {\'a}tico}{23}
-\contentsline {subsection}{\numberline {5.2.2}Mapa de corto plazo}{23}
-\contentsline {subsection}{\numberline {5.2.3}Mapa de largo plazo}{26}
-\contentsline {section}{\numberline {5.3}Construcci\IeC {\'o}n del mapa final}{28}
-\contentsline {chapter}{\numberline {6}Navegaci\IeC {\'o}n sem\IeC {\'a}ntica}{29}
-\contentsline {chapter}{\numberline {7}Experimentaci\IeC {\'o}n}{32}
-\contentsline {section}{\numberline {7.1}Mapeado en entorno dom\IeC {\'e}stico}{32}
-\contentsline {subsection}{\numberline {7.1.1}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de corto plazo en entorno simulado}{32}
-\contentsline {subsection}{\numberline {7.1.2}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de corto plazo en entorno real}{33}
-\contentsline {subsection}{\numberline {7.1.3}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de largo plazo en entorno simulado}{34}
-\contentsline {subsection}{\numberline {7.1.4}Mapeado de zonas desconocidas.}{34}
-\contentsline {subsection}{\numberline {7.1.5}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de largo plazo en entorno real}{38}
-\contentsline {section}{\numberline {7.2}Navegaci\IeC {\'o}n con obst\IeC {\'a}culos din\IeC {\'a}micos}{38}
-\contentsline {section}{\numberline {7.3}Experimentaci\IeC {\'o}n en la Robocup}{38}
-\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{41}
+\contentsline {section}{\numberline {4.1}Estructura}{20}
+\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de conectividad}{21}
+\contentsline {section}{\numberline {4.3}Modelo de Gazebo}{21}
+\contentsline {chapter}{\numberline {5}Mapas din\IeC {\'a}micos}{22}
+\contentsline {section}{\numberline {5.1}Arquitectura del sistema}{22}
+\contentsline {section}{\numberline {5.2}Servidor de mapas din\IeC {\'a}mico}{24}
+\contentsline {subsection}{\numberline {5.2.1}Mapa est\IeC {\'a}tico}{24}
+\contentsline {subsection}{\numberline {5.2.2}Mapa de corto plazo}{24}
+\contentsline {subsection}{\numberline {5.2.3}Mapa de largo plazo}{27}
+\contentsline {section}{\numberline {5.3}Construcci\IeC {\'o}n del mapa final}{29}
+\contentsline {chapter}{\numberline {6}Navegaci\IeC {\'o}n sem\IeC {\'a}ntica}{30}
+\contentsline {chapter}{\numberline {7}Experimentaci\IeC {\'o}n}{33}
+\contentsline {section}{\numberline {7.1}Mapeado en entorno dom\IeC {\'e}stico}{33}
+\contentsline {subsection}{\numberline {7.1.1}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de corto plazo en entorno simulado}{33}
+\contentsline {subsection}{\numberline {7.1.2}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de corto plazo en entorno real}{34}
+\contentsline {subsection}{\numberline {7.1.3}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de largo plazo en entorno simulado}{35}
+\contentsline {subsection}{\numberline {7.1.4}Mapeado de zonas desconocidas.}{35}
+\contentsline {subsection}{\numberline {7.1.5}Adici\IeC {\'o}n y eliminaci\IeC {\'o}n de objetos en el mapa de largo plazo en entorno real}{39}
+\contentsline {section}{\numberline {7.2}Navegaci\IeC {\'o}n con obst\IeC {\'a}culos din\IeC {\'a}micos}{39}
+\contentsline {section}{\numberline {7.3}Experimentaci\IeC {\'o}n en la Robocup}{39}
+\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{42}

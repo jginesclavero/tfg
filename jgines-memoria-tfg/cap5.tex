@@ -95,6 +95,7 @@ La cuantía del decremento se puede modelar, consiguiendo así que el robot olvi
 \end{lstlisting}
 
 El proceso de añadir o eliminar un objeto puede ser más o menos rápido dependiendo de los valores de las variables que modelan estas operaciones. Para el caso de nuestro algoritmo contamos un fichero con extensión yaml en el que modificamos los valores de los parámetros.
+
 \renewcommand{\lstlistingname}{Código}
 \begin{lstlisting}[caption=Fichero de configuración obstacle\_detector.yaml, label={lst:obstacledetectorconfig}]
   cost_inc: 4
@@ -102,6 +103,7 @@ El proceso de añadir o eliminar un objeto puede ser más o menos rápido depend
   min_lenght: 0.23
   max_lenght: 2.5
 \end{lstlisting}
+
 Los valores asociados a cost\_inc y cost\_dec representan el incremento o decremento del valor de una celda por cada iteración del algoritmo. Los otros valores configurables representan la longitud máxima y mínima que se tiene en cuenta para cada medida que el láser nos proporciona.
 
 Al final de cada iteración del algoritmo el mapa de corto plazo es publicado en un topic para que pueda ser usado por el resto de nodos que conforman el servidor de mapas dinámico. Para llevar a cabo esta operación usamos una estructura de datos proporcionada por ROS, \textit{Costmap2DPublisher}\footnote{http://docs.ros.org/indigo/api/costmap\_2d/html/classcostmap\_\_2d\_1\_1Costmap2DPublisher.html}. Este publicador publica nuestro mapa en el topic \textit{/shortterm\_map}.
