@@ -14,6 +14,20 @@ La estructura establecida consta de:
 \section{Diseño de conectividad}
 \label{cap:conectividad}
 
+
+
+
 \section{Modelo de Gazebo}
 \label{cap:modelodegazebo}
+Para crear un modelo fidedigno del robot real en el simulador Gazebo se utilizaron las medidas del robot real. Se tuvo en cuenta la altura respecto al suelo, la inclinación y profundidad de elementos críticos, como el láser, y se modificó el modelo por defecto de kobuki que se tiene en ROS para crear nuestro propio modelo de robot.
 
+\begin{figure} [hbtp]
+  \begin{center}
+    \includegraphics[width=9cm]{img/cap4/modelogazebo}
+  \end{center}
+  \caption{Visualización del modelo de robot de Gazebo.}
+  \label{fig:modelogazebo}
+\end{figure}
+
+
+Es muy importante que el modelo se ajuste lo máximo posible a la realidad ya que muchas de las pruebas se realizarán en el simulador en primera instancia y más tarde se llevarán al robot real.
