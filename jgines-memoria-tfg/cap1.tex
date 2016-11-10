@@ -32,11 +32,55 @@ Para llevar a cabo el mapeo de un escenario con un robot móvil deberemos equipa
 
 En ese trabajo se expondrá una nueva opción de mapeado que resultará de la mezcla de las dos opciones vistas anteriormente. Partiremos de un mapa creado por nosotros de un escenario y el robot irá añadiendo dinámicamente los objetos que vaya encontrando y no estén representados en este mapa inicial. Esta nueva visión nos ha proporcionado muy buenos resultados, tanto que fue integrada como algoritmo de navegación en el robot del equipo GentleBots, del cual formamos parte, y con el que participamos en la Robocup 2016 de Leipzig, en la categoría RoboCup@Home.
 
-\section{RoboCup@Home}
-\label{cap:robocup}
-La categoría RoboCup@Home tiene como objetivo desarrollar la tecnología de robots de servicio y asistencia para futuras aplicaciones domésticas. Es el mayor concurso anual internacional de robots de servicio autónomos y es parte de la Robocup.
 
-\begin{figure} [hbtp]
+
+\section{RoboCup y RoboCup@Home}
+\label{cap:robocup}
+La RoboCup\footnote{http://www.robocup.org} es un proyecto internacional que se constituyó en 1997 y que tiene por objetivo el promover la investigación y educación sobre inteligencia artificial. La misión por la que se constituyó esta iniciativa fue la de crear un equipo de robots completamente autónomos que fueran capaces de ganar a la selección de fútbol ganadora de la Copa del Mundo en el año 2050. Desde sus inicios, esta competición ha experimentado una gran expansión y ahora abarca disciplinas tales como: Robótica doméstica, industrial, de rescate, competiciones infantiles, etc.
+
+Las competencias más destacadas que abarca la competición son, aunque dentro de cada una puede haber distintas ligas:
+\begin{itemize}
+  \item \textbf{RoboCupSoccer:} Categoría de fútbol con robots móviles autónomos. La diferencia entre las ligas reside en la morfología de los robots ya que existen ligas para pequeños y gran robots con ruedas, para robots humanoides y para robots simulados.
+\begin{figure}[H]
+  \begin{center}
+    \subfigure[Robocup soccer robot movil]{\includegraphics[width=6cm,height=5cm]{img/cap1/robocup-soccer}}
+    \subfigure[Robocup soccer nao]{\includegraphics[width=6cm,height=5cm]{img/cap1/robocup-nao}}
+  \end{center}
+  \caption{Robocup Soccer}
+  \label{fig:maps-ej}
+\end{figure}
+  \item \textbf{RoboCupRescue:} Categoría de robots autónomos o teleoperados capaces de desplazarse, operar y rescatar víctimas en escenarios que simulan un terreno desfavorable, como puede ser el que se puede encontrar tras un desastre natural o en un conflicto bélico.
+  \begin{figure}[H]  
+  \begin{center}
+    \includegraphics[width=7cm,height=5cm]{img/cap1/robocup-rescue}
+  \end{center}
+  \caption{Robocup Rescue.}
+  \label{fig:robocup-rescue}
+\end{figure}
+  \item \textbf{RoboCupJunior:} Categoría orientada a acercar la competición a estudiantes de primaria y secundaria. Dentro de esta categoría existen ligas adaptadas de fútbol y rescate y una categoría de baile.
+  \begin{figure}[H]  
+  \begin{center}
+    \includegraphics[width=7cm,height=5cm]{img/cap1/robocup-junior}
+  \end{center}
+  \caption{Robocup Junior.}
+  \label{fig:robocup-junior}
+\end{figure}
+  \item \textbf{RoboCup@Home:} Categoría que tiene como objetivo desarrollar la tecnología de robots de servicio y asistencia para futuras aplicaciones domésticas.
+  \begin{figure}[H]  
+  \begin{center}
+    \includegraphics[width=7cm,height=5cm]{img/cap1/robocup-home}
+  \end{center}
+  \caption{Robocup Home.}
+  \label{fig:robocup-home}
+\end{figure}
+\end{itemize}
+
+Profundizaremos un poco más en la categoría Home.
+
+\subsection{RoboCup@Home}
+\label{cap:robocuphome}
+Como se ha expuesto anteriormente esta categoría se centra en el desarrollo y la aplicación de robots autónomos móviles al ámbito doméstico.
+\begin{figure}[hbtp]  
   \begin{center}
     \includegraphics[width=5cm]{img/cap1/logoRobocupHome}
   \end{center}
@@ -56,6 +100,16 @@ Se utiliza un conjunto de pruebas de referencia  para evaluar las capacidades y 
 \item \textbf{Inteligencia ambiental}  
 \item \textbf{Normalización e integración de Sistemas}  
 \end{itemize}
+
+
+Las principales pruebas que se usan para evaluar las competencias antes descritas son:
+\begin{itemize}
+  \item \textbf{Navegación:} En esta prueba se evalúa la capacidad de navegar por dentro de un escenario doméstico sin chocar con nada y pudiendo sortear objetos grandes, pequeños y personas que puedan obstaculizar su camino. Se propone, por parte de la organización, una serie de puntos que el robot debe alcanzar, incluso si se encontrara una puerta cerrada o un objeto que le hace imposible alcanzar su objetivo, debe tomar un camino alternativo.
+  \item \textbf{Reconocimiento del habla:} En esta prueba se hace al robot una serie de preguntas pactadas, y el robot debe dirigirse a su interlocutor y contestar correctamente a dicha pregunta.
+  \item \textbf{Manipulación y reconocimiento de objetos:} Esta prueba consiste en reconocer objetos cotidianos de una estantería e intentar cogerlos con el brazo articulado que debe poseer el robot y dejar estos objetos en una balda vacía. 
+  \item \textbf{Following and guiding:} Se reconocerá a un arbitro que se colocará delante del robot y se le seguirá sin perderse, saliendo desde la casa, por el recinto de la competición. Cuando el árbitro decida el robot deberá dar la vuelta y guiar al árbitro de nuevo hasta la casa.
+\end{itemize}
+
 
 Cada año el escenario en el que se realizan las pruebas se actualiza para parecerse cada vez más a un escenario real de un ambiente doméstico. En los primeros años solo constaba de una salón y una cocina pero cada vez se incorporan más estancias, como pasillos, habitaciones o zonas de jardín. Los escenarios del año 2016 constaban de cocina, sala de estar, habitación, pasillo y entrada. Además cada escenario tenia 3 puertas para salir al exterior.
 
