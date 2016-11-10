@@ -1,0 +1,20 @@
+hablar de la robocup en general, 4, 5 fotos. pruebas de la robocup home, describirlas un poco
+2. Requisitos enumerados (destacados)
+   Plan de trabajo diagrama de gantt como resumen
+
+3.2 Nodos como idea fundamental que pueden ejecutarse en paralelo e interconexión estandar de los nodos.
+
+    referencia a la figura del navigation stack desde donde se explica.
+
+4. Esquema de conexionado lógico. Usar alguna herramienta de circuitado.
+   Incluir algún fichero o parte del modelo gazebo para describirlo un poco y darle mñas importancia.
+5. Hablar del fichero yaml de los mapas. Decir que cada mapa son 2 ficheros
+   Enlazar el código al principio. Poner el fichero de cada parte del código.
+   5.3 Hay ?? en un sitio
+
+6. Hay una imagen que se sale.
+
+
+9. Bibliografia
+
+manuela veloso, 1000...., papers de ros, costmaps, etc
